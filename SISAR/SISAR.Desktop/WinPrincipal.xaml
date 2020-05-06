@@ -1,0 +1,533 @@
+﻿<r:RibbonWindow x:Class="SISAR.Desktop.WinPrincipal"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:r="clr-namespace:Microsoft.Windows.Controls.Ribbon;assembly=RibbonControlsLibrary"
+    xmlns:sys="clr-namespace:System;assembly=mscorlib"
+    Title="SISAR - Sistema de Atención para Restaurantes" 
+    Icon="Imagenes/Cheff.ico"
+    IconVisibility="Visible"
+    Height="450" Width="650"
+    MinHeight="450" MinWidth="650"
+    WindowState="Maximized">
+    <r:RibbonWindow.Resources>
+        <!--PAQUETE DE ATENCION-->
+        <!--Administrar Menu-->
+        <r:RibbonCommand x:Key="cmd_AdministrarMenu"
+                             LabelTitle="Administrar"
+                             LabelDescription="Administrar los menus que los clientes realizan"
+                             ToolTipTitle="Administrar pedidos"
+                             ToolTipDescription="Administrar los pedidos que los clientes realizan"
+                             LargeImageSource="Imagenes\cart.png"
+                             SmallImageSource="Imagenes\cart.png"
+                             Executed="Mantenimiento_Menu"
+                             />
+        <!--Administrar Pedidos-->
+        <r:RibbonCommand x:Key="cmd_AdministrarPedidos"
+                             LabelTitle="Administrar"
+                             LabelDescription="Administrar los pedidos que los clientes realizan"
+                             ToolTipTitle="Administrar pedidos"
+                             ToolTipDescription="Administrar los pedidos que los clientes realizan"
+                             LargeImageSource="Imagenes\cart.png"
+                             SmallImageSource="Imagenes\cart.png"
+                             Executed="Atencion_AdministrarPedidos"
+                             />
+        <!--Confirmar Pedidos-->
+        <r:RibbonCommand x:Key="cmd_ConfirmarPedidos"
+                             LabelTitle="Ver"
+                             LabelDescription="Confirmacion de Pedidos realizados por los clientes"
+                             ToolTipTitle="Confirmar pedidos"
+                             ToolTipDescription="Confirmacion de Pedidos realizados por los clientes"
+                             LargeImageSource="Imagenes\Pedidos.png"
+                             SmallImageSource="Imagenes\Pedidos.png"
+                             Executed="Atencion_ConfirmarPedidos"
+                             />
+        <!--Modificar Pedidos-->
+        <r:RibbonCommand x:Key="cmd_ModificarPedido"
+                             LabelTitle="Modificar"
+                             LabelDescription="Modifica el pedido realizado por el cliente"
+                             ToolTipTitle="Modificar pedido"
+                             ToolTipDescription="Modificar el pedido realizado por el cliente"
+                             LargeImageSource="Imagenes\M-Cart.png"
+                             SmallImageSource="Imagenes\M-Cart.png"
+                             Executed="Atencion_ModificarPedidos"
+                             />
+        <!--Eliminar Pedido-->
+        <r:RibbonCommand x:Key="cmd_EliminarPedido"
+                             LabelTitle="Eliminar"
+                             LabelDescription="Elimina el pedido realizado por el cliente"
+                             ToolTipTitle="Eliminar pedido"
+                             ToolTipDescription="Elimina el pedido realizado por el cliente"
+                             LargeImageSource="Imagenes\E-Cart.png"
+                             SmallImageSource="Imagenes\E-Cart.png"
+                             Executed="Atencion_EliminarPedidos"
+                             />
+        <!--PAQUETE DE MANTENIMIENTO-->
+        <!--Administrar Categorias-->
+        <r:RibbonCommand x:Key="cmd_AdministrarCategorias"
+                             LabelTitle="Categorias"
+                             LabelDescription="Administración de las categorias de los platos"
+                             ToolTipTitle="Administrar categorias"
+                             ToolTipDescription="Administración de las categorias de los platos"
+                             LargeImageSource="Imagenes\Categorias.png"
+                             SmallImageSource="Imagenes\Categorias.png"
+                             Executed="Mantenimiento_Categorias"
+                             />
+        <!--Administrar Clientes-->
+        <r:RibbonCommand x:Key="cmd_AdministrarClientes"
+                             LabelTitle="Clientes"
+                             LabelDescription="Administración de los clientes"
+                             ToolTipTitle="Administrar clientes"
+                             ToolTipDescription="Administración de los clientes"
+                             LargeImageSource="Imagenes\Clientes.png"
+                             SmallImageSource="Imagenes\Clientes.png"
+                             Executed="Mantenimiento_Clientes"
+                             />
+        <!--Administrar Distribución de Mesas-->
+        <r:RibbonCommand x:Key="cmd_AdministrarDistribucion" 
+                             LabelDescription="Administrar la distribución de las mesas"
+                             LabelTitle="Distribución de Mesas"
+                             ToolTipTitle="Administrar distribución de mesas"
+                             ToolTipDescription="Administrar la organización y distribución de las mesas del restaurant"
+                             SmallImageSource="Imagenes\source_moc.png"
+                             LargeImageSource="Imagenes\source_moc.png"
+                             Executed="Mantenimiento_Distribucion"
+                             />
+        <!--Administrar Empleados-->
+        <r:RibbonCommand x:Key="cmd_AdministrarEmpleados"
+                             LabelTitle="Empleados"
+                             LabelDescription="Administra los empleados del restaurant"
+                             ToolTipTitle="Administrar empleados"
+                             ToolTipDescription="Administra los empleados del restaurant"
+                             SmallImageSource="Imagenes\vcard.png"
+                             LargeImageSource="Imagenes\vcard.png"
+                             Executed="Mantenimiento_Empleados"
+                             />
+        <!--Administrar Perfiles-->
+        <r:RibbonCommand x:Key="cmd_AdministrarPerfiles"
+                         LabelTitle="Perfiles"
+                         LabelDescription="Administrar los perfiles de los empleados"
+                         ToolTipTitle="Administrar Perfiles"
+                         ToolTipDescription="Administrar los perfiles de los empleados"
+                         LargeImageSource="Imagenes\Personal.png"
+                         SmallImageSource="Imagenes\Personal.png"                             
+                         Executed="Mantenimiento_Perfiles"
+                         />
+        <!--Administrar Políticas de Propinas-->
+        <r:RibbonCommand x:Key="cmd_AdministrarPropinas"
+                             LabelTitle="Propinas"
+                             LabelDescription="Administrar la política de propinas"
+                             ToolTipTitle="Administrar política de propinas"
+                             ToolTipDescription="Administración de las políticas de las propinas dejadas por los clientes"
+                             SmallImageSource="Imagenes\tip.png"
+                             
+                             Executed="Mantenimiento_Propinas"
+                             />
+        <!--Administrar Productos-->
+        <r:RibbonCommand x:Key="cmd_AdministrarProductos"
+                             LabelTitle="Productos"
+                             LabelDescription="Administrar los productos del restaurant"
+                             ToolTipTitle="Administrar productos"
+                             ToolTipDescription="Administrar los productos del restaurant"
+                             SmallImageSource="Imagenes\burger-48x48x32b.png"
+                             LargeImageSource="Imagenes\burger-48x48x32b.png"
+                             Executed="Mantenimiento_Productos"
+                             />
+        <!--Administrar Zonas-->
+        <r:RibbonCommand x:Key="cmd_AdministrarZonas"
+                             LabelTitle="Zonas"
+                             LabelDescription="Administrar las zonas con las que cuenta el local"
+                             ToolTipTitle="Administrar zonas"
+                             ToolTipDescription="Administrar las zonas con las que cuenta el local"
+                             LargeImageSource="Imagenes\Zonas.png"
+                             SmallImageSource="Imagenes\Zonas.png"
+                             Executed="Mantenimiento_Zonas"
+                             />
+        <!--Administrar Local-->
+        <r:RibbonCommand x:Key="cmd_AdministrarLocal"
+                             LabelTitle="Local"
+                             LabelDescription="Administrar las locales de la cadena"
+                             ToolTipTitle="Administrar Local"
+                             ToolTipDescription="Administrar los locales de la cadena"
+                             SmallImageSource="Imagenes\home.png"
+                             LargeImageSource="Imagenes\home.png"
+                             Executed="Mantenimiento_Local"
+                             />
+        <!--Administrar Reservas-->
+        <r:RibbonCommand x:Key="cmd_AdministrarReservas"
+                             LabelTitle="Reservas"
+                             LabelDescription="Administrar las reservas hechas por los clientes"
+                             ToolTipTitle="Administrar Reservas"
+                             ToolTipDescription="Administrar las reservas hechas por los clientes"
+                             Executed="Mantenimiento_Reservas"
+                             />
+        <!--Administrar Menu-->
+        <!--PAQUETE DE VENTAS-->
+        <r:RibbonCommand x:Key="cmd_VentasRegistrarConsumo"
+                            LabelTitle="Registrar"
+                            LabelDescription="Registra los movimientos de caja a realizar"
+                            ToolTipTitle="Registrar Movimientos de Caja"
+                            ToolTipDescription="Registra los movimientos de caja a realizar"
+                            Executed="Venta_RegistrarMovimientoCaja"
+                            LargeImageSource="Imagenes\AtencionCaja.png"
+                            SmallImageSource="Imagenes\AtencionCaja.png"
+                            />
+        <r:RibbonCommand x:Key="cmd_VentasAbrirCaja"
+                         LabelTitle="Abrir Caja"
+                         LabelDescription="Registra las cuentas para el inicio del día por caja"
+                         ToolTipTitle="Abrir Caja"
+                         ToolTipDescription="Registra las cuentas para el inicio del día por caja"
+                         Executed="Venta_AbrirCaja"
+                         LargeImageSource="Imagenes\AbrirCaja.png"
+                         SmallImageSource="Imagenes\AbrirCaja.png"
+                         />
+        <r:RibbonCommand x:Key="cmd_VentasCerrarCaja"
+                         LabelTitle="Cerrar Caja"
+                         LabelDescription="Registra las cuentas para el fin del día por caja"
+                         ToolTipTitle="Cerrar Caja"
+                         ToolTipDescription="Registra las cuentas para el fin del día por caja"
+                         Executed="Venta_CerrarCaja"
+                         LargeImageSource="Imagenes\CerrarCaja.png"
+                         SmallImageSource="Imagenes\CerrarCaja.png"
+                         />
+        <!--PAQUETE DE SEGURIDAD-->
+        <!--PAQUETE DE CONSULTAS Y REPORTES-->
+        <r:RibbonCommand x:Key="cmd_GenerarReporteVentas"
+                         LabelTitle="Ventas"
+                         LabelDescription="Muestra el reporte de ventas del restaurant"
+                         ToolTipTitle="Reporte de ventas"
+                         ToolTipDescription="Muestra el reporte de ventas del restaurant"
+                         LargeImageSource="Imagenes\kchart.png"
+                         SmallImageSource="Imagenes\kchart.png"
+                         Executed="Reportes_Ventas"
+                         />
+        <r:RibbonCommand x:Key="cmd_ConsultarStock"
+                         LabelTitle="Stock"
+                         LabelDescription="Consulta stock de productos"
+                         ToolTipTitle="Stock de productos"
+                         ToolTipDescription="Consulta stock de productos"
+                         LargeImageSource="Imagenes\Package.png"
+                         SmallImageSource="Imagenes\Package.png"
+                         Executed="Consultas_ConsultarStock"
+                         />
+        <r:RibbonCommand x:Key="Ribbon_Seguridad"
+                         LabelTitle="Seguridad"
+                         LabelDescription="Administración de los diferentes módulos del restaurante"
+                         ToolTipTitle="Administración"
+                         ToolTipDescription="Administración de los diferentes módulos del restaurante"
+                         />
+        <!--Commands for Buttons-->
+        <!--Seguridad-->
+        <!--Cambio de Contraseña-->
+        <r:RibbonCommand x:Key="Command_CambioPassword"
+                         LabelTitle="Cambio Password" 
+                         LabelDescription="Permite cambiar de contraseña al usuario de la sesión actual."
+                         SmallImageSource="Imagenes\CambioPasword.png"
+                         LargeImageSource="Imagenes\CambioPasword.png"
+                         ToolTipTitle="Cambio Password"
+                         ToolTipDescription="Permite cambiar de contraseña al usuario de la sesión actual."
+                         Executed="Seguridad_CambioPassword"
+                         />
+        <!--Administracion-->
+        <!--Distribucion-->
+        <r:RibbonCommand x:Key="VerCarta"
+                         LabelTitle="Ver Carta"
+                         LabelDescription="Muestra la carta"
+                         LargeImageSource="Imagenes\txt.png"
+                         SmallImageSource="Imagenes\txt.png"
+                         Executed="Ayuda_VerCarta"
+                         />
+        <!--Acciones-->
+        <r:RibbonCommand x:Key="cmd_Limpiar"
+                         LabelTitle="Limpiar"
+                         LabelDescription="Limpiar datos de la pantalla seleccionada"
+                         LargeImageSource="Imagenes\3floppy_mount.png"
+                         SmallImageSource="Imagenes\3floppy_mount.png"
+                         Executed="Acciones_Limpiar"
+                         />
+        <r:RibbonCommand x:Key="cmd_Guardar"
+                         LabelTitle="Guardar"
+                         LabelDescription="Guarda los cambios realizados en la pantalla seleccionada"
+                         LargeImageSource="Imagenes\3floppy_mount.png"
+                         SmallImageSource="Imagenes\3floppy_mount.png"
+                         Executed="Acciones_Guardar"
+                         />
+        <r:RibbonCommand x:Key="cmd_Eliminar"
+                         LabelTitle="Eliminar"
+                         LabelDescription="Elimina el registro seleccionado"
+                         LargeImageSource="Imagenes\Recycle Bin Full.png"
+                         SmallImageSource="Imagenes\Recycle Bin Full.png"
+                         Executed="Acciones_Eliminar"
+                         />
+        <r:RibbonCommand x:Key="cmd_Cerrar"
+                         LabelTitle="Cerrar"
+                         LargeImageSource="Imagenes\file_broken.png"
+                         SmallImageSource="Imagenes\file_broken.png"
+                         Executed="Accion_Cerrar"
+                         />
+        <r:RibbonCommand x:Key="cmd_Salir"
+                         LabelTitle="Cerrar"
+                         LargeImageSource="Imagenes\file_broken.png"
+                         SmallImageSource="Imagenes\file_broken.png"
+                         Executed="Command_Salir" 
+                         />
+        <r:RibbonCommand x:Key="cmd_Consultar_Libro_Visitas"
+                         LabelTitle="Libro"
+                         Executed="Consultas_LibroVisitas"
+                         LargeImageSource="Imagenes\Doc.png"
+                         SmallImageSource="Imagenes\Doc.png"
+                         />
+        <r:RibbonCommand x:Key="cmd_VerManual"
+                         LabelTitle="Manual"
+                         Executed="Ayuda_VerManual"
+                         SmallImageSource="Imagenes\Notepad.png"
+                         LargeImageSource="Imagenes\Notepad.png"
+                         />
+        <r:RibbonCommand x:Key="cmd_Imprimir"
+                         Executed="Accion_Imprimir"
+                         SmallImageSource="Imagenes\Default printer.png"
+                         LargeImageSource="Imagenes\Default printer.png"
+                         LabelTitle="Imprimir"
+                         />
+        <r:RibbonCommand x:Key="cmd_Pagar"
+                         LabelTitle="Pagar"
+                         LabelDescription="Salda el consumo"
+                         LargeImageSource="Imagenes\tip.png"
+                         SmallImageSource="Imagenes\tip.png"
+                         Executed="Acciones_Pagar"
+                         />
+
+
+        <!--THEMES-->
+        <r:RibbonCommand x:Key="RibbonBlackTheme" 
+                         LargeImageSource="Imagenes\BlackTheme.png"
+                         SmallImageSource="Imagenes\BlackTheme.png"
+                         Executed="Config_OfficeBlack"
+                         />
+        <r:RibbonCommand x:Key="RibbonBlueTheme" 
+                         LargeImageSource="Imagenes\BureauTheme.png"
+                         SmallImageSource="Imagenes\BureauTheme.png"
+                         Executed="Config_OfficeBlue"
+                         />
+        <r:RibbonCommand x:Key="RibbonGrayTheme" 
+                         LargeImageSource="Imagenes\GrayTheme.png"
+                         SmallImageSource="Imagenes\GrayTheme.png"
+                         Executed="Config_OfficeSilver"
+                         />
+        
+    </r:RibbonWindow.Resources>
+    <DockPanel>
+        <r:Ribbon x:Name="ribbonPrincipal" 
+                  DockPanel.Dock="Top" 
+                  Title="{Binding Title, ElementName=ribbonWindow, Mode=Default}" 
+                  WindowIconVisibility="Visible">
+            <r:Ribbon.QuickAccessToolBar>
+                <r:RibbonQuickAccessToolBar>
+                    <r:RibbonButton Command="{StaticResource RibbonBlueTheme}"/>
+                    <r:RibbonButton Command="{StaticResource RibbonGrayTheme}"/>
+                    <r:RibbonButton Command="{StaticResource RibbonBlackTheme}"/>
+                        
+                </r:RibbonQuickAccessToolBar>
+            </r:Ribbon.QuickAccessToolBar>
+            <r:Ribbon.ApplicationMenu>
+                <r:RibbonApplicationMenu>
+                    <r:RibbonApplicationMenu.Command>
+                        <r:RibbonCommand 
+                                         SmallImageSource="Imagenes/Cheff.png"
+                                         LargeImageSource="Imagenes/Cheff.png"
+                                         />
+                    </r:RibbonApplicationMenu.Command>
+                    <r:RibbonApplicationMenu.RecentItemList>
+                        <r:RibbonHighlightingList MostRecentFileSelected="RibbonHighlightingList_MostRecentFileSelected" 
+                                                  ItemsSource="{Binding MostRecentFiles}"
+                                                  DisplayMemberPath="Name"
+                                                  />
+                    </r:RibbonApplicationMenu.RecentItemList>
+                    <r:RibbonApplicationMenu.Items>
+                        <r:RibbonButton Command="{StaticResource cmd_Salir}"/>
+                    </r:RibbonApplicationMenu.Items>
+                </r:RibbonApplicationMenu>
+            </r:Ribbon.ApplicationMenu>
+            <r:Ribbon.ContextualTabGroups>
+                <r:RibbonContextualTabGroup x:Name="Acciones" Label="Acciones">
+                    <r:RibbonTab Name="TabAcciones" Label="Acciones">
+                        <r:RibbonGroup>
+                            <r:RibbonGroup.Command>
+                                <r:RibbonCommand LabelTitle="Acciones"/>
+                            </r:RibbonGroup.Command>
+                            <r:RibbonButton x:Name="btnGuardar" Command="{StaticResource cmd_Guardar}"/>
+                            <r:RibbonButton x:Name="btnLimpiar" Command="{StaticResource cmd_Limpiar}"/>
+                            <r:RibbonButton x:Name="btnEliminar" Command="{StaticResource cmd_Eliminar}"/>
+                            <r:RibbonButton x:Name="btnImprimir" Command="{StaticResource cmd_Imprimir}" Visibility="Collapsed" />
+                            <r:RibbonButton x:Name="btnCerrar" Command="{StaticResource cmd_Cerrar}"/>
+                        </r:RibbonGroup>
+                    </r:RibbonTab>
+                </r:RibbonContextualTabGroup>
+                <r:RibbonContextualTabGroup x:Name="Consumo" Label="Consumo">
+                    <r:RibbonTab Name="TabConsumo" Label="Consumo">
+                        <r:RibbonGroup>
+                            <r:RibbonGroup.Command>
+                                <r:RibbonCommand LabelTitle="Consumo"/>
+                            </r:RibbonGroup.Command>
+                            <r:RibbonButton x:Name="btnPagar" Command="{StaticResource cmd_Pagar}"/>
+                        </r:RibbonGroup>
+                    </r:RibbonTab>
+                </r:RibbonContextualTabGroup>
+            </r:Ribbon.ContextualTabGroups>
+            
+            <!--ATENCION-->
+            <r:RibbonTab x:Name="TabAtencion"
+                         Label="Atencion"
+                         >
+                <r:RibbonGroup>
+                    <r:RibbonGroup.GroupSizeDefinitions>
+                        <r:RibbonGroupSizeDefinitionCollection>
+                            <r:RibbonGroupSizeDefinition>
+                                <r:RibbonControlSizeDefinition ImageSize="Large" IsLabelVisible="True"/>
+                                <r:RibbonControlSizeDefinition ImageSize="Small" IsLabelVisible="True"/>
+                                <r:RibbonControlSizeDefinition ImageSize="Small" IsLabelVisible="True"/>
+                                <r:RibbonControlSizeDefinition ImageSize="Small" IsLabelVisible="True"/>
+                            </r:RibbonGroupSizeDefinition>
+                        </r:RibbonGroupSizeDefinitionCollection>
+                    </r:RibbonGroup.GroupSizeDefinitions>
+                    <r:RibbonGroup.Command>
+                        <r:RibbonCommand LabelTitle="Pedidos"/>
+                    </r:RibbonGroup.Command>
+                    <r:RibbonButton Name="btnConfirmarPedidos" Command="{StaticResource cmd_ConfirmarPedidos}"/>
+                    <r:RibbonButton Name="btnAdministrarPedidos" Command="{StaticResource cmd_AdministrarMenu}"/>
+                    <r:RibbonButton Name="btnModificarPedidos" Command="{StaticResource cmd_ModificarPedido}"/>
+                    <r:RibbonButton Name="btnEliminarPedidos" Command="{StaticResource cmd_EliminarPedido}"/>
+                </r:RibbonGroup>
+            </r:RibbonTab>
+            <!--VENTAS-->
+            <r:RibbonTab x:Name="TabVentas" Label="Ventas">
+                <r:RibbonGroup>
+                    <r:RibbonGroup.Command>
+                        <r:RibbonCommand LabelTitle="Movimiento de Caja"/>
+                    </r:RibbonGroup.Command>
+                    <r:RibbonGroup.GroupSizeDefinitions>
+                        <r:RibbonGroupSizeDefinitionCollection>
+                            <r:RibbonGroupSizeDefinition>
+                                <r:RibbonControlSizeDefinition ImageSize="Large" IsLabelVisible="True"/>
+                                <r:RibbonControlSizeDefinition ImageSize="Small" IsLabelVisible="True"/>
+                                <r:RibbonControlSizeDefinition ImageSize="Small" IsLabelVisible="True"/>
+                                <!--<r:RibbonControlSizeDefinition ImageSize="Small" IsLabelVisible="True"/>-->
+                            </r:RibbonGroupSizeDefinition>
+                        </r:RibbonGroupSizeDefinitionCollection>
+                    </r:RibbonGroup.GroupSizeDefinitions>
+                    <r:RibbonButton Command="{StaticResource cmd_VentasRegistrarConsumo}"/>
+                    <r:RibbonButton Command="{StaticResource cmd_VentasAbrirCaja}"/>
+                    <r:RibbonButton Command="{StaticResource cmd_VentasCerrarCaja}"/>
+                </r:RibbonGroup>
+            </r:RibbonTab>
+            <!--MANTENIMIENTO-->
+            <r:RibbonTab x:Name="TabMantenimiento"
+                         Label="Mantenimiento">
+                <r:RibbonGroup>
+                    <r:RibbonGroup.Command>
+                        <r:RibbonCommand LabelTitle="Personal"/>
+                    </r:RibbonGroup.Command>
+                    <r:RibbonButton x:Name="btnAdministrarEmpleados"  Command="{StaticResource cmd_AdministrarEmpleados}"/>                    
+                    <r:RibbonButton x:Name="btnAdministrarPerfiles" Command="{StaticResource cmd_AdministrarPerfiles}"/>
+                </r:RibbonGroup>
+                <r:RibbonGroup>
+                    <r:RibbonGroup.Command>
+                        <r:RibbonCommand LabelTitle="Productos"/>
+                    </r:RibbonGroup.Command>
+                    <r:RibbonButton x:Name="btnAdministrarProducto" Command="{StaticResource cmd_AdministrarProductos}"/>
+                    <r:RibbonButton x:Name="btnAdministrarCategorias"  Command="{StaticResource cmd_AdministrarCategorias}"/>
+                    <r:RibbonButton Name="btnAdministrarMenu" Command="{StaticResource cmd_AdministrarMenu}"/>
+                </r:RibbonGroup>
+                <r:RibbonGroup>
+                    <r:RibbonGroup.Command>
+                        <r:RibbonCommand LabelTitle="Local"/>
+                    </r:RibbonGroup.Command>
+                    <r:RibbonButton x:Name="btnAdministrarLocal"  Command="{StaticResource cmd_AdministrarLocal}"/>
+                    <r:RibbonButton x:Name="btnAdministrarZonas"  Command="{StaticResource cmd_AdministrarZonas}"/>
+                    <r:RibbonButton x:Name="btnAdministrarDistribucion" Command="{StaticResource cmd_AdministrarDistribucion}"/>
+                    <r:RibbonButton x:Name="btnAdministrarReserva" Command="{StaticResource cmd_AdministrarReservas}"/>
+                    
+                </r:RibbonGroup>
+                <r:RibbonGroup>
+                    <r:RibbonGroup.Command>
+                        <r:RibbonCommand LabelTitle="Registro"/>
+                    </r:RibbonGroup.Command>
+                    <r:RibbonButton x:Name="btnMantenimientoClientes" Command="{StaticResource cmd_AdministrarClientes}"/>
+                </r:RibbonGroup>
+            </r:RibbonTab>
+            <!--CONSULTA-->
+            <r:RibbonTab x:Name="TabConsultas"
+                         Label="Consultas">
+                <r:RibbonGroup>
+                    <r:RibbonGroup.Command>
+                        <r:RibbonCommand LabelTitle="Ver"/>
+                    </r:RibbonGroup.Command>
+                    <r:RibbonButton Command="{StaticResource VerCarta}"/>
+                </r:RibbonGroup>
+                <r:RibbonGroup>
+                    <r:RibbonGroup.Command>
+                        <r:RibbonCommand LabelTitle="Consultas"/>
+                    </r:RibbonGroup.Command>
+                    <r:RibbonButton Command="{StaticResource cmd_ConsultarStock}"/>
+                </r:RibbonGroup>
+            </r:RibbonTab>
+            <!--REPORTES-->
+            <r:RibbonTab x:Name="TabReportes"
+                         Label="Reportes">
+                <r:RibbonGroup>
+                    <r:RibbonGroup.Command>
+                        <r:RibbonCommand LabelTitle="Reportes"/>
+                    </r:RibbonGroup.Command>
+                    <r:RibbonButton Command="{StaticResource cmd_GenerarReporteVentas}"/>
+                </r:RibbonGroup>
+            </r:RibbonTab>
+            <!--SEGURIDAD-->
+            <r:RibbonTab x:Name="TabSeguridad" Label="Seguridad">
+                <r:RibbonGroup Command="{StaticResource Ribbon_Seguridad}">
+                    <r:RibbonButton Command="{StaticResource Command_CambioPassword}"/>
+                </r:RibbonGroup>
+            </r:RibbonTab>
+            <!--AYUDA-->
+            <r:RibbonTab Label="Ayuda">
+                <r:RibbonGroup>
+                    <r:RibbonGroup.Command>
+                        <r:RibbonCommand LabelTitle="Ayuda"/>
+                    </r:RibbonGroup.Command>
+                    <r:RibbonButton>
+                        <r:RibbonButton.Command>
+                            <r:RibbonCommand LabelTitle="Acerca De"
+                                             LargeImageSource="Imagenes\Symbol-Help.png"
+                                             Executed="Ayuda_AcercaDe"/>
+                        </r:RibbonButton.Command>
+                    </r:RibbonButton>
+                    <r:RibbonButton Command="{StaticResource cmd_Consultar_Libro_Visitas}"/>
+                    <r:RibbonButton Command="{StaticResource cmd_VerManual}"/>
+                </r:RibbonGroup>
+            </r:RibbonTab>
+        </r:Ribbon>
+        <!--STATUS BAR-->
+        
+        <StatusBar DockPanel.Dock="Bottom">
+            <StatusBarItem>
+                <StatusBarItem.Content>
+                    <Image Source="Imagenes\Fecha.png"  Stretch="Uniform" Width="15" Height="15"/>
+                </StatusBarItem.Content>
+            </StatusBarItem>
+            <StatusBarItem x:Name="statusFecha" Content="Fecha: " HorizontalAlignment="Left" />
+            <StatusBarItem x:Name="fecha">
+                <!--<Label Content="{Binding Path={x:Static sys:DateTime.Now}}" />-->
+                <Label Name="Fecha"/>
+            </StatusBarItem>
+            <StatusBarItem>
+                <StatusBarItem.Content>
+                    <Image Source="Imagenes\Hora.png" Width="15" Height="15"/>
+                </StatusBarItem.Content>
+            </StatusBarItem>
+            <StatusBarItem x:Name="statusHora" Content="Hora: " HorizontalAlignment="Left"/>
+            <Label x:Name="hora"/>
+            <StatusBarItem x:Name="statusSesion" Content="Sesión: " HorizontalAlignment="Right"/>
+            <Label x:Name="sesion" HorizontalAlignment="Right"/>
+        </StatusBar>
+        <Grid x:Name="Container" Background="{DynamicResource ControlBackgroundBrush}">
+         </Grid>
+    </DockPanel>
+</r:RibbonWindow>

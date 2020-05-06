@@ -1,0 +1,122 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{346EA2B0-3DAD-445F-AF41-382D83B84AC9}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SISAR.Entidades</RootNamespace>
+    <AssemblyName>SISAR.Entidades</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\Ejecutable_SISAR\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="T_Categoria.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="T_Detalle_Menu.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="T_Detalle_Movimiento_Caja.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="T_Detalle_Pedido.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="T_Distribucion.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="T_DistribucionxMesa.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="T_Horario.cs" />
+    <Compile Include="T_Local.cs" />
+    <Compile Include="T_Menu.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="T_MenuxLocal.cs" />
+    <Compile Include="T_Mesa.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="T_Moneda.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="T_Moviemiento_Caja.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="T_Pedido.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="T_Perfil.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="T_PerfilxPermiso.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="T_Permiso.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="T_Producto.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="T_ProductoxLocal.cs" />
+    <Compile Include="T_Reserva.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="T_ReservaxMesa.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="T_Tipo_Cambio.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="T_Usuario.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="T_Zona.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

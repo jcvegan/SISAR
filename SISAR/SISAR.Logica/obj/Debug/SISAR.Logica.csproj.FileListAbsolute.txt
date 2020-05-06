@@ -1,0 +1,10 @@
+C:\Users\Juan\Desktop\TP\SISAR\SISAR.Logica\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Juan\Desktop\TP\Ejecutable_SISAR\SISAR.Logica.dll
+C:\Users\Juan\Desktop\TP\Ejecutable_SISAR\SISAR.Logica.pdb
+C:\Users\Juan\Desktop\TP\SISAR\SISAR.Logica\obj\Debug\SISAR.Logica.dll
+C:\Users\Juan\Desktop\TP\SISAR\SISAR.Logica\obj\Debug\SISAR.Logica.pdb
+C:\SISAR TP 2009 2\Repositorio\Ejecutable_SISAR\SISAR.Logica.dll
+C:\SISAR TP 2009 2\Repositorio\Ejecutable_SISAR\SISAR.Logica.pdb
+C:\SISAR TP 2009 2\Repositorio\SISAR\SISAR.Logica\obj\Debug\ResolveAssemblyReference.cache
+C:\SISAR TP 2009 2\Repositorio\SISAR\SISAR.Logica\obj\Debug\SISAR.Logica.dll
+C:\SISAR TP 2009 2\Repositorio\SISAR\SISAR.Logica\obj\Debug\SISAR.Logica.pdb

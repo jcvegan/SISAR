@@ -1,0 +1,26 @@
+﻿<UserControl x:Class="SISAR.Desktop.Atencion.ConfirmarPedidos"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:toolkit="http://schemas.microsoft.com/wpf/2008/toolkit"
+    Loaded="UserControl_Loaded">
+    <Grid>
+        <toolkit:DataGrid x:Name="ListaPedidos" ItemsSource="{Binding}" HorizontalScrollBarVisibility="Hidden" SelectionMode="Extended" CanUserAddRows="False" CanUserDeleteRows="False" CanUserResizeRows="False" CanUserSortColumns="False" AutoGenerateColumns="False">
+            <toolkit:DataGrid.Columns>
+                <toolkit:DataGridTextColumn x:Name="CodPedido" Header="Codigo Pedido" MaxWidth="0" Binding="{Binding Path=Id_DetallePedido}" IsReadOnly="True"/>
+                <toolkit:DataGridTextColumn x:Name="Producto" Header="Producto" MinWidth="60" Binding="{Binding Path=Producto}" IsReadOnly="True"/>
+                <toolkit:DataGridTextColumn x:Name="Categoria" Header="Categoria" MinWidth="60" Binding="{Binding Path=Categoria}" IsReadOnly="True"/>
+                <toolkit:DataGridTextColumn x:Name="Zona" Header="Zona" MinWidth="40" Binding="{Binding Path=Zona}" IsReadOnly="True"/>
+                <toolkit:DataGridTextColumn x:Name="Mesa" Header="Mesa" MinWidth="40" Binding="{Binding Path= Mesa}" IsReadOnly="True"/>
+                <toolkit:DataGridTextColumn x:Name="HoraPedido" Header="Hora de Pedido" MinWidth="50" Binding="{Binding Path=Hora}" IsReadOnly="True"/>
+                <toolkit:DataGridTextColumn x:Name="Detalle" Header="Detalle" MinWidth="50" Binding="{Binding Path= Detalle}" IsReadOnly="True"/>
+                <toolkit:DataGridTemplateColumn x:Name="Confirmacion" Header="Confirmación" IsReadOnly="True">
+                    <toolkit:DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <ToggleButton Content="Listo" Width="100" Height="30" Click="Listo_Click"/>
+                        </DataTemplate>
+                    </toolkit:DataGridTemplateColumn.CellTemplate>
+                </toolkit:DataGridTemplateColumn>
+            </toolkit:DataGrid.Columns>
+        </toolkit:DataGrid>
+    </Grid>
+</UserControl>

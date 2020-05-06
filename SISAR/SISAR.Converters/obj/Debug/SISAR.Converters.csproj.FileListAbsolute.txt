@@ -1,0 +1,5 @@
+C:\Users\Juan\Desktop\TP\SISAR\SISAR.Converters\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Juan\Desktop\TP\Ejecutable_SISAR\SISAR.Converters.dll
+C:\Users\Juan\Desktop\TP\Ejecutable_SISAR\SISAR.Converters.pdb
+C:\Users\Juan\Desktop\TP\SISAR\SISAR.Converters\obj\Debug\SISAR.Converters.dll
+C:\Users\Juan\Desktop\TP\SISAR\SISAR.Converters\obj\Debug\SISAR.Converters.pdb

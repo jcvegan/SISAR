@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/SISAR.WebApplication.UserReference" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/SISAR.WebApplication.UserReference" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="T_Usuario">
+    <xs:sequence>
+      <xs:element name="apellidosField" nillable="true" type="xs:string" />
+      <xs:element name="contraseñaField" nillable="true" type="xs:string" />
+      <xs:element name="direccionField" nillable="true" type="xs:string" />
+      <xs:element name="emailField" nillable="true" type="xs:string" />
+      <xs:element name="estadoField" nillable="true" type="xs:string" />
+      <xs:element name="fecha_NacimientoField" type="xs:dateTime" />
+      <xs:element name="fecha_RegistroField" type="xs:dateTime" />
+      <xs:element name="id_LocalField" type="xs:int" />
+      <xs:element name="id_PerfilField" type="xs:int" />
+      <xs:element name="id_UsuarioField" type="xs:int" />
+      <xs:element name="nombresField" nillable="true" type="xs:string" />
+      <xs:element name="telefonoField" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="T_Usuario" nillable="true" type="tns:T_Usuario" />
+</xs:schema>

@@ -1,0 +1,65 @@
+﻿<configuration>
+    <system.serviceModel>
+        <bindings>
+            <customBinding>
+                <binding name="CustomBinding_UsuarioService">
+                    <binaryMessageEncoding />
+                    <httpTransport maxReceivedMessageSize="2147483647" maxBufferSize="2147483647">
+                        <extendedProtectionPolicy policyEnforcement="Never" />
+                    </httpTransport>
+                </binding>
+                <binding name="CustomBinding_LocalService">
+                    <binaryMessageEncoding />
+                    <httpTransport maxReceivedMessageSize="2147483647" maxBufferSize="2147483647">
+                        <extendedProtectionPolicy policyEnforcement="Never" />
+                    </httpTransport>
+                </binding>
+                <binding name="CustomBinding_MailService">
+                    <binaryMessageEncoding />
+                    <httpTransport maxReceivedMessageSize="2147483647" maxBufferSize="2147483647">
+                        <extendedProtectionPolicy policyEnforcement="Never" />
+                    </httpTransport>
+                </binding>
+                <binding name="CustomBinding_ReservaService">
+                    <binaryMessageEncoding />
+                    <httpTransport maxReceivedMessageSize="2147483647" maxBufferSize="2147483647">
+                        <extendedProtectionPolicy policyEnforcement="Never" />
+                    </httpTransport>
+                </binding>
+                <binding name="CustomBinding_ReservaService1">
+                    <binaryMessageEncoding />
+                    <httpTransport maxReceivedMessageSize="2147483647" maxBufferSize="2147483647">
+                        <extendedProtectionPolicy policyEnforcement="Never" />
+                    </httpTransport>
+                </binding>
+                <binding name="CustomBinding_ReservaService2">
+                    <binaryMessageEncoding />
+                    <httpTransport maxReceivedMessageSize="2147483647" maxBufferSize="2147483647">
+                        <extendedProtectionPolicy policyEnforcement="Never" />
+                    </httpTransport>
+                </binding>
+            </customBinding>
+        </bindings>
+        <client>
+            <endpoint address="http://localhost:49554/LocalService.svc" binding="customBinding"
+                bindingConfiguration="CustomBinding_LocalService" contract="LocalService.LocalService"
+                name="CustomBinding_LocalService" />
+            <endpoint address="http://localhost:49554/ReservaService.svc"
+                binding="customBinding" bindingConfiguration="CustomBinding_ReservaService2"
+                contract="ReservaService.ReservaService" name="CustomBinding_ReservaService" />
+            <endpoint address="http://localhost:49554/MailService.svc" binding="customBinding"
+                bindingConfiguration="CustomBinding_MailService" contract="MailService.MailService"
+                name="CustomBinding_MailService" />
+            <endpoint address="http://localhost:49554/UsuarioService.svc"
+                binding="customBinding" bindingConfiguration="CustomBinding_UsuarioService"
+                contract="UsuarioService.UsuarioService" name="CustomBinding_UsuarioService" />
+        </client>
+    </system.serviceModel>
+  <system.net>
+    <mailSettings>
+      <smtp>
+        <network host="smtp.live.com" port="25" userName="mi.carcochita@live.com.pe" password="juancarlos1911+"/>
+      </smtp>
+    </mailSettings>
+  </system.net>
+</configuration>

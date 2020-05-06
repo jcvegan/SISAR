@@ -1,0 +1,70 @@
+﻿<UserControl x:Class="SISAR.Desktop.Consultas.ConsultarStock"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:toolkit="http://schemas.microsoft.com/wpf/2008/toolkit"
+    >
+    <Grid>
+        <TabControl>
+            <TabControl.Items>
+                <TabItem Header="Entrada">
+                    <Grid>
+                        <toolkit:DataGrid>
+                            <toolkit:DataGrid.Columns>
+                                <toolkit:DataGridTextColumn x:Name="ID_ProductoEntrada" Header="ID Producto"/>
+                                <toolkit:DataGridTextColumn x:Name="NombreEntrada" Header="Nombre"/>
+                                <toolkit:DataGridTextColumn x:Name="DescripcionEntrada" Header="Descripción"/>
+                                <toolkit:DataGridTextColumn x:Name="CantTotalEntrada" Header="Cantidad Total"/>
+                                <toolkit:DataGridTextColumn x:Name="CantActualEntrada" Header="Cantidad Actual"/>
+                            </toolkit:DataGrid.Columns>
+                        </toolkit:DataGrid>
+                    </Grid>
+                </TabItem>
+                <TabItem Header="Sopas">
+                    <toolkit:DataGrid>
+                        <toolkit:DataGrid.Columns>
+                            <toolkit:DataGridTextColumn x:Name="IdProductoSopa" Header="ID Producto"/>
+                            <toolkit:DataGridTextColumn x:Name="NombreSopa" Header="Nombre"/>
+                            <toolkit:DataGridTextColumn x:Name="DescripcionSopa" Header="Descripción"/>
+                            <toolkit:DataGridTextColumn x:Name="CantTotalSopa" Header="Cantidad Total"/>
+                            <toolkit:DataGridTextColumn x:Name="CantActualSopa" Header="Cantidad Actual"/>
+                        </toolkit:DataGrid.Columns>
+                    </toolkit:DataGrid>
+                </TabItem>
+                <TabItem Header="Segundos">
+                    <toolkit:DataGrid>
+                        <toolkit:DataGrid.Columns>
+                            <toolkit:DataGridTextColumn x:Name="IdProductoSegundos" Header="ID Producto"/>
+                            <toolkit:DataGridTextColumn x:Name="NombreSegundos" Header="Nombre"/>
+                            <toolkit:DataGridTextColumn x:Name="DescripcionSegundos" Header="Descripción"/>
+                            <toolkit:DataGridTextColumn x:Name="CantTotalSegundos" Header="Cantidad Total"/>
+                            <toolkit:DataGridTextColumn x:Name="CantActualSegundos" Header="Cantidad Actual"/>
+                        </toolkit:DataGrid.Columns>
+                    </toolkit:DataGrid>
+                </TabItem>
+                <TabItem Header="Postres">
+                    <toolkit:DataGrid>
+                        <toolkit:DataGrid.Columns>
+                            <toolkit:DataGridTextColumn x:Name="IdProductoPostres" Header="ID Producto"/>
+                            <toolkit:DataGridTextColumn x:Name="NombrePostres" Header="Nombre"/>
+                            <toolkit:DataGridTextColumn x:Name="DescripcionPostres" Header="Descripción"/>
+                            <toolkit:DataGridTextColumn x:Name="CantTotalPostres" Header="Cantidad Total"/>
+                            <toolkit:DataGridTextColumn x:Name="CantActualPostres" Header="Cantidad Actual"/>
+                        </toolkit:DataGrid.Columns>
+                    </toolkit:DataGrid>
+                </TabItem>
+                <TabItem Header="Bebidas">
+                    <toolkit:DataGrid>
+                        <toolkit:DataGrid.Columns>
+                            <toolkit:DataGridTextColumn x:Name="IdProductoBebidas" Header="ID Producto"/>
+                            <toolkit:DataGridTextColumn x:Name="NombreBebidas" Header="Nombre"/>
+                            <toolkit:DataGridTextColumn x:Name="DescripcionBebidas" Header="Descripción"/>
+                            <toolkit:DataGridTextColumn x:Name="CantTotalBebidas" Header="Cantidad Total"/>
+                            <toolkit:DataGridTextColumn x:Name="CantActualBebidas" Header="Cantidad Actual"/>
+                        </toolkit:DataGrid.Columns>
+                    </toolkit:DataGrid>
+                </TabItem>
+            </TabControl.Items>
+        </TabControl>
+            
+    </Grid>
+</UserControl>

@@ -1,0 +1,5 @@
+C:\Users\Juan\Desktop\TP\Ejecutable_SISAR\SISAR.Validators.dll
+C:\Users\Juan\Desktop\TP\Ejecutable_SISAR\SISAR.Validators.pdb
+C:\Users\Juan\Desktop\TP\SISAR\SISAR.Validators\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Juan\Desktop\TP\SISAR\SISAR.Validators\obj\Debug\SISAR.Validators.dll
+C:\Users\Juan\Desktop\TP\SISAR\SISAR.Validators\obj\Debug\SISAR.Validators.pdb

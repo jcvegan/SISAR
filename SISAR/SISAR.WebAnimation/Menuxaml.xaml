@@ -1,0 +1,24 @@
+﻿<basics:ChildWindow
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:basics="clr-namespace:System.Windows.Controls;assembly=System.Windows.Controls"
+	xmlns:expressionLight="clr-namespace:System.Windows.Controls.Theming;assembly=System.Windows.Controls.Theming.ExpressionLight"
+	
+	xmlns:SLMitsuControls="clr-namespace:SLMitsuControls;assembly=SLMitsuControls"
+	
+	x:Class="SISAR.WebAnimation.Menuxaml"
+	Title="Menu de Hoy"
+	Width="700" Height="400">
+		<expressionLight:ExpressionLightTheme>
+			<Grid x:Name="LayoutRoot">
+			
+				<SLMitsuControls:UCBook Margin="30" Name="BookMenu">
+					<SLMitsuControls:UCBook.Projection>
+						<PlaneProjection RotationX="-29"/>
+					</SLMitsuControls:UCBook.Projection>
+					
+				</SLMitsuControls:UCBook>
+			
+			</Grid>
+		</expressionLight:ExpressionLightTheme>
+</basics:ChildWindow>

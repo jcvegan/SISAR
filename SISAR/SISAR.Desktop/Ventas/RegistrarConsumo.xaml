@@ -1,0 +1,59 @@
+﻿<UserControl x:Class="SISAR.Desktop.Ventas.RegistrarConsumo"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Loaded="UserControl_Loaded"
+    >
+    <UserControl.Resources>
+        <Image x:Key="Mesa1" Source="/SISAR.Desktop;Component/Imagenes/Mesa2.png" />
+        <Image x:Key="Mesa2" Source="/SISAR.Desktop;Component/Imagenes/Mesa4.png" />
+        <Image x:Key="Mesa3" Source="/SISAR.Desktop;Component/Imagenes/Mesa8.png" />
+    </UserControl.Resources>
+    <GroupBox Header="Registrar Consumo" HorizontalContentAlignment="Center" VerticalContentAlignment="Center">
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="6*"/>
+                <ColumnDefinition Width="2*"/>
+            </Grid.ColumnDefinitions>
+            <TabControl Name="Zonas" SelectionChanged="Zonas_SelectionChanged"/>
+            <GridSplitter ResizeDirection="Columns" 
+                      Grid.Column="0" 
+                      Grid.ColumnSpan="1" 
+                      Background="{DynamicResource ControlBackgroundBrush}" Width="3"/>
+
+            <GroupBox Header="Pedido" Grid.Column="1">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+                    <GridSplitter/>
+                    <ListView Name="lvDetallePedido" ItemsSource="{Binding}">
+                        <ListView.View>
+                            <GridView>
+                                <GridViewColumn Header="Cantidad" DisplayMemberBinding="{Binding Path=Cantidad}"/>
+                                <GridViewColumn Header="Nombre" DisplayMemberBinding="{Binding Path=Nombre}"/>
+                                <GridViewColumn Header="Precio" DisplayMemberBinding="{Binding Path=PrecioUnitario}"/>
+                                <GridViewColumn Header="Total" DisplayMemberBinding="{Binding Path=Total}"/>
+                            </GridView>
+                        </ListView.View>
+                    </ListView>
+                    <StackPanel Grid.Row="1">
+                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                            <Label Content="Sub Total" Width="100" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                            <TextBox Name="txtSubTotal" Width="50" IsReadOnly="True" HorizontalContentAlignment="Right"/>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                            <Label Content="IGV" Width="100" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                            <TextBox Name="txtIGV" Width="50" IsReadOnly="True" HorizontalContentAlignment="Right"/>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                            <Label Content="Total" Width="100" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                            <TextBox Name="txtTotal" Width="50" IsReadOnly="True" HorizontalContentAlignment="Right"/>
+                        </StackPanel>
+                    </StackPanel>
+                </Grid>
+            </GroupBox>
+            <Canvas Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        </Grid>
+    </GroupBox>
+</UserControl>

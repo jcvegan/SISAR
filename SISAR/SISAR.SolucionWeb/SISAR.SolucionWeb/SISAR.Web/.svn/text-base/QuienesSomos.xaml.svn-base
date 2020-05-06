@@ -1,0 +1,20 @@
+﻿<controls:ChildWindow xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:controls="clr-namespace:System.Windows.Controls;assembly=System.Windows.Controls" xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" x:Class="SISAR.Web.QuienesSomos" Width="400" Height="300" Title="QuienesSomos" mc:Ignorable="d">
+    <Grid x:Name="LayoutRoot">
+        <Image HorizontalAlignment="Left" Source="Imagenes/mc.gif" VerticalAlignment="Center"/>
+        <ScrollViewer HorizontalAlignment="Right" VerticalAlignment="Stretch" Margin="2">
+            <StackPanel>
+                <TextBlock Text="Bienvenido a la página web de Mi Carcochita" 
+                           TextWrapping="Wrap" 
+                           HorizontalAlignment="Center" 
+                           VerticalAlignment="Top" 
+                           TextAlignment="Center" 
+                           FontWeight="Bold" 
+                           FontSize="21.333"/>
+                <TextBlock Text="Somos una empresa de comida cuya visión es mejorar la calidad de atención al cliente y ser los primeros en este rubro." 
+                           TextWrapping="Wrap"/>
+                <TextBlock Text="Esperamos esta página web te sea útil para hacer reservaciones." 
+                           TextWrapping="Wrap"/>
+            </StackPanel>
+        </ScrollViewer>
+    </Grid>
+</controls:ChildWindow>

@@ -1,0 +1,17 @@
+﻿<configuration>
+    <system.serviceModel>
+        <bindings>
+            <customBinding>
+                <binding name="CustomBinding_UsuarioService">
+                    <binaryMessageEncoding />
+                    <httpTransport maxReceivedMessageSize="2147483647" maxBufferSize="2147483647" />
+                </binding>
+            </customBinding>
+        </bindings>
+        <client>
+            <endpoint address="http://localhost:49554/UsuarioService.svc"
+                binding="customBinding" bindingConfiguration="CustomBinding_UsuarioService"
+                contract="UsuarioService.UsuarioService" name="CustomBinding_UsuarioService" />
+        </client>
+    </system.serviceModel>
+</configuration>

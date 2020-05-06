@@ -1,0 +1,82 @@
+﻿<UserControl x:Class="SISAR.Desktop.Administracion.AdministrarProducto"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:converter="clr-namespace:SISAR.Converters;assembly=SISAR.Converters"
+    >
+    <UserControl.Resources>
+        <converter:CategoryConverter x:Key="CategoryConverter"/>
+        <converter:MoneyConverter x:Key="MoneyConverter"/>
+        <converter:ByteToImage x:Key="ImageConverter"/>
+    </UserControl.Resources>
+    <GroupBox Name="Form" Header="Administrar Productos">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                <StackPanel Orientation="Vertical">
+                    <StackPanel Orientation="Horizontal" Visibility="Collapsed">
+                        <Label Content="Id Producto" Width="100"/>
+                        <TextBox Name="txtIdProducto" Width="120" IsReadOnly="False" />
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <Label Content="Nombre" Width="100"/>
+                        <TextBox Name="txtNombre" Width="220" KeyDown="Letra_KeyDown"/>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <Label Content="Descripción" Width="100"/>
+                        <TextBox Name="txtDescripcion" Width="220" ScrollViewer.CanContentScroll="True" HorizontalScrollBarVisibility="Hidden" VerticalScrollBarVisibility="Auto"/>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <Label Content="Cantidad" Width="100"/>
+                        <TextBox Name="txtObservaciones" Width="220"  ScrollViewer.CanContentScroll="True" KeyDown="LetraODigito_KeyDown" />
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <Label Content="Categoria" Width="100"/>
+                        <ComboBox Name="cmbCategoria" Width="120" ItemsSource="{Binding}" SelectedValuePath="Id_Categoria">
+                            <ComboBox.ItemTemplate>
+                                <DataTemplate>
+                                    <TextBlock Text="{Binding Path=Id_Categoria, Converter={StaticResource CategoryConverter}}"/>
+                                </DataTemplate>
+                            </ComboBox.ItemTemplate>
+                        </ComboBox>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <Label Content="Precio Unitario" Width="100"/>
+                        <TextBox Name="txtPrecioUnitario" Width="120" KeyDown="Digito_KeyDown" />
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <Label Content="Moneda" Width="100"/>
+                        <ComboBox Name="cmbMoneda" Width="120" ItemsSource="{Binding}" SelectedValuePath="Id_Moneda">
+                            <ComboBox.ItemTemplate>
+                                <DataTemplate>
+                                    <TextBlock Text="{Binding Path=Id_Moneda, Converter={StaticResource MoneyConverter}}"/>
+                                </DataTemplate>
+                            </ComboBox.ItemTemplate>
+                        </ComboBox>
+                    </StackPanel>
+                </StackPanel>
+                <StackPanel Orientation="Vertical">
+                    <Label Content="Imagen" HorizontalAlignment="Center"/>
+                    <!--<Image Name="imgFotoProducto" Width="140" Height="140" Source="{Binding Imagen, Converter={StaticResource ImageConverter}, Mode = Default}" DataContext="{Binding SelectedItem, ElementName=lvProductos, Mode=Default}"></Image>-->
+                    <Image Name="imgFotoProducto" Width="140" Height="140" Source="{Binding Path = Imagen, Converter={StaticResource ImageConverter}}" DataContext="{Binding SelectedItem, ElementName=lvProductos}"/>
+                    <Button Name="btnSeleccionarFoto"  Content="Seleccionar" Width="70" Click="btnSeleccionarFoto_Click"/>
+                </StackPanel>
+            </StackPanel>
+            <ListView Name="lvProductos" ItemsSource="{Binding}" SelectionChanged="lvProductos_SelectionChanged" Grid.Row="1">
+                <ListView.View>
+                    <GridView>
+                        <GridViewColumn Header="Codigo" DisplayMemberBinding="{Binding Path=Id_Producto}" Width="0"/>
+                        <GridViewColumn Header="Nombre" DisplayMemberBinding="{Binding Path=Nombre}"/>
+                        <GridViewColumn Header="Descripción" DisplayMemberBinding="{Binding Path=Descripcion}"/>
+                        <GridViewColumn Header="Precio" DisplayMemberBinding="{Binding Path=PrecioUnitario}"/>
+                        <GridViewColumn Header="Cantidad" DisplayMemberBinding="{Binding Path=Observacion}"/>
+                        <GridViewColumn Header="Categoria" DisplayMemberBinding="{Binding Path=Id_Categoria, Converter={StaticResource CategoryConverter}}"/>
+                        <GridViewColumn Header="Moneda" DisplayMemberBinding="{Binding Path=Id_Moneda,Converter={StaticResource MoneyConverter}}"/>
+                    </GridView>
+                </ListView.View>
+            </ListView>
+        </Grid>
+    </GroupBox>
+</UserControl>

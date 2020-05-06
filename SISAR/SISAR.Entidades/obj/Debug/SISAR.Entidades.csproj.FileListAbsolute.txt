@@ -1,0 +1,5 @@
+C:\Users\Juan\Desktop\TP\Ejecutable_SISAR\SISAR.Entidades.dll
+C:\Users\Juan\Desktop\TP\Ejecutable_SISAR\SISAR.Entidades.pdb
+C:\Users\Juan\Desktop\TP\SISAR\SISAR.Entidades\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Juan\Desktop\TP\SISAR\SISAR.Entidades\obj\Debug\SISAR.Entidades.dll
+C:\Users\Juan\Desktop\TP\SISAR\SISAR.Entidades\obj\Debug\SISAR.Entidades.pdb

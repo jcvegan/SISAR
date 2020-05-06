@@ -1,0 +1,99 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Capa de Presentacion", "Capa de Presentacion", "{97E42B1F-F1B2-46A2-96A7-22C8B69B4B2A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Acceso a Datos", "Acceso a Datos", "{5B71D68B-5D87-42DA-BA67-F407D2228E34}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Logica de Negocios", "Logica de Negocios", "{779247FB-025D-4DEA-BF59-F2767233B6D8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Servicios Web", "Servicios Web", "{DA44634F-9E7C-4AFC-AFD7-15DB8B89344A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SISAR.Acceso", "..\SISAR.Acceso\SISAR.Acceso.csproj", "{AD1CBA8F-E583-47D6-93FF-B06410C4E688}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SISAR.Entidades", "..\SISAR.Entidades\SISAR.Entidades.csproj", "{346EA2B0-3DAD-445F-AF41-382D83B84AC9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SISAR.Desktop", "..\SISAR.Desktop\SISAR.Desktop.csproj", "{6B713BDB-6D96-40E7-BF1A-68E8937E04B1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SISAR.Logica", "..\SISAR.Logica\SISAR.Logica.csproj", "{967C2982-3942-4006-BA0D-68EE4AF23E0E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SISAR.Validators", "..\SISAR.Validators\SISAR.Validators.csproj", "{54682A03-3054-4AD2-815B-C2E37DC0898C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SISAR.Converters", "..\SISAR.Converters\SISAR.Converters.csproj", "{D21D48DD-843F-4C20-950A-5A6C1E3ADCE9}"
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "SISAR.WebService", "..\SISAR.WebService\", "{D949AFE9-F342-4A2C-A897-42F3CA4318BC}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFramework = "3.5"
+		ProjectReferences = "{967C2982-3942-4006-BA0D-68EE4AF23E0E}|SISAR.Logica.dll;{AD1CBA8F-E583-47D6-93FF-B06410C4E688}|SISAR.Acceso.dll;{346EA2B0-3DAD-445F-AF41-382D83B84AC9}|SISAR.Entidades.dll;"
+		Debug.AspNetCompiler.VirtualPath = "/SISAR.WebService"
+		Debug.AspNetCompiler.PhysicalPath = "..\SISAR.WebService\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\SISAR.WebService\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/SISAR.WebService"
+		Release.AspNetCompiler.PhysicalPath = "..\SISAR.WebService\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\SISAR.WebService\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "1784"
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SISAR.GragAndGrop", "..\SISAR.GragAndGrop\SISAR.GragAndGrop.csproj", "{65A6F6F1-ACB1-42C5-890E-C240CA03A859}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AD1CBA8F-E583-47D6-93FF-B06410C4E688}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AD1CBA8F-E583-47D6-93FF-B06410C4E688}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AD1CBA8F-E583-47D6-93FF-B06410C4E688}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AD1CBA8F-E583-47D6-93FF-B06410C4E688}.Release|Any CPU.Build.0 = Release|Any CPU
+		{346EA2B0-3DAD-445F-AF41-382D83B84AC9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{346EA2B0-3DAD-445F-AF41-382D83B84AC9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{346EA2B0-3DAD-445F-AF41-382D83B84AC9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{346EA2B0-3DAD-445F-AF41-382D83B84AC9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6B713BDB-6D96-40E7-BF1A-68E8937E04B1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6B713BDB-6D96-40E7-BF1A-68E8937E04B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6B713BDB-6D96-40E7-BF1A-68E8937E04B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6B713BDB-6D96-40E7-BF1A-68E8937E04B1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{967C2982-3942-4006-BA0D-68EE4AF23E0E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{967C2982-3942-4006-BA0D-68EE4AF23E0E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{967C2982-3942-4006-BA0D-68EE4AF23E0E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{967C2982-3942-4006-BA0D-68EE4AF23E0E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{54682A03-3054-4AD2-815B-C2E37DC0898C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{54682A03-3054-4AD2-815B-C2E37DC0898C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{54682A03-3054-4AD2-815B-C2E37DC0898C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{54682A03-3054-4AD2-815B-C2E37DC0898C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D21D48DD-843F-4C20-950A-5A6C1E3ADCE9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D21D48DD-843F-4C20-950A-5A6C1E3ADCE9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D21D48DD-843F-4C20-950A-5A6C1E3ADCE9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D21D48DD-843F-4C20-950A-5A6C1E3ADCE9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D949AFE9-F342-4A2C-A897-42F3CA4318BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D949AFE9-F342-4A2C-A897-42F3CA4318BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D949AFE9-F342-4A2C-A897-42F3CA4318BC}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{D949AFE9-F342-4A2C-A897-42F3CA4318BC}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{65A6F6F1-ACB1-42C5-890E-C240CA03A859}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{65A6F6F1-ACB1-42C5-890E-C240CA03A859}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{65A6F6F1-ACB1-42C5-890E-C240CA03A859}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{65A6F6F1-ACB1-42C5-890E-C240CA03A859}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{6B713BDB-6D96-40E7-BF1A-68E8937E04B1} = {97E42B1F-F1B2-46A2-96A7-22C8B69B4B2A}
+		{AD1CBA8F-E583-47D6-93FF-B06410C4E688} = {5B71D68B-5D87-42DA-BA67-F407D2228E34}
+		{346EA2B0-3DAD-445F-AF41-382D83B84AC9} = {5B71D68B-5D87-42DA-BA67-F407D2228E34}
+		{967C2982-3942-4006-BA0D-68EE4AF23E0E} = {779247FB-025D-4DEA-BF59-F2767233B6D8}
+		{54682A03-3054-4AD2-815B-C2E37DC0898C} = {779247FB-025D-4DEA-BF59-F2767233B6D8}
+		{D21D48DD-843F-4C20-950A-5A6C1E3ADCE9} = {779247FB-025D-4DEA-BF59-F2767233B6D8}
+		{65A6F6F1-ACB1-42C5-890E-C240CA03A859} = {779247FB-025D-4DEA-BF59-F2767233B6D8}
+		{D949AFE9-F342-4A2C-A897-42F3CA4318BC} = {DA44634F-9E7C-4AFC-AFD7-15DB8B89344A}
+	EndGlobalSection
+EndGlobal

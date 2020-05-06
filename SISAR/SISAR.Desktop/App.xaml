@@ -1,0 +1,14 @@
+﻿<Application x:Class="SISAR.Desktop.App"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    StartupUri="WinPrincipal.xaml">
+    <Application.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Temas\ExpressionDark.xaml"/>
+                
+                <ResourceDictionary Source="/RibbonControlsLibrary;component/Themes/Office2007Black.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>

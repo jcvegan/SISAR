@@ -1,0 +1,218 @@
+C:\Users\Alberto\Desktop\SISAR 2009 2\SISAR\SISAR.SolucionWeb\SISAR.SolucionWeb\SISAR.Web\Bin\Debug\AppManifest.xaml
+C:\Users\Alberto\Desktop\SISAR 2009 2\SISAR\SISAR.SolucionWeb\SISAR.SolucionWeb\SISAR.Web\Bin\Debug\SISAR.Web.dll
+C:\Users\Alberto\Desktop\SISAR 2009 2\SISAR\SISAR.SolucionWeb\SISAR.SolucionWeb\SISAR.Web\Bin\Debug\SISAR.Web.pdb
+C:\Users\Alberto\Desktop\SISAR 2009 2\SISAR\SISAR.SolucionWeb\SISAR.SolucionWeb\SISAR.Web\Bin\Debug\SISAR.Web.xap
+C:\Users\Alberto\Desktop\SISAR 2009 2\SISAR\SISAR.SolucionWeb\SISAR.SolucionWeb\SISAR.Web\Bin\Debug\TestPage.html
+C:\Users\Alberto\Desktop\SISAR 2009 2\SISAR\SISAR.SolucionWeb\SISAR.SolucionWeb\SISAR.Web\Bin\Debug\Microsoft.Expression.Interactions.dll
+C:\Users\Alberto\Desktop\SISAR 2009 2\SISAR\SISAR.SolucionWeb\SISAR.SolucionWeb\SISAR.Web\Bin\Debug\System.ComponentModel.DataAnnotations.dll
+C:\Users\Alberto\Desktop\SISAR 2009 2\SISAR\SISAR.SolucionWeb\SISAR.SolucionWeb\SISAR.Web\Bin\Debug\System.Reactive.dll
+C:\Users\Alberto\Desktop\SISAR 2009 2\SISAR\SISAR.SolucionWeb\SISAR.SolucionWeb\SISAR.Web\Bin\Debug\System.Windows.Controls.Data.Input.dll
+C:\Users\Alberto\Desktop\SISAR 2009 2\SISAR\SISAR.SolucionWeb\SISAR.SolucionWeb\SISAR.Web\Bin\Debug\System.Windows.Controls.dll
+C:\Users\Alberto\Desktop\SISAR 2009 2\SISAR\SISAR.SolucionWeb\SISAR.SolucionWeb\SISAR.Web\Bin\Debug\System.Windows.Controls.Input.Toolkit.dll
+C:\Users\Alberto\Desktop\SISAR 2009 2\SISAR\SISAR.SolucionWeb\SISAR.SolucionWeb\SISAR.Web\Bin\Debug\System.Windows.Controls.Toolkit.dll
+C:\Users\Alberto\Desktop\SISAR 2009 2\SISAR\SISAR.SolucionWeb\SISAR.SolucionWeb\SISAR.Web\Bin\Debug\System.Windows.Interactivity.dll
+C:\Users\Alberto\Desktop\SISAR 2009 2\SISAR\SISAR.SolucionWeb\SISAR.SolucionWeb\SISAR.Web\Bin\Debug\System.Xml.Linq.dll
+C:\Users\Alberto\Desktop\SISAR 2009 2\SISAR\SISAR.SolucionWeb\SISAR.SolucionWeb\SISAR.Web\Bin\Debug\System.Xml.Serialization.dll
+C:\Users\Alberto\Desktop\SISAR 2009 2\SISAR\SISAR.SolucionWeb\SISAR.SolucionWeb\SISAR.Web\Bin\Debug\System.Windows.Controls.Toolkit.xml
+C:\Users\Alberto\Desktop\SISAR 2009 2\SISAR\SISAR.SolucionWeb\SISAR.SolucionWeb\SISAR.Web\Bin\Debug\System.Windows.Interactivity.xml
+C:\Users\Alberto\Desktop\SISAR 2009 2\SISAR\SISAR.SolucionWeb\SISAR.SolucionWeb\SISAR.Web\Bin\Debug\System.Windows.Controls.Input.Toolkit.xml
+C:\Users\Alberto\Desktop\SISAR 2009 2\SISAR\SISAR.SolucionWeb\SISAR.SolucionWeb\SISAR.Web\Bin\Debug\Microsoft.Expression.Interactions.xml
+C:\Users\Alberto\Desktop\SISAR 2009 2\SISAR\SISAR.SolucionWeb\SISAR.SolucionWeb\SISAR.Web\Bin\Debug\de\System.Xml.Linq.resources.dll
+C:\Users\Alberto\Desktop\SISAR 2009 2\SISAR\SISAR.SolucionWeb\SISAR.SolucionWeb\SISAR.Web\Bin\Debug\es\System.Xml.Linq.resources.dll
+C:\Users\Alberto\Desktop\SISAR 2009 2\SISAR\SISAR.SolucionWeb\SISAR.SolucionWeb\SISAR.Web\Bin\Debug\fr\System.Xml.Linq.resources.dll
+C:\Users\Alberto\Desktop\SISAR 2009 2\SISAR\SISAR.SolucionWeb\SISAR.SolucionWeb\SISAR.Web\Bin\Debug\it\System.Xml.Linq.resources.dll
+C:\Users\Alberto\Desktop\SISAR 2009 2\SISAR\SISAR.SolucionWeb\SISAR.SolucionWeb\SISAR.Web\Bin\Debug\ja\System.Xml.Linq.resources.dll
+C:\Users\Alberto\Desktop\SISAR 2009 2\SISAR\SISAR.SolucionWeb\SISAR.SolucionWeb\SISAR.Web\Bin\Debug\ko\System.Xml.Linq.resources.dll
+C:\Users\Alberto\Desktop\SISAR 2009 2\SISAR\SISAR.SolucionWeb\SISAR.SolucionWeb\SISAR.Web\Bin\Debug\zh-Hans\System.Xml.Linq.resources.dll
+C:\Users\Alberto\Desktop\SISAR 2009 2\SISAR\SISAR.SolucionWeb\SISAR.SolucionWeb\SISAR.Web\Bin\Debug\zh-Hant\System.Xml.Linq.resources.dll
+C:\Users\Alberto\Desktop\SISAR 2009 2\SISAR\SISAR.SolucionWeb\SISAR.SolucionWeb\SISAR.Web\Bin\Debug\de\System.Windows.Controls.resources.dll
+C:\Users\Alberto\Desktop\SISAR 2009 2\SISAR\SISAR.SolucionWeb\SISAR.SolucionWeb\SISAR.Web\Bin\Debug\es\System.Windows.Controls.resources.dll
+C:\Users\Alberto\Desktop\SISAR 2009 2\SISAR\SISAR.SolucionWeb\SISAR.SolucionWeb\SISAR.Web\Bin\Debug\fr\System.Windows.Controls.resources.dll
+C:\Users\Alberto\Desktop\SISAR 2009 2\SISAR\SISAR.SolucionWeb\SISAR.SolucionWeb\SISAR.Web\Bin\Debug\it\System.Windows.Controls.resources.dll
+C:\Users\Alberto\Desktop\SISAR 2009 2\SISAR\SISAR.SolucionWeb\SISAR.SolucionWeb\SISAR.Web\Bin\Debug\ja\System.Windows.Controls.resources.dll
+C:\Users\Alberto\Desktop\SISAR 2009 2\SISAR\SISAR.SolucionWeb\SISAR.SolucionWeb\SISAR.Web\Bin\Debug\ko\System.Windows.Controls.resources.dll
+C:\Users\Alberto\Desktop\SISAR 2009 2\SISAR\SISAR.SolucionWeb\SISAR.SolucionWeb\SISAR.Web\Bin\Debug\zh-Hans\System.Windows.Controls.resources.dll
+C:\Users\Alberto\Desktop\SISAR 2009 2\SISAR\SISAR.SolucionWeb\SISAR.SolucionWeb\SISAR.Web\Bin\Debug\zh-Hant\System.Windows.Controls.resources.dll
+C:\Users\Alberto\Desktop\SISAR 2009 2\SISAR\SISAR.SolucionWeb\SISAR.SolucionWeb\SISAR.Web\Bin\Debug\de\System.Xml.Serialization.resources.dll
+C:\Users\Alberto\Desktop\SISAR 2009 2\SISAR\SISAR.SolucionWeb\SISAR.SolucionWeb\SISAR.Web\Bin\Debug\es\System.Xml.Serialization.resources.dll
+C:\Users\Alberto\Desktop\SISAR 2009 2\SISAR\SISAR.SolucionWeb\SISAR.SolucionWeb\SISAR.Web\Bin\Debug\fr\System.Xml.Serialization.resources.dll
+C:\Users\Alberto\Desktop\SISAR 2009 2\SISAR\SISAR.SolucionWeb\SISAR.SolucionWeb\SISAR.Web\Bin\Debug\it\System.Xml.Serialization.resources.dll
+C:\Users\Alberto\Desktop\SISAR 2009 2\SISAR\SISAR.SolucionWeb\SISAR.SolucionWeb\SISAR.Web\Bin\Debug\ja\System.Xml.Serialization.resources.dll
+C:\Users\Alberto\Desktop\SISAR 2009 2\SISAR\SISAR.SolucionWeb\SISAR.SolucionWeb\SISAR.Web\Bin\Debug\ko\System.Xml.Serialization.resources.dll
+C:\Users\Alberto\Desktop\SISAR 2009 2\SISAR\SISAR.SolucionWeb\SISAR.SolucionWeb\SISAR.Web\Bin\Debug\zh-Hans\System.Xml.Serialization.resources.dll
+C:\Users\Alberto\Desktop\SISAR 2009 2\SISAR\SISAR.SolucionWeb\SISAR.SolucionWeb\SISAR.Web\Bin\Debug\zh-Hant\System.Xml.Serialization.resources.dll
+C:\Users\Alberto\Desktop\SISAR 2009 2\SISAR\SISAR.SolucionWeb\SISAR.SolucionWeb\SISAR.Web\Bin\Debug\de\System.ComponentModel.DataAnnotations.resources.dll
+C:\Users\Alberto\Desktop\SISAR 2009 2\SISAR\SISAR.SolucionWeb\SISAR.SolucionWeb\SISAR.Web\Bin\Debug\es\System.ComponentModel.DataAnnotations.resources.dll
+C:\Users\Alberto\Desktop\SISAR 2009 2\SISAR\SISAR.SolucionWeb\SISAR.SolucionWeb\SISAR.Web\Bin\Debug\fr\System.ComponentModel.DataAnnotations.resources.dll
+C:\Users\Alberto\Desktop\SISAR 2009 2\SISAR\SISAR.SolucionWeb\SISAR.SolucionWeb\SISAR.Web\Bin\Debug\it\System.ComponentModel.DataAnnotations.resources.dll
+C:\Users\Alberto\Desktop\SISAR 2009 2\SISAR\SISAR.SolucionWeb\SISAR.SolucionWeb\SISAR.Web\Bin\Debug\ja\System.ComponentModel.DataAnnotations.resources.dll
+C:\Users\Alberto\Desktop\SISAR 2009 2\SISAR\SISAR.SolucionWeb\SISAR.SolucionWeb\SISAR.Web\Bin\Debug\ko\System.ComponentModel.DataAnnotations.resources.dll
+C:\Users\Alberto\Desktop\SISAR 2009 2\SISAR\SISAR.SolucionWeb\SISAR.SolucionWeb\SISAR.Web\Bin\Debug\zh-Hans\System.ComponentModel.DataAnnotations.resources.dll
+C:\Users\Alberto\Desktop\SISAR 2009 2\SISAR\SISAR.SolucionWeb\SISAR.SolucionWeb\SISAR.Web\Bin\Debug\zh-Hant\System.ComponentModel.DataAnnotations.resources.dll
+C:\Users\Alberto\Desktop\SISAR 2009 2\SISAR\SISAR.SolucionWeb\SISAR.SolucionWeb\SISAR.Web\Bin\Debug\de\System.Windows.Controls.Data.Input.resources.dll
+C:\Users\Alberto\Desktop\SISAR 2009 2\SISAR\SISAR.SolucionWeb\SISAR.SolucionWeb\SISAR.Web\Bin\Debug\es\System.Windows.Controls.Data.Input.resources.dll
+C:\Users\Alberto\Desktop\SISAR 2009 2\SISAR\SISAR.SolucionWeb\SISAR.SolucionWeb\SISAR.Web\Bin\Debug\fr\System.Windows.Controls.Data.Input.resources.dll
+C:\Users\Alberto\Desktop\SISAR 2009 2\SISAR\SISAR.SolucionWeb\SISAR.SolucionWeb\SISAR.Web\Bin\Debug\it\System.Windows.Controls.Data.Input.resources.dll
+C:\Users\Alberto\Desktop\SISAR 2009 2\SISAR\SISAR.SolucionWeb\SISAR.SolucionWeb\SISAR.Web\Bin\Debug\ja\System.Windows.Controls.Data.Input.resources.dll
+C:\Users\Alberto\Desktop\SISAR 2009 2\SISAR\SISAR.SolucionWeb\SISAR.SolucionWeb\SISAR.Web\Bin\Debug\ko\System.Windows.Controls.Data.Input.resources.dll
+C:\Users\Alberto\Desktop\SISAR 2009 2\SISAR\SISAR.SolucionWeb\SISAR.SolucionWeb\SISAR.Web\Bin\Debug\zh-Hans\System.Windows.Controls.Data.Input.resources.dll
+C:\Users\Alberto\Desktop\SISAR 2009 2\SISAR\SISAR.SolucionWeb\SISAR.SolucionWeb\SISAR.Web\Bin\Debug\zh-Hant\System.Windows.Controls.Data.Input.resources.dll
+C:\Users\Alberto\Desktop\SISAR 2009 2\SISAR\SISAR.SolucionWeb\SISAR.SolucionWeb\SISAR.Web\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Alberto\Desktop\SISAR 2009 2\SISAR\SISAR.SolucionWeb\SISAR.SolucionWeb\SISAR.Web\obj\Debug\App.g.cs
+C:\Users\Alberto\Desktop\SISAR 2009 2\SISAR\SISAR.SolucionWeb\SISAR.SolucionWeb\SISAR.Web\obj\Debug\DetalleReservación.g.cs
+C:\Users\Alberto\Desktop\SISAR 2009 2\SISAR\SISAR.SolucionWeb\SISAR.SolucionWeb\SISAR.Web\obj\Debug\Login.g.cs
+C:\Users\Alberto\Desktop\SISAR 2009 2\SISAR\SISAR.SolucionWeb\SISAR.SolucionWeb\SISAR.Web\obj\Debug\MainPage.g.cs
+C:\Users\Alberto\Desktop\SISAR 2009 2\SISAR\SISAR.SolucionWeb\SISAR.SolucionWeb\SISAR.Web\obj\Debug\ModifyUser.g.cs
+C:\Users\Alberto\Desktop\SISAR 2009 2\SISAR\SISAR.SolucionWeb\SISAR.SolucionWeb\SISAR.Web\obj\Debug\QuienesSomos.g.cs
+C:\Users\Alberto\Desktop\SISAR 2009 2\SISAR\SISAR.SolucionWeb\SISAR.SolucionWeb\SISAR.Web\obj\Debug\RegistrarCliente.g.cs
+C:\Users\Alberto\Desktop\SISAR 2009 2\SISAR\SISAR.SolucionWeb\SISAR.SolucionWeb\SISAR.Web\obj\Debug\Reservas.g.cs
+C:\Users\Alberto\Desktop\SISAR 2009 2\SISAR\SISAR.SolucionWeb\SISAR.SolucionWeb\SISAR.Web\obj\Debug\Ubicanos.g.cs
+C:\Users\Alberto\Desktop\SISAR 2009 2\SISAR\SISAR.SolucionWeb\SISAR.SolucionWeb\SISAR.Web\obj\Debug\SISAR.Web.g.resources
+C:\Users\Alberto\Desktop\SISAR 2009 2\SISAR\SISAR.SolucionWeb\SISAR.SolucionWeb\SISAR.Web\obj\Debug\SISAR.Web.dll
+C:\Users\Alberto\Desktop\SISAR 2009 2\SISAR\SISAR.SolucionWeb\SISAR.SolucionWeb\SISAR.Web\obj\Debug\SISAR.Web.pdb
+C:\Users\Alberto\Desktop\SISAR 2009 2\SISAR\SISAR.SolucionWeb\SISAR.SolucionWeb\SISAR.Web\obj\Debug\XapCacheFile.xml
+C:\Users\Juan\Desktop\TP\SISAR\SISAR.SolucionWeb\SISAR.SolucionWeb\SISAR.Web\Bin\Debug\AppManifest.xaml
+C:\Users\Juan\Desktop\TP\SISAR\SISAR.SolucionWeb\SISAR.SolucionWeb\SISAR.Web\Bin\Debug\SISAR.Web.dll
+C:\Users\Juan\Desktop\TP\SISAR\SISAR.SolucionWeb\SISAR.SolucionWeb\SISAR.Web\Bin\Debug\SISAR.Web.pdb
+C:\Users\Juan\Desktop\TP\SISAR\SISAR.SolucionWeb\SISAR.SolucionWeb\SISAR.Web\Bin\Debug\SISAR.Web.xap
+C:\Users\Juan\Desktop\TP\SISAR\SISAR.SolucionWeb\SISAR.SolucionWeb\SISAR.Web\Bin\Debug\TestPage.html
+C:\Users\Juan\Desktop\TP\SISAR\SISAR.SolucionWeb\SISAR.SolucionWeb\SISAR.Web\Bin\Debug\Microsoft.Expression.Interactions.dll
+C:\Users\Juan\Desktop\TP\SISAR\SISAR.SolucionWeb\SISAR.SolucionWeb\SISAR.Web\Bin\Debug\System.ComponentModel.DataAnnotations.dll
+C:\Users\Juan\Desktop\TP\SISAR\SISAR.SolucionWeb\SISAR.SolucionWeb\SISAR.Web\Bin\Debug\System.Windows.Controls.Data.Input.dll
+C:\Users\Juan\Desktop\TP\SISAR\SISAR.SolucionWeb\SISAR.SolucionWeb\SISAR.Web\Bin\Debug\System.Windows.Controls.dll
+C:\Users\Juan\Desktop\TP\SISAR\SISAR.SolucionWeb\SISAR.SolucionWeb\SISAR.Web\Bin\Debug\System.Windows.Controls.Input.Toolkit.dll
+C:\Users\Juan\Desktop\TP\SISAR\SISAR.SolucionWeb\SISAR.SolucionWeb\SISAR.Web\Bin\Debug\System.Windows.Controls.Toolkit.dll
+C:\Users\Juan\Desktop\TP\SISAR\SISAR.SolucionWeb\SISAR.SolucionWeb\SISAR.Web\Bin\Debug\System.Windows.Interactivity.dll
+C:\Users\Juan\Desktop\TP\SISAR\SISAR.SolucionWeb\SISAR.SolucionWeb\SISAR.Web\Bin\Debug\System.Xml.Linq.dll
+C:\Users\Juan\Desktop\TP\SISAR\SISAR.SolucionWeb\SISAR.SolucionWeb\SISAR.Web\Bin\Debug\System.Xml.Serialization.dll
+C:\Users\Juan\Desktop\TP\SISAR\SISAR.SolucionWeb\SISAR.SolucionWeb\SISAR.Web\Bin\Debug\System.Windows.Controls.Toolkit.xml
+C:\Users\Juan\Desktop\TP\SISAR\SISAR.SolucionWeb\SISAR.SolucionWeb\SISAR.Web\Bin\Debug\System.Windows.Interactivity.xml
+C:\Users\Juan\Desktop\TP\SISAR\SISAR.SolucionWeb\SISAR.SolucionWeb\SISAR.Web\Bin\Debug\System.Windows.Controls.Input.Toolkit.xml
+C:\Users\Juan\Desktop\TP\SISAR\SISAR.SolucionWeb\SISAR.SolucionWeb\SISAR.Web\Bin\Debug\Microsoft.Expression.Interactions.xml
+C:\Users\Juan\Desktop\TP\SISAR\SISAR.SolucionWeb\SISAR.SolucionWeb\SISAR.Web\Bin\Debug\de\System.Xml.Linq.resources.dll
+C:\Users\Juan\Desktop\TP\SISAR\SISAR.SolucionWeb\SISAR.SolucionWeb\SISAR.Web\Bin\Debug\es\System.Xml.Linq.resources.dll
+C:\Users\Juan\Desktop\TP\SISAR\SISAR.SolucionWeb\SISAR.SolucionWeb\SISAR.Web\Bin\Debug\fr\System.Xml.Linq.resources.dll
+C:\Users\Juan\Desktop\TP\SISAR\SISAR.SolucionWeb\SISAR.SolucionWeb\SISAR.Web\Bin\Debug\it\System.Xml.Linq.resources.dll
+C:\Users\Juan\Desktop\TP\SISAR\SISAR.SolucionWeb\SISAR.SolucionWeb\SISAR.Web\Bin\Debug\ja\System.Xml.Linq.resources.dll
+C:\Users\Juan\Desktop\TP\SISAR\SISAR.SolucionWeb\SISAR.SolucionWeb\SISAR.Web\Bin\Debug\ko\System.Xml.Linq.resources.dll
+C:\Users\Juan\Desktop\TP\SISAR\SISAR.SolucionWeb\SISAR.SolucionWeb\SISAR.Web\Bin\Debug\zh-Hans\System.Xml.Linq.resources.dll
+C:\Users\Juan\Desktop\TP\SISAR\SISAR.SolucionWeb\SISAR.SolucionWeb\SISAR.Web\Bin\Debug\zh-Hant\System.Xml.Linq.resources.dll
+C:\Users\Juan\Desktop\TP\SISAR\SISAR.SolucionWeb\SISAR.SolucionWeb\SISAR.Web\Bin\Debug\de\System.Windows.Controls.resources.dll
+C:\Users\Juan\Desktop\TP\SISAR\SISAR.SolucionWeb\SISAR.SolucionWeb\SISAR.Web\Bin\Debug\es\System.Windows.Controls.resources.dll
+C:\Users\Juan\Desktop\TP\SISAR\SISAR.SolucionWeb\SISAR.SolucionWeb\SISAR.Web\Bin\Debug\fr\System.Windows.Controls.resources.dll
+C:\Users\Juan\Desktop\TP\SISAR\SISAR.SolucionWeb\SISAR.SolucionWeb\SISAR.Web\Bin\Debug\it\System.Windows.Controls.resources.dll
+C:\Users\Juan\Desktop\TP\SISAR\SISAR.SolucionWeb\SISAR.SolucionWeb\SISAR.Web\Bin\Debug\ja\System.Windows.Controls.resources.dll
+C:\Users\Juan\Desktop\TP\SISAR\SISAR.SolucionWeb\SISAR.SolucionWeb\SISAR.Web\Bin\Debug\ko\System.Windows.Controls.resources.dll
+C:\Users\Juan\Desktop\TP\SISAR\SISAR.SolucionWeb\SISAR.SolucionWeb\SISAR.Web\Bin\Debug\zh-Hans\System.Windows.Controls.resources.dll
+C:\Users\Juan\Desktop\TP\SISAR\SISAR.SolucionWeb\SISAR.SolucionWeb\SISAR.Web\Bin\Debug\zh-Hant\System.Windows.Controls.resources.dll
+C:\Users\Juan\Desktop\TP\SISAR\SISAR.SolucionWeb\SISAR.SolucionWeb\SISAR.Web\Bin\Debug\de\System.Xml.Serialization.resources.dll
+C:\Users\Juan\Desktop\TP\SISAR\SISAR.SolucionWeb\SISAR.SolucionWeb\SISAR.Web\Bin\Debug\es\System.Xml.Serialization.resources.dll
+C:\Users\Juan\Desktop\TP\SISAR\SISAR.SolucionWeb\SISAR.SolucionWeb\SISAR.Web\Bin\Debug\fr\System.Xml.Serialization.resources.dll
+C:\Users\Juan\Desktop\TP\SISAR\SISAR.SolucionWeb\SISAR.SolucionWeb\SISAR.Web\Bin\Debug\it\System.Xml.Serialization.resources.dll
+C:\Users\Juan\Desktop\TP\SISAR\SISAR.SolucionWeb\SISAR.SolucionWeb\SISAR.Web\Bin\Debug\ja\System.Xml.Serialization.resources.dll
+C:\Users\Juan\Desktop\TP\SISAR\SISAR.SolucionWeb\SISAR.SolucionWeb\SISAR.Web\Bin\Debug\ko\System.Xml.Serialization.resources.dll
+C:\Users\Juan\Desktop\TP\SISAR\SISAR.SolucionWeb\SISAR.SolucionWeb\SISAR.Web\Bin\Debug\zh-Hans\System.Xml.Serialization.resources.dll
+C:\Users\Juan\Desktop\TP\SISAR\SISAR.SolucionWeb\SISAR.SolucionWeb\SISAR.Web\Bin\Debug\zh-Hant\System.Xml.Serialization.resources.dll
+C:\Users\Juan\Desktop\TP\SISAR\SISAR.SolucionWeb\SISAR.SolucionWeb\SISAR.Web\Bin\Debug\de\System.ComponentModel.DataAnnotations.resources.dll
+C:\Users\Juan\Desktop\TP\SISAR\SISAR.SolucionWeb\SISAR.SolucionWeb\SISAR.Web\Bin\Debug\es\System.ComponentModel.DataAnnotations.resources.dll
+C:\Users\Juan\Desktop\TP\SISAR\SISAR.SolucionWeb\SISAR.SolucionWeb\SISAR.Web\Bin\Debug\fr\System.ComponentModel.DataAnnotations.resources.dll
+C:\Users\Juan\Desktop\TP\SISAR\SISAR.SolucionWeb\SISAR.SolucionWeb\SISAR.Web\Bin\Debug\it\System.ComponentModel.DataAnnotations.resources.dll
+C:\Users\Juan\Desktop\TP\SISAR\SISAR.SolucionWeb\SISAR.SolucionWeb\SISAR.Web\Bin\Debug\ja\System.ComponentModel.DataAnnotations.resources.dll
+C:\Users\Juan\Desktop\TP\SISAR\SISAR.SolucionWeb\SISAR.SolucionWeb\SISAR.Web\Bin\Debug\ko\System.ComponentModel.DataAnnotations.resources.dll
+C:\Users\Juan\Desktop\TP\SISAR\SISAR.SolucionWeb\SISAR.SolucionWeb\SISAR.Web\Bin\Debug\zh-Hans\System.ComponentModel.DataAnnotations.resources.dll
+C:\Users\Juan\Desktop\TP\SISAR\SISAR.SolucionWeb\SISAR.SolucionWeb\SISAR.Web\Bin\Debug\zh-Hant\System.ComponentModel.DataAnnotations.resources.dll
+C:\Users\Juan\Desktop\TP\SISAR\SISAR.SolucionWeb\SISAR.SolucionWeb\SISAR.Web\Bin\Debug\de\System.Windows.Controls.Data.Input.resources.dll
+C:\Users\Juan\Desktop\TP\SISAR\SISAR.SolucionWeb\SISAR.SolucionWeb\SISAR.Web\Bin\Debug\es\System.Windows.Controls.Data.Input.resources.dll
+C:\Users\Juan\Desktop\TP\SISAR\SISAR.SolucionWeb\SISAR.SolucionWeb\SISAR.Web\Bin\Debug\fr\System.Windows.Controls.Data.Input.resources.dll
+C:\Users\Juan\Desktop\TP\SISAR\SISAR.SolucionWeb\SISAR.SolucionWeb\SISAR.Web\Bin\Debug\it\System.Windows.Controls.Data.Input.resources.dll
+C:\Users\Juan\Desktop\TP\SISAR\SISAR.SolucionWeb\SISAR.SolucionWeb\SISAR.Web\Bin\Debug\ja\System.Windows.Controls.Data.Input.resources.dll
+C:\Users\Juan\Desktop\TP\SISAR\SISAR.SolucionWeb\SISAR.SolucionWeb\SISAR.Web\Bin\Debug\ko\System.Windows.Controls.Data.Input.resources.dll
+C:\Users\Juan\Desktop\TP\SISAR\SISAR.SolucionWeb\SISAR.SolucionWeb\SISAR.Web\Bin\Debug\zh-Hans\System.Windows.Controls.Data.Input.resources.dll
+C:\Users\Juan\Desktop\TP\SISAR\SISAR.SolucionWeb\SISAR.SolucionWeb\SISAR.Web\Bin\Debug\zh-Hant\System.Windows.Controls.Data.Input.resources.dll
+C:\Users\Juan\Desktop\TP\SISAR\SISAR.SolucionWeb\SISAR.SolucionWeb\SISAR.Web\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Juan\Desktop\TP\SISAR\SISAR.SolucionWeb\SISAR.SolucionWeb\SISAR.Web\obj\Debug\App.g.cs
+C:\Users\Juan\Desktop\TP\SISAR\SISAR.SolucionWeb\SISAR.SolucionWeb\SISAR.Web\obj\Debug\DetalleReservación.g.cs
+C:\Users\Juan\Desktop\TP\SISAR\SISAR.SolucionWeb\SISAR.SolucionWeb\SISAR.Web\obj\Debug\Login.g.cs
+C:\Users\Juan\Desktop\TP\SISAR\SISAR.SolucionWeb\SISAR.SolucionWeb\SISAR.Web\obj\Debug\MainPage.g.cs
+C:\Users\Juan\Desktop\TP\SISAR\SISAR.SolucionWeb\SISAR.SolucionWeb\SISAR.Web\obj\Debug\ModifyUser.g.cs
+C:\Users\Juan\Desktop\TP\SISAR\SISAR.SolucionWeb\SISAR.SolucionWeb\SISAR.Web\obj\Debug\QuienesSomos.g.cs
+C:\Users\Juan\Desktop\TP\SISAR\SISAR.SolucionWeb\SISAR.SolucionWeb\SISAR.Web\obj\Debug\RegistrarCliente.g.cs
+C:\Users\Juan\Desktop\TP\SISAR\SISAR.SolucionWeb\SISAR.SolucionWeb\SISAR.Web\obj\Debug\Reservas.g.cs
+C:\Users\Juan\Desktop\TP\SISAR\SISAR.SolucionWeb\SISAR.SolucionWeb\SISAR.Web\obj\Debug\Ubicanos.g.cs
+C:\Users\Juan\Desktop\TP\SISAR\SISAR.SolucionWeb\SISAR.SolucionWeb\SISAR.Web\obj\Debug\SISAR.Web.g.resources
+C:\Users\Juan\Desktop\TP\SISAR\SISAR.SolucionWeb\SISAR.SolucionWeb\SISAR.Web\obj\Debug\SISAR.Web.dll
+C:\Users\Juan\Desktop\TP\SISAR\SISAR.SolucionWeb\SISAR.SolucionWeb\SISAR.Web\obj\Debug\SISAR.Web.pdb
+C:\Users\Juan\Desktop\TP\SISAR\SISAR.SolucionWeb\SISAR.SolucionWeb\SISAR.Web\obj\Debug\XapCacheFile.xml
+C:\SISAR TP 2009 2\Repositorio\SISAR\SISAR.SolucionWeb\SISAR.SolucionWeb\SISAR.Web\Bin\Debug\AppManifest.xaml
+C:\SISAR TP 2009 2\Repositorio\SISAR\SISAR.SolucionWeb\SISAR.SolucionWeb\SISAR.Web\Bin\Debug\SISAR.Web.dll
+C:\SISAR TP 2009 2\Repositorio\SISAR\SISAR.SolucionWeb\SISAR.SolucionWeb\SISAR.Web\Bin\Debug\SISAR.Web.pdb
+C:\SISAR TP 2009 2\Repositorio\SISAR\SISAR.SolucionWeb\SISAR.SolucionWeb\SISAR.Web\Bin\Debug\SISAR.Web.xap
+C:\SISAR TP 2009 2\Repositorio\SISAR\SISAR.SolucionWeb\SISAR.SolucionWeb\SISAR.Web\Bin\Debug\TestPage.html
+C:\SISAR TP 2009 2\Repositorio\SISAR\SISAR.SolucionWeb\SISAR.SolucionWeb\SISAR.Web\Bin\Debug\Microsoft.Expression.Interactions.dll
+C:\SISAR TP 2009 2\Repositorio\SISAR\SISAR.SolucionWeb\SISAR.SolucionWeb\SISAR.Web\Bin\Debug\System.ComponentModel.DataAnnotations.dll
+C:\SISAR TP 2009 2\Repositorio\SISAR\SISAR.SolucionWeb\SISAR.SolucionWeb\SISAR.Web\Bin\Debug\System.Reactive.dll
+C:\SISAR TP 2009 2\Repositorio\SISAR\SISAR.SolucionWeb\SISAR.SolucionWeb\SISAR.Web\Bin\Debug\System.Windows.Controls.Data.Input.dll
+C:\SISAR TP 2009 2\Repositorio\SISAR\SISAR.SolucionWeb\SISAR.SolucionWeb\SISAR.Web\Bin\Debug\System.Windows.Controls.dll
+C:\SISAR TP 2009 2\Repositorio\SISAR\SISAR.SolucionWeb\SISAR.SolucionWeb\SISAR.Web\Bin\Debug\System.Windows.Controls.Input.Toolkit.dll
+C:\SISAR TP 2009 2\Repositorio\SISAR\SISAR.SolucionWeb\SISAR.SolucionWeb\SISAR.Web\Bin\Debug\System.Windows.Controls.Toolkit.dll
+C:\SISAR TP 2009 2\Repositorio\SISAR\SISAR.SolucionWeb\SISAR.SolucionWeb\SISAR.Web\Bin\Debug\System.Windows.Interactivity.dll
+C:\SISAR TP 2009 2\Repositorio\SISAR\SISAR.SolucionWeb\SISAR.SolucionWeb\SISAR.Web\Bin\Debug\System.Xml.Linq.dll
+C:\SISAR TP 2009 2\Repositorio\SISAR\SISAR.SolucionWeb\SISAR.SolucionWeb\SISAR.Web\Bin\Debug\System.Xml.Serialization.dll
+C:\SISAR TP 2009 2\Repositorio\SISAR\SISAR.SolucionWeb\SISAR.SolucionWeb\SISAR.Web\Bin\Debug\System.Windows.Controls.Toolkit.xml
+C:\SISAR TP 2009 2\Repositorio\SISAR\SISAR.SolucionWeb\SISAR.SolucionWeb\SISAR.Web\Bin\Debug\System.Windows.Interactivity.xml
+C:\SISAR TP 2009 2\Repositorio\SISAR\SISAR.SolucionWeb\SISAR.SolucionWeb\SISAR.Web\Bin\Debug\System.Windows.Controls.Input.Toolkit.xml
+C:\SISAR TP 2009 2\Repositorio\SISAR\SISAR.SolucionWeb\SISAR.SolucionWeb\SISAR.Web\Bin\Debug\Microsoft.Expression.Interactions.xml
+C:\SISAR TP 2009 2\Repositorio\SISAR\SISAR.SolucionWeb\SISAR.SolucionWeb\SISAR.Web\Bin\Debug\de\System.Xml.Linq.resources.dll
+C:\SISAR TP 2009 2\Repositorio\SISAR\SISAR.SolucionWeb\SISAR.SolucionWeb\SISAR.Web\Bin\Debug\es\System.Xml.Linq.resources.dll
+C:\SISAR TP 2009 2\Repositorio\SISAR\SISAR.SolucionWeb\SISAR.SolucionWeb\SISAR.Web\Bin\Debug\fr\System.Xml.Linq.resources.dll
+C:\SISAR TP 2009 2\Repositorio\SISAR\SISAR.SolucionWeb\SISAR.SolucionWeb\SISAR.Web\Bin\Debug\it\System.Xml.Linq.resources.dll
+C:\SISAR TP 2009 2\Repositorio\SISAR\SISAR.SolucionWeb\SISAR.SolucionWeb\SISAR.Web\Bin\Debug\ja\System.Xml.Linq.resources.dll
+C:\SISAR TP 2009 2\Repositorio\SISAR\SISAR.SolucionWeb\SISAR.SolucionWeb\SISAR.Web\Bin\Debug\ko\System.Xml.Linq.resources.dll
+C:\SISAR TP 2009 2\Repositorio\SISAR\SISAR.SolucionWeb\SISAR.SolucionWeb\SISAR.Web\Bin\Debug\zh-Hans\System.Xml.Linq.resources.dll
+C:\SISAR TP 2009 2\Repositorio\SISAR\SISAR.SolucionWeb\SISAR.SolucionWeb\SISAR.Web\Bin\Debug\zh-Hant\System.Xml.Linq.resources.dll
+C:\SISAR TP 2009 2\Repositorio\SISAR\SISAR.SolucionWeb\SISAR.SolucionWeb\SISAR.Web\Bin\Debug\de\System.Windows.Controls.resources.dll
+C:\SISAR TP 2009 2\Repositorio\SISAR\SISAR.SolucionWeb\SISAR.SolucionWeb\SISAR.Web\Bin\Debug\es\System.Windows.Controls.resources.dll
+C:\SISAR TP 2009 2\Repositorio\SISAR\SISAR.SolucionWeb\SISAR.SolucionWeb\SISAR.Web\Bin\Debug\fr\System.Windows.Controls.resources.dll
+C:\SISAR TP 2009 2\Repositorio\SISAR\SISAR.SolucionWeb\SISAR.SolucionWeb\SISAR.Web\Bin\Debug\it\System.Windows.Controls.resources.dll
+C:\SISAR TP 2009 2\Repositorio\SISAR\SISAR.SolucionWeb\SISAR.SolucionWeb\SISAR.Web\Bin\Debug\ja\System.Windows.Controls.resources.dll
+C:\SISAR TP 2009 2\Repositorio\SISAR\SISAR.SolucionWeb\SISAR.SolucionWeb\SISAR.Web\Bin\Debug\ko\System.Windows.Controls.resources.dll
+C:\SISAR TP 2009 2\Repositorio\SISAR\SISAR.SolucionWeb\SISAR.SolucionWeb\SISAR.Web\Bin\Debug\zh-Hans\System.Windows.Controls.resources.dll
+C:\SISAR TP 2009 2\Repositorio\SISAR\SISAR.SolucionWeb\SISAR.SolucionWeb\SISAR.Web\Bin\Debug\zh-Hant\System.Windows.Controls.resources.dll
+C:\SISAR TP 2009 2\Repositorio\SISAR\SISAR.SolucionWeb\SISAR.SolucionWeb\SISAR.Web\Bin\Debug\de\System.Xml.Serialization.resources.dll
+C:\SISAR TP 2009 2\Repositorio\SISAR\SISAR.SolucionWeb\SISAR.SolucionWeb\SISAR.Web\Bin\Debug\es\System.Xml.Serialization.resources.dll
+C:\SISAR TP 2009 2\Repositorio\SISAR\SISAR.SolucionWeb\SISAR.SolucionWeb\SISAR.Web\Bin\Debug\fr\System.Xml.Serialization.resources.dll
+C:\SISAR TP 2009 2\Repositorio\SISAR\SISAR.SolucionWeb\SISAR.SolucionWeb\SISAR.Web\Bin\Debug\it\System.Xml.Serialization.resources.dll
+C:\SISAR TP 2009 2\Repositorio\SISAR\SISAR.SolucionWeb\SISAR.SolucionWeb\SISAR.Web\Bin\Debug\ja\System.Xml.Serialization.resources.dll
+C:\SISAR TP 2009 2\Repositorio\SISAR\SISAR.SolucionWeb\SISAR.SolucionWeb\SISAR.Web\Bin\Debug\ko\System.Xml.Serialization.resources.dll
+C:\SISAR TP 2009 2\Repositorio\SISAR\SISAR.SolucionWeb\SISAR.SolucionWeb\SISAR.Web\Bin\Debug\zh-Hans\System.Xml.Serialization.resources.dll
+C:\SISAR TP 2009 2\Repositorio\SISAR\SISAR.SolucionWeb\SISAR.SolucionWeb\SISAR.Web\Bin\Debug\zh-Hant\System.Xml.Serialization.resources.dll
+C:\SISAR TP 2009 2\Repositorio\SISAR\SISAR.SolucionWeb\SISAR.SolucionWeb\SISAR.Web\Bin\Debug\de\System.ComponentModel.DataAnnotations.resources.dll
+C:\SISAR TP 2009 2\Repositorio\SISAR\SISAR.SolucionWeb\SISAR.SolucionWeb\SISAR.Web\Bin\Debug\es\System.ComponentModel.DataAnnotations.resources.dll
+C:\SISAR TP 2009 2\Repositorio\SISAR\SISAR.SolucionWeb\SISAR.SolucionWeb\SISAR.Web\Bin\Debug\fr\System.ComponentModel.DataAnnotations.resources.dll
+C:\SISAR TP 2009 2\Repositorio\SISAR\SISAR.SolucionWeb\SISAR.SolucionWeb\SISAR.Web\Bin\Debug\it\System.ComponentModel.DataAnnotations.resources.dll
+C:\SISAR TP 2009 2\Repositorio\SISAR\SISAR.SolucionWeb\SISAR.SolucionWeb\SISAR.Web\Bin\Debug\ja\System.ComponentModel.DataAnnotations.resources.dll
+C:\SISAR TP 2009 2\Repositorio\SISAR\SISAR.SolucionWeb\SISAR.SolucionWeb\SISAR.Web\Bin\Debug\ko\System.ComponentModel.DataAnnotations.resources.dll
+C:\SISAR TP 2009 2\Repositorio\SISAR\SISAR.SolucionWeb\SISAR.SolucionWeb\SISAR.Web\Bin\Debug\zh-Hans\System.ComponentModel.DataAnnotations.resources.dll
+C:\SISAR TP 2009 2\Repositorio\SISAR\SISAR.SolucionWeb\SISAR.SolucionWeb\SISAR.Web\Bin\Debug\zh-Hant\System.ComponentModel.DataAnnotations.resources.dll
+C:\SISAR TP 2009 2\Repositorio\SISAR\SISAR.SolucionWeb\SISAR.SolucionWeb\SISAR.Web\Bin\Debug\de\System.Windows.Controls.Data.Input.resources.dll
+C:\SISAR TP 2009 2\Repositorio\SISAR\SISAR.SolucionWeb\SISAR.SolucionWeb\SISAR.Web\Bin\Debug\es\System.Windows.Controls.Data.Input.resources.dll
+C:\SISAR TP 2009 2\Repositorio\SISAR\SISAR.SolucionWeb\SISAR.SolucionWeb\SISAR.Web\Bin\Debug\fr\System.Windows.Controls.Data.Input.resources.dll
+C:\SISAR TP 2009 2\Repositorio\SISAR\SISAR.SolucionWeb\SISAR.SolucionWeb\SISAR.Web\Bin\Debug\it\System.Windows.Controls.Data.Input.resources.dll
+C:\SISAR TP 2009 2\Repositorio\SISAR\SISAR.SolucionWeb\SISAR.SolucionWeb\SISAR.Web\Bin\Debug\ja\System.Windows.Controls.Data.Input.resources.dll
+C:\SISAR TP 2009 2\Repositorio\SISAR\SISAR.SolucionWeb\SISAR.SolucionWeb\SISAR.Web\Bin\Debug\ko\System.Windows.Controls.Data.Input.resources.dll
+C:\SISAR TP 2009 2\Repositorio\SISAR\SISAR.SolucionWeb\SISAR.SolucionWeb\SISAR.Web\Bin\Debug\zh-Hans\System.Windows.Controls.Data.Input.resources.dll
+C:\SISAR TP 2009 2\Repositorio\SISAR\SISAR.SolucionWeb\SISAR.SolucionWeb\SISAR.Web\Bin\Debug\zh-Hant\System.Windows.Controls.Data.Input.resources.dll
+C:\SISAR TP 2009 2\Repositorio\SISAR\SISAR.SolucionWeb\SISAR.SolucionWeb\SISAR.Web\obj\Debug\ResolveAssemblyReference.cache
+C:\SISAR TP 2009 2\Repositorio\SISAR\SISAR.SolucionWeb\SISAR.SolucionWeb\SISAR.Web\obj\Debug\App.g.cs
+C:\SISAR TP 2009 2\Repositorio\SISAR\SISAR.SolucionWeb\SISAR.SolucionWeb\SISAR.Web\obj\Debug\DetalleReservación.g.cs
+C:\SISAR TP 2009 2\Repositorio\SISAR\SISAR.SolucionWeb\SISAR.SolucionWeb\SISAR.Web\obj\Debug\Login.g.cs
+C:\SISAR TP 2009 2\Repositorio\SISAR\SISAR.SolucionWeb\SISAR.SolucionWeb\SISAR.Web\obj\Debug\MainPage.g.cs
+C:\SISAR TP 2009 2\Repositorio\SISAR\SISAR.SolucionWeb\SISAR.SolucionWeb\SISAR.Web\obj\Debug\ModifyUser.g.cs
+C:\SISAR TP 2009 2\Repositorio\SISAR\SISAR.SolucionWeb\SISAR.SolucionWeb\SISAR.Web\obj\Debug\QuienesSomos.g.cs
+C:\SISAR TP 2009 2\Repositorio\SISAR\SISAR.SolucionWeb\SISAR.SolucionWeb\SISAR.Web\obj\Debug\RegistrarCliente.g.cs
+C:\SISAR TP 2009 2\Repositorio\SISAR\SISAR.SolucionWeb\SISAR.SolucionWeb\SISAR.Web\obj\Debug\Reservas.g.cs
+C:\SISAR TP 2009 2\Repositorio\SISAR\SISAR.SolucionWeb\SISAR.SolucionWeb\SISAR.Web\obj\Debug\Ubicanos.g.cs
+C:\SISAR TP 2009 2\Repositorio\SISAR\SISAR.SolucionWeb\SISAR.SolucionWeb\SISAR.Web\obj\Debug\SISAR.Web.g.resources
+C:\SISAR TP 2009 2\Repositorio\SISAR\SISAR.SolucionWeb\SISAR.SolucionWeb\SISAR.Web\obj\Debug\SISAR.Web.dll
+C:\SISAR TP 2009 2\Repositorio\SISAR\SISAR.SolucionWeb\SISAR.SolucionWeb\SISAR.Web\obj\Debug\SISAR.Web.pdb
+C:\SISAR TP 2009 2\Repositorio\SISAR\SISAR.SolucionWeb\SISAR.SolucionWeb\SISAR.Web\obj\Debug\XapCacheFile.xml

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="fdf2ad0f-6b9e-49df-bf52-5ad0721b2413" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>true</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings>
+      <CollectionMapping TypeName="System.Collections.ObjectModel.ObservableCollection`1" Category="List" />
+    </CollectionMappings>
+    <GenerateSerializableTypes>false</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:49554/LocalService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="LocalService.xsd" MetadataType="Schema" ID="2cc06db2-a0ab-4821-b7dc-8328857fa0cf" SourceId="1" SourceUrl="http://localhost:49554/LocalService.svc?xsd=xsd0" />
+    <MetadataFile FileName="LocalService.wsdl" MetadataType="Wsdl" ID="1640b8e7-9068-425a-bffd-d351c21a738f" SourceId="1" SourceUrl="http://localhost:49554/LocalService.svc?wsdl" />
+    <MetadataFile FileName="LocalService1.xsd" MetadataType="Schema" ID="d57f97af-9c4a-4819-8a6d-c07bcf54358b" SourceId="1" SourceUrl="http://localhost:49554/LocalService.svc?xsd=xsd1" />
+    <MetadataFile FileName="LocalService.disco" MetadataType="Disco" ID="b5641f18-8777-4350-a633-b8db550f3644" SourceId="1" SourceUrl="http://localhost:49554/LocalService.svc?disco" />
+    <MetadataFile FileName="LocalService1.wsdl" MetadataType="Wsdl" ID="f609a566-f2fb-4186-99e7-e225326b2303" SourceId="1" SourceUrl="http://localhost:49554/LocalService.svc?wsdl=wsdl0" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

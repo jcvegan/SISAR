@@ -1,0 +1,5 @@
+C:\Users\Juan\Desktop\TP\Ejecutable_SISAR\SISAR.GragAndGrop.dll
+C:\Users\Juan\Desktop\TP\Ejecutable_SISAR\SISAR.GragAndGrop.pdb
+C:\Users\Juan\Desktop\TP\SISAR\SISAR.GragAndGrop\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Juan\Desktop\TP\SISAR\SISAR.GragAndGrop\obj\Debug\SISAR.GragAndGrop.dll
+C:\Users\Juan\Desktop\TP\SISAR\SISAR.GragAndGrop\obj\Debug\SISAR.GragAndGrop.pdb

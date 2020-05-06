@@ -1,0 +1,12 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="SISAR.WebApplication.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="SISAR_WebApplication_UserReference_SW_Usuario" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://localhost:49539/SISAR.WebService/SW_Usuario.asmx</Value>
+    </Setting>
+    <Setting Name="SISAR_WebApplication_ReserveReference_SW_Reserva" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://localhost:49539/SISAR.WebService/SW_Reserva.asmx</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

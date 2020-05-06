@@ -1,0 +1,21 @@
+C:\Users\Alberto\Desktop\SISAR 2009 2\SISAR\SISAR.SolucionWeb\SISAR.SolucionWeb\SISAR.WebApplication\bin\SISAR.WebApplication.dll
+C:\Users\Alberto\Desktop\SISAR 2009 2\SISAR\SISAR.SolucionWeb\SISAR.SolucionWeb\SISAR.WebApplication\bin\SISAR.WebApplication.pdb
+C:\Users\Alberto\Desktop\SISAR 2009 2\SISAR\SISAR.SolucionWeb\SISAR.SolucionWeb\SISAR.WebApplication\bin\SISAR.Entidades.dll
+C:\Users\Alberto\Desktop\SISAR 2009 2\SISAR\SISAR.SolucionWeb\SISAR.SolucionWeb\SISAR.WebApplication\bin\SISAR.Entidades.pdb
+C:\Users\Alberto\Desktop\SISAR 2009 2\SISAR\SISAR.SolucionWeb\SISAR.SolucionWeb\SISAR.WebApplication\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Alberto\Desktop\SISAR 2009 2\SISAR\SISAR.SolucionWeb\SISAR.SolucionWeb\SISAR.WebApplication\obj\Debug\SISAR.WebApplication.dll
+C:\Users\Alberto\Desktop\SISAR 2009 2\SISAR\SISAR.SolucionWeb\SISAR.SolucionWeb\SISAR.WebApplication\obj\Debug\SISAR.WebApplication.pdb
+C:\Users\Juan\Desktop\TP\SISAR\SISAR.SolucionWeb\SISAR.SolucionWeb\SISAR.WebApplication\bin\SISAR.WebApplication.dll
+C:\Users\Juan\Desktop\TP\SISAR\SISAR.SolucionWeb\SISAR.SolucionWeb\SISAR.WebApplication\bin\SISAR.WebApplication.pdb
+C:\Users\Juan\Desktop\TP\SISAR\SISAR.SolucionWeb\SISAR.SolucionWeb\SISAR.WebApplication\bin\SISAR.Entidades.dll
+C:\Users\Juan\Desktop\TP\SISAR\SISAR.SolucionWeb\SISAR.SolucionWeb\SISAR.WebApplication\bin\SISAR.Entidades.pdb
+C:\Users\Juan\Desktop\TP\SISAR\SISAR.SolucionWeb\SISAR.SolucionWeb\SISAR.WebApplication\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Juan\Desktop\TP\SISAR\SISAR.SolucionWeb\SISAR.SolucionWeb\SISAR.WebApplication\obj\Debug\SISAR.WebApplication.dll
+C:\Users\Juan\Desktop\TP\SISAR\SISAR.SolucionWeb\SISAR.SolucionWeb\SISAR.WebApplication\obj\Debug\SISAR.WebApplication.pdb
+C:\SISAR TP 2009 2\Repositorio\SISAR\SISAR.SolucionWeb\SISAR.SolucionWeb\SISAR.WebApplication\obj\Debug\ResolveAssemblyReference.cache
+C:\SISAR TP 2009 2\Repositorio\SISAR\SISAR.SolucionWeb\SISAR.SolucionWeb\SISAR.WebApplication\obj\Debug\SISAR.WebApplication.dll
+C:\SISAR TP 2009 2\Repositorio\SISAR\SISAR.SolucionWeb\SISAR.SolucionWeb\SISAR.WebApplication\bin\SISAR.WebApplication.dll
+C:\SISAR TP 2009 2\Repositorio\SISAR\SISAR.SolucionWeb\SISAR.SolucionWeb\SISAR.WebApplication\bin\SISAR.WebApplication.pdb
+C:\SISAR TP 2009 2\Repositorio\SISAR\SISAR.SolucionWeb\SISAR.SolucionWeb\SISAR.WebApplication\bin\SISAR.Entidades.dll
+C:\SISAR TP 2009 2\Repositorio\SISAR\SISAR.SolucionWeb\SISAR.SolucionWeb\SISAR.WebApplication\bin\SISAR.Entidades.pdb
+C:\SISAR TP 2009 2\Repositorio\SISAR\SISAR.SolucionWeb\SISAR.SolucionWeb\SISAR.WebApplication\obj\Debug\SISAR.WebApplication.pdb

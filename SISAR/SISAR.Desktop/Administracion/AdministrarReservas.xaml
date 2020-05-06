@@ -1,0 +1,47 @@
+﻿<UserControl x:Class="SISAR.Desktop.Administracion.AdministrarReservas"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:toolkit="http://schemas.microsoft.com/wpf/2008/toolkit"
+    xmlns:schedule="clr-namespace:Schedule;assembly=Schedule"
+    xmlns:sys="clr-namespace:System;assembly=mscorlib"
+    xmlns:Avalon="clr-namespace:AC.AvalonControlsLibrary.Controls;assembly=AvalonControlsLibrary"
+    HorizontalAlignment="Center"
+    VerticalAlignment="Center"
+    >
+        <GroupBox Name="FormReservas" Header="Administración de Reservas">
+            <StackPanel Orientation="Horizontal">
+                <GroupBox Header="Parametros">
+                    <StackPanel Orientation="Vertical">
+                        <StackPanel Orientation="Horizontal">
+                            <Label Content="Desde" Width="80"/>
+                            <toolkit:DatePicker x:Name="dpInicio"  Width="120"/>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal">
+                            <Label Content="Hasta" Width="80"/>
+                            <toolkit:DatePicker x:Name="dpFin" Width="120"/>
+                        </StackPanel>
+                        <StackPanel Orientation="Vertical">
+                            <StackPanel Orientation="Horizontal">
+                                <Label Content="Hora Inicio"/>
+                                <Avalon:TimePicker/>
+                            </StackPanel>
+                        </StackPanel>
+                    </StackPanel>
+                </GroupBox>
+                <schedule:Schedule x:Name="CalendarioReservas" ItemSize="HalfHour"  Width="720" Height="360">
+                    <schedule:Schedule.DisplayedDates>
+                        <sys:DateTime>09/14/2009</sys:DateTime>
+                        <sys:DateTime>09/15/2009</sys:DateTime>
+                        <sys:DateTime>09/16/2009</sys:DateTime>
+                        <sys:DateTime>09/17/2009</sys:DateTime>
+                        <sys:DateTime>09/18/2009</sys:DateTime>
+                        <sys:DateTime>09/19/2009</sys:DateTime>
+                        <sys:DateTime>09/20/2009</sys:DateTime>
+                    </schedule:Schedule.DisplayedDates>
+                    <schedule:Schedule.Appointments>
+                        <schedule:Appointment Start="09/14/2009 18:00:00" End="09/14/2009 20:00:00" Location="Mesa 5" Summary="Cena de Gala" Title="Sr. Juan Carlos Vega"/>
+                    </schedule:Schedule.Appointments>
+                </schedule:Schedule>
+            </StackPanel>
+        </GroupBox>
+</UserControl>

@@ -1,0 +1,566 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{6B713BDB-6D96-40E7-BF1A-68E8937E04B1}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SISAR.Desktop</RootNamespace>
+    <AssemblyName>SISAR.Desktop</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <ExpressionBlendVersion>3.0.1927.0</ExpressionBlendVersion>
+    <ApplicationIcon>Imagenes\Cheff.ico</ApplicationIcon>
+    <ManifestCertificateThumbprint>083F67675502C44E20B7BF00C4B8C8919B86E76B</ManifestCertificateThumbprint>
+    <ManifestKeyFile>SISAR.Desktop_TemporaryKey.pfx</ManifestKeyFile>
+    <GenerateManifests>true</GenerateManifests>
+    <TargetZone>LocalIntranet</TargetZone>
+    <ApplicationManifest>Properties\app.manifest</ApplicationManifest>
+    <SignManifests>true</SignManifests>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <InstallUrl>http://192.168.1.191/</InstallUrl>
+    <TargetCulture>es-PE</TargetCulture>
+    <ProductName>Sistema de Atencion de Restaurantes</ProductName>
+    <PublisherName>Juan Carlos Vega</PublisherName>
+    <SuiteName>SISAR</SuiteName>
+    <ApplicationRevision>2</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\Ejecutable_SISAR\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AvalonControlsLibrary, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Documents and Settings\Administrador\Mis documentos\Release V2\Release V2\AvalonControlsLibrary\AvalonControlsLibrary\bin\Debug\AvalonControlsLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="Dotway.WPF.Controls, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Documents and Settings\Administrador\Mis documentos\Dotway[1].WPFLibraries\Dotway.WPF\Dotway.WPF.Controls.dll</HintPath>
+    </Reference>
+    <Reference Include="Dotway.WPF.Panels, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Documents and Settings\Administrador\Mis documentos\Dotway[1].WPFLibraries\Dotway.WPF\Dotway.WPF.Panels.dll</HintPath>
+    </Reference>
+    <Reference Include="FluidKit, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Downloads\fluidkit-19470\FluidKit\FluidKit\bin\Debug\FluidKit.dll</HintPath>
+    </Reference>
+    <Reference Include="RibbonControlsLibrary, Version=3.5.31016.1, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\DemoRibbon\DemoRibbon\bin\Debug\RibbonControlsLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="Schedule, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\wpfschedule-26603\Schedule\TestApplication\bin\Debug\Schedule.dll</HintPath>
+    </Reference>
+    <Reference Include="SISAR.GragAndGrop, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Windows.Controls.DataVisualization.Toolkit, Version=3.5.40128.1, Culture=neutral, PublicKeyToken=31bf3856ad364e35" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UIAutomationProvider">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="PresentationCore">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="PresentationFramework">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WPFMitsuControls, Version=1.0.3552.42074, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\CONTROLES WPF\wpfbookcontrol-24122\WPFMitsuControls\bin\Debug\WPFMitsuControls.dll</HintPath>
+    </Reference>
+    <Reference Include="WPFToolkit, Version=3.5.40128.1, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Page Include="Administracion\AdministrarCategorias.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Administracion\AdministrarCliente.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Administracion\AdministrarEmpleados.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Administracion\AdministrarLocal.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Administracion\AdministrarMenu.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Administracion\AdministrarPerfil.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Administracion\AdministrarProducto.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Administracion\AdministrarReservas.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Administracion\AdministrarZona.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Administracion\DistribucionMesas.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Administracion\MesaItem.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Atencion\ConfirmarPedidos.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Ayuda\AcercaDe.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Ayuda\LibroContraTapa.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Ayuda\LibroPortada.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Ayuda\LibroVisitas.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Ayuda\LibroVisitasItem.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Ayuda\Manual.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Ayuda\Portada.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Consultas\CartaItem.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Consultas\ConsultarStock.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Consultas\VerCarta.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Seguridad\ReporteVentas.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Seguridad\CambioPassword.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Seguridad\Login.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Temas\BubbleCreme.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Temas\BureauBlack.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Temas\BureauBlue.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Temas\ExpressionDark.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Temas\ExpressionLight.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Temas\ShinyBlue.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Temas\ShinyRed.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Temas\TwilightBlue.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Temas\WhistlerBlue.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Ventas\AbrirCaja.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Ventas\CerrarCaja.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Ventas\RegistrarConsumo.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="WinPrincipal.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WinPrincipal.xaml.cs">
+      <DependentUpon>WinPrincipal.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Administracion\AdministrarCategorias.xaml.cs">
+      <DependentUpon>AdministrarCategorias.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Administracion\AdministrarCliente.xaml.cs">
+      <DependentUpon>AdministrarCliente.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Administracion\AdministrarEmpleados.xaml.cs">
+      <DependentUpon>AdministrarEmpleados.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Administracion\AdministrarLocal.xaml.cs">
+      <DependentUpon>AdministrarLocal.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Administracion\AdministrarMenu.xaml.cs">
+      <DependentUpon>AdministrarMenu.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Administracion\AdministrarPerfil.xaml.cs">
+      <DependentUpon>AdministrarPerfil.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Administracion\AdministrarProducto.xaml.cs">
+      <DependentUpon>AdministrarProducto.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Administracion\AdministrarReservas.xaml.cs">
+      <DependentUpon>AdministrarReservas.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Administracion\AdministrarZona.xaml.cs">
+      <DependentUpon>AdministrarZona.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Administracion\DistribucionMesas.xaml.cs">
+      <DependentUpon>DistribucionMesas.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Administracion\MesaItem.xaml.cs">
+      <DependentUpon>MesaItem.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Atencion\ConfirmarPedidos.xaml.cs">
+      <DependentUpon>ConfirmarPedidos.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Ayuda\AcercaDe.xaml.cs">
+      <DependentUpon>AcercaDe.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Ayuda\LibroContraTapa.xaml.cs">
+      <DependentUpon>LibroContraTapa.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Ayuda\LibroPortada.xaml.cs">
+      <DependentUpon>LibroPortada.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Ayuda\LibroVisitas.xaml.cs">
+      <DependentUpon>LibroVisitas.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Ayuda\LibroVisitasItem.xaml.cs">
+      <DependentUpon>LibroVisitasItem.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Ayuda\Manual.xaml.cs">
+      <DependentUpon>Manual.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Ayuda\Portada.xaml.cs">
+      <DependentUpon>Portada.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ByteToImageConverter.cs" />
+    <Compile Include="Consultas\CartaItem.xaml.cs">
+      <DependentUpon>CartaItem.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Consultas\ConsultarStock.xaml.cs">
+      <DependentUpon>ConsultarStock.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Consultas\VerCarta.xaml.cs">
+      <DependentUpon>VerCarta.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Seguridad\ReporteVentas.xaml.cs">
+      <DependentUpon>ReporteVentas.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Seguridad\CambioPassword.xaml.cs">
+      <DependentUpon>CambioPassword.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Seguridad\Login.xaml.cs">
+      <DependentUpon>Login.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Validators.cs" />
+    <Compile Include="Ventas\AbrirCaja.xaml.cs">
+      <DependentUpon>AbrirCaja.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Ventas\CerrarCaja.xaml.cs">
+      <DependentUpon>CerrarCaja.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Ventas\RegistrarConsumo.xaml.cs">
+      <DependentUpon>RegistrarConsumo.xaml</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\app.manifest" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="SISAR.Desktop_TemporaryKey.pfx" />
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Imagenes\3floppy_mount.png" />
+    <Resource Include="Imagenes\burger-48x48x32b.png" />
+    <Resource Include="Imagenes\CambioPasword.png" />
+    <Resource Include="Imagenes\cart.png" />
+    <Resource Include="Imagenes\Categorias.png" />
+    <Resource Include="Imagenes\Clientes.png" />
+    <Resource Include="Imagenes\clientes2.png" />
+    <Resource Include="Imagenes\Dishes.png" />
+    <Resource Include="Imagenes\E-Cart.png" />
+    <Resource Include="Imagenes\Fecha.png" />
+    <Resource Include="Imagenes\file_broken.png" />
+    <Resource Include="Imagenes\Hora.png" />
+    <Resource Include="Imagenes\kchart.png" />
+    <Resource Include="Imagenes\krita_kra.png" />
+    <Resource Include="Imagenes\M-Cart.png" />
+    <Resource Include="Imagenes\Mesa2.png" />
+    <Resource Include="Imagenes\Mesa4.png" />
+    <Resource Include="Imagenes\Mesa8.png" />
+    <Resource Include="Imagenes\package.png" />
+    <Resource Include="Imagenes\pedidos.png" />
+    <Resource Include="Imagenes\personal.png" />
+    <Resource Include="Imagenes\Publisher_Icon_PNG2.png" />
+    <Resource Include="Imagenes\ReporteVentas.png" />
+    <Resource Include="Imagenes\source_moc.png" />
+    <Resource Include="Imagenes\Splash.png" />
+    <Resource Include="Imagenes\Symbol-Help.ico" />
+    <Resource Include="Imagenes\Symbol-Help.png" />
+    <Resource Include="Imagenes\tip.png" />
+    <Resource Include="Imagenes\txt.png" />
+    <Resource Include="Imagenes\vcard.png" />
+    <Resource Include="Imagenes\white.png" />
+    <Resource Include="Imagenes\zonas.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Imagenes\image0.png" />
+    <Resource Include="Imagenes\image01.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Imagenes\desktop-software-applications.jpg" />
+    <Resource Include="Imagenes\lawson_1l.jpg" />
+    <Resource Include="Imagenes\mobile-army-knife.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Imagenes\Notepad.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Imagenes\Doc.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Imagenes\Default printer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Imagenes\Recycle Bin Full.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Imagenes\1.png" />
+    <Resource Include="Imagenes\10.png" />
+    <Resource Include="Imagenes\2.png" />
+    <Resource Include="Imagenes\20.png" />
+    <Resource Include="Imagenes\5.png" />
+    <Resource Include="Imagenes\50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Imagenes\100soles.jpg" />
+    <Resource Include="Imagenes\10soles.JPG" />
+    <Resource Include="Imagenes\200soles.jpg" />
+    <Resource Include="Imagenes\20soles.jpg" />
+    <Resource Include="Imagenes\50soles.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Imagenes\AbrirCaja.png" />
+    <Resource Include="Imagenes\AtencionCaja.png" />
+    <Resource Include="Imagenes\CerrarCaja.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <SplashScreen Include="Imagenes\PortadaSISAR.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Imagenes\Cheff.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Imagenes\BlackTheme.png" />
+    <Resource Include="Imagenes\BureauTheme.png" />
+    <Resource Include="Imagenes\GrayTheme.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Imagenes\Cheff.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Imagenes\100dollar.jpg" />
+    <Resource Include="Imagenes\10dollar.jpg" />
+    <Resource Include="Imagenes\1dollar.jpg" />
+    <Resource Include="Imagenes\20dollar.jpg" />
+    <Resource Include="Imagenes\2dollar.jpg" />
+    <Resource Include="Imagenes\50dollar.jpg" />
+    <Resource Include="Imagenes\5dollar.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SISAR.Converters\SISAR.Converters.csproj">
+      <Project>{D21D48DD-843F-4C20-950A-5A6C1E3ADCE9}</Project>
+      <Name>SISAR.Converters</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SISAR.Entidades\SISAR.Entidades.csproj">
+      <Project>{346EA2B0-3DAD-445F-AF41-382D83B84AC9}</Project>
+      <Name>SISAR.Entidades</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SISAR.Logica\SISAR.Logica.csproj">
+      <Project>{967C2982-3942-4006-BA0D-68EE4AF23E0E}</Project>
+      <Name>SISAR.Logica</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SISAR.Validators\SISAR.Validators.csproj">
+      <Project>{54682A03-3054-4AD2-815B-C2E37DC0898C}</Project>
+      <Name>SISAR.Validators</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Imagenes\home.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Reportes\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,48 @@
+﻿<fluid:GlassWindow x:Class="SISAR.Desktop.Ayuda.AcercaDe"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:fluid="clr-namespace:FluidKit.Controls;assembly=FluidKit"
+    Title="AcercaDe" Height="300" Width="500" >
+    <Grid  Background="{DynamicResource ControlBackgroundBrush}">
+        <Button HorizontalAlignment="Right" 
+                Margin="0,0,12,12" 
+                Name="btnOK" 
+                VerticalAlignment="Bottom" 
+                Width="75" 
+                Content="OK"
+                Click="btnOK_Click"/>
+        <RichTextBox Margin="131,12,12,36" VerticalScrollBarVisibility="Visible" IsReadOnly="True">
+            <FlowDocument>
+                <Paragraph FontSize="14" TextAlignment="Center">
+                    <Bold>Sistema de Atención de Restaurant - SISAR</Bold>
+                </Paragraph>
+                <Paragraph TextAlignment="Center">
+                    <Italic>
+                        Taller de Proyectos 2009-2
+                    </Italic>
+                </Paragraph>
+                <Paragraph>
+                    <Italic>
+                        Integrantes:
+                    </Italic>
+                </Paragraph>
+                <Paragraph>
+
+                    <Italic>- Pablo</Italic>
+                    <LineBreak/>
+                    <Italic>- Marco Alberto Prado Carbonel</Italic>
+                    <LineBreak/>
+                    <Italic>- Juan Carlos Vega Neira</Italic>
+                    <LineBreak/>
+                    <Italic>- Jose Cortez Parra</Italic>
+                    <LineBreak/>
+                    <Italic>- Alberto</Italic>
+                    <LineBreak/>
+                </Paragraph>
+                <Paragraph TextAlignment="Center">
+                    <Italic>Universidad Ricardo Palma</Italic>
+                </Paragraph>
+            </FlowDocument>
+        </RichTextBox>
+    </Grid>
+</fluid:GlassWindow>

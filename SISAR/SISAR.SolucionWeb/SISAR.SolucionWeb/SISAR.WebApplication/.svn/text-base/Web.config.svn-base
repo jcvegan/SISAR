@@ -1,0 +1,231 @@
+<?xml version="1.0"?><configuration>
+	<configSections>
+		<sectionGroup name="system.web.extensions" type="System.Web.Configuration.SystemWebExtensionsSectionGroup, System.Web.Extensions, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31BF3856AD364E35">
+			<sectionGroup name="scripting" type="System.Web.Configuration.ScriptingSectionGroup, System.Web.Extensions, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31BF3856AD364E35">
+				<section name="scriptResourceHandler" type="System.Web.Configuration.ScriptingScriptResourceHandlerSection, System.Web.Extensions, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31BF3856AD364E35" requirePermission="false" allowDefinition="MachineToApplication"/>
+				<sectionGroup name="webServices" type="System.Web.Configuration.ScriptingWebServicesSectionGroup, System.Web.Extensions, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31BF3856AD364E35">
+					<section name="jsonSerialization" type="System.Web.Configuration.ScriptingJsonSerializationSection, System.Web.Extensions, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31BF3856AD364E35" requirePermission="false" allowDefinition="Everywhere"/>
+					<section name="profileService" type="System.Web.Configuration.ScriptingProfileServiceSection, System.Web.Extensions, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31BF3856AD364E35" requirePermission="false" allowDefinition="MachineToApplication"/>
+					<section name="authenticationService" type="System.Web.Configuration.ScriptingAuthenticationServiceSection, System.Web.Extensions, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31BF3856AD364E35" requirePermission="false" allowDefinition="MachineToApplication"/>
+					<section name="roleService" type="System.Web.Configuration.ScriptingRoleServiceSection, System.Web.Extensions, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31BF3856AD364E35" requirePermission="false" allowDefinition="MachineToApplication"/>
+				</sectionGroup>
+			</sectionGroup>
+		</sectionGroup>
+	 <sectionGroup name="applicationSettings" type="System.Configuration.ApplicationSettingsGroup, System, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+   <section name="SISAR.WebApplication.Properties.Settings" type="System.Configuration.ClientSettingsSection, System, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" requirePermission="false"/>
+  </sectionGroup>
+ </configSections>
+	<appSettings/>
+	<connectionStrings/>
+	<system.web>
+		<!-- 
+            Establezca debug="true" en la compilación para insertar símbolos 
+            de depuración en la página compilada. Dado que este 
+            proceso afecta al rendimiento, debe establecer este valor como true 
+            durante la depuración.
+        -->
+		<compilation debug="true">
+   <assemblies>
+    <add assembly="System.Core, Version=3.5.0.0, Culture=neutral, PublicKeyToken=B77A5C561934E089" />
+    <add assembly="System.Data.DataSetExtensions, Version=3.5.0.0, Culture=neutral, PublicKeyToken=B77A5C561934E089" />
+    <add assembly="System.Web.Extensions, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31BF3856AD364E35" />
+    <add assembly="System.Xml.Linq, Version=3.5.0.0, Culture=neutral, PublicKeyToken=B77A5C561934E089" />
+    <add assembly="Microsoft.ReportViewer.WebForms, Version=9.0.0.0, Culture=neutral, PublicKeyToken=B03F5F7F11D50A3A" />
+    <add assembly="Microsoft.ReportViewer.Common, Version=9.0.0.0, Culture=neutral, PublicKeyToken=B03F5F7F11D50A3A" />
+   </assemblies>
+   <buildProviders>
+    <add extension=".rdlc" type="Microsoft.Reporting.RdlBuildProvider, Microsoft.ReportViewer.Common, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+   </buildProviders>
+  </compilation>
+		<!--
+            La sección <authentication> habilita la configuración
+            del modo de autenticación de seguridad utilizado por 
+            ASP.NET para identificar a un usuario entrante. 
+        -->
+		<authentication mode="Windows"/>
+		<!--
+            La sección <customErrors> habilita la configuración de 
+            las acciones que se deben realizar si un error no controlado tiene lugar
+            durante la ejecución de una solicitud. Específicamente, 
+            permite a los desarrolladores configurar páginas de error html 
+            que se mostrarán en lugar de un seguimiento de pila de errores.
+
+        <customErrors mode="RemoteOnly" defaultRedirect="GenericErrorPage.htm">
+            <error statusCode="403" redirect="NoAccess.htm" />
+            <error statusCode="404" redirect="FileNotFound.htm" />
+        </customErrors>
+        -->
+		<pages>
+			<controls>
+				<add tagPrefix="asp" namespace="System.Web.UI" assembly="System.Web.Extensions, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31BF3856AD364E35"/>
+				<add tagPrefix="asp" namespace="System.Web.UI.WebControls" assembly="System.Web.Extensions, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31BF3856AD364E35"/>
+			</controls>
+		</pages>
+		<httpHandlers>
+   <remove path="*.asmx" verb="*" />
+   <add path="*.asmx" verb="*" type="System.Web.Script.Services.ScriptHandlerFactory, System.Web.Extensions, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31BF3856AD364E35"
+    validate="false" />
+   <add path="*_AppService.axd" verb="*" type="System.Web.Script.Services.ScriptHandlerFactory, System.Web.Extensions, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31BF3856AD364E35"
+    validate="false" />
+   <add path="ScriptResource.axd" verb="GET,HEAD" type="System.Web.Handlers.ScriptResourceHandler, System.Web.Extensions, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31BF3856AD364E35"
+    validate="false" />
+   <add path="Reserved.ReportViewerWebControl.axd" verb="*" type="Microsoft.Reporting.WebForms.HttpHandler, Microsoft.ReportViewer.WebForms, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"
+    validate="false" />
+  </httpHandlers>
+		<httpModules>
+			<add name="ScriptModule" type="System.Web.Handlers.ScriptModule, System.Web.Extensions, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31BF3856AD364E35"/>
+		</httpModules>
+	</system.web>
+	<system.codedom>
+		<compilers>
+			<compiler language="c#;cs;csharp" extension=".cs" warningLevel="4" type="Microsoft.CSharp.CSharpCodeProvider, System, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+				<providerOption name="CompilerVersion" value="v3.5"/>
+				<providerOption name="WarnAsError" value="false"/>
+			</compiler>
+		</compilers>
+	</system.codedom>
+	<!-- 
+        La sección system.webServer es necesaria para ejecutar ASPN.NET AJAX en Internet
+        Information Services 7.0. No es necesaria para la versión anterior de IIS.
+    -->
+	<system.webServer>
+		<validation validateIntegratedModeConfiguration="false"/>
+		<modules>
+			<remove name="ScriptModule"/>
+			<add name="ScriptModule" preCondition="managedHandler" type="System.Web.Handlers.ScriptModule, System.Web.Extensions, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31BF3856AD364E35"/>
+		</modules>
+		<handlers>
+			<remove name="WebServiceHandlerFactory-Integrated"/>
+			<remove name="ScriptHandlerFactory"/>
+			<remove name="ScriptHandlerFactoryAppServices"/>
+			<remove name="ScriptResource"/>
+			<add name="ScriptHandlerFactory" verb="*" path="*.asmx" preCondition="integratedMode" type="System.Web.Script.Services.ScriptHandlerFactory, System.Web.Extensions, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31BF3856AD364E35"/>
+			<add name="ScriptHandlerFactoryAppServices" verb="*" path="*_AppService.axd" preCondition="integratedMode" type="System.Web.Script.Services.ScriptHandlerFactory, System.Web.Extensions, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31BF3856AD364E35"/>
+			<add name="ScriptResource" preCondition="integratedMode" verb="GET,HEAD" path="ScriptResource.axd" type="System.Web.Handlers.ScriptResourceHandler, System.Web.Extensions, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31BF3856AD364E35"/>
+		</handlers>
+	</system.webServer>
+	<runtime>
+		<assemblyBinding xmlns="urn:schemas-microsoft-com:asm.v1">
+			<dependentAssembly>
+				<assemblyIdentity name="System.Web.Extensions" publicKeyToken="31bf3856ad364e35"/>
+				<bindingRedirect oldVersion="1.0.0.0-1.1.0.0" newVersion="3.5.0.0"/>
+			</dependentAssembly>
+			<dependentAssembly>
+				<assemblyIdentity name="System.Web.Extensions.Design" publicKeyToken="31bf3856ad364e35"/>
+				<bindingRedirect oldVersion="1.0.0.0-1.1.0.0" newVersion="3.5.0.0"/>
+			</dependentAssembly>
+		</assemblyBinding>
+	</runtime>
+ <system.serviceModel>
+  <behaviors>
+   <serviceBehaviors>
+    <behavior name="SISAR.WebApplication.UserServiceBehavior">
+     <serviceMetadata httpGetEnabled="true" />
+     <serviceDebug includeExceptionDetailInFaults="false" />
+    </behavior>
+    <behavior name="SISAR.WebApplication.UsuarioServiceBehavior">
+     <serviceMetadata httpGetEnabled="true" />
+     <serviceDebug includeExceptionDetailInFaults="false" />
+    </behavior>
+    <behavior name="SISAR.WebApplication.ReservaServiceBehavior">
+     <serviceMetadata httpGetEnabled="true" />
+     <serviceDebug includeExceptionDetailInFaults="false" />
+    </behavior>
+    <behavior name="SISAR.WebApplication.LocalServiceBehavior">
+     <serviceMetadata httpGetEnabled="true" />
+     <serviceDebug includeExceptionDetailInFaults="false" />
+    </behavior>
+    <behavior name="SISAR.WebApplication.MailServiceBehavior">
+     <serviceMetadata httpGetEnabled="true" />
+     <serviceDebug includeExceptionDetailInFaults="false" />
+    </behavior>
+   </serviceBehaviors>
+  </behaviors>
+  <bindings>
+   <customBinding>
+    <binding name="customBinding0">
+     <binaryMessageEncoding />
+     <httpTransport>
+      <extendedProtectionPolicy policyEnforcement="Never" />
+     </httpTransport>
+    </binding>
+    <binding name="customBinding1">
+     <binaryMessageEncoding />
+     <httpTransport>
+      <extendedProtectionPolicy policyEnforcement="Never" />
+     </httpTransport>
+    </binding>
+    <binding name="customBinding2">
+     <binaryMessageEncoding />
+     <httpTransport>
+      <extendedProtectionPolicy policyEnforcement="Never" />
+     </httpTransport>
+    </binding>
+    <binding name="customBinding3">
+     <binaryMessageEncoding />
+     <httpTransport>
+      <extendedProtectionPolicy policyEnforcement="Never" />
+     </httpTransport>
+    </binding>
+    <binding name="customBinding4">
+     <binaryMessageEncoding />
+     <httpTransport>
+      <extendedProtectionPolicy policyEnforcement="Never" />
+     </httpTransport>
+    </binding>
+   </customBinding>
+  </bindings>
+  <serviceHostingEnvironment aspNetCompatibilityEnabled="true" />
+  <services>
+   <service behaviorConfiguration="SISAR.WebApplication.UserServiceBehavior"
+    name="SISAR.WebApplication.UserService">
+    <endpoint address="" binding="customBinding" bindingConfiguration="customBinding0"
+     contract="SISAR.WebApplication.UserService" />
+    <endpoint address="mex" binding="mexHttpBinding" contract="IMetadataExchange" />
+   </service>
+   <service behaviorConfiguration="SISAR.WebApplication.UsuarioServiceBehavior"
+    name="SISAR.WebApplication.UsuarioService">
+    <endpoint address="" binding="customBinding" bindingConfiguration="customBinding1"
+     contract="SISAR.WebApplication.UsuarioService" />
+    <endpoint address="mex" binding="mexHttpBinding" contract="IMetadataExchange" />
+   </service>
+   <service behaviorConfiguration="SISAR.WebApplication.ReservaServiceBehavior"
+    name="SISAR.WebApplication.ReservaService">
+    <endpoint address="" binding="customBinding" bindingConfiguration="customBinding2"
+     contract="SISAR.WebApplication.ReservaService" />
+    <endpoint address="mex" binding="mexHttpBinding" contract="IMetadataExchange" />
+   </service>
+   <service behaviorConfiguration="SISAR.WebApplication.LocalServiceBehavior"
+    name="SISAR.WebApplication.LocalService">
+    <endpoint address="" binding="customBinding" bindingConfiguration="customBinding3"
+     contract="SISAR.WebApplication.LocalService" />
+    <endpoint address="mex" binding="mexHttpBinding" contract="IMetadataExchange" />
+   </service>
+   <service behaviorConfiguration="SISAR.WebApplication.MailServiceBehavior"
+    name="SISAR.WebApplication.MailService">
+    <endpoint address="" binding="customBinding" bindingConfiguration="customBinding4"
+     contract="SISAR.WebApplication.MailService" />
+    <endpoint address="mex" binding="mexHttpBinding" contract="IMetadataExchange" />
+   </service>
+  </services>
+ </system.serviceModel>
+ <applicationSettings>
+  <SISAR.WebApplication.Properties.Settings>
+   <setting name="SISAR_WebApplication_UserReference_SW_Usuario"
+    serializeAs="String">
+    <value>http://localhost:49539/SISAR.WebService/SW_Usuario.asmx</value>
+   </setting>
+   <setting name="SISAR_WebApplication_ReserveReference_SW_Reserva"
+    serializeAs="String">
+    <value>http://localhost:49539/SISAR.WebService/SW_Reserva.asmx</value>
+   </setting>
+   <setting name="SISAR_WebApplication_LocalReference_SW_Local"
+    serializeAs="String">
+    <value>http://localhost:49539/SISAR.WebService/SW_Local.asmx</value>
+   </setting>
+   <setting name="SISAR_WebApplication_MailReference_SendMail" serializeAs="String">
+    <value>http://localhost:49539/SISAR.WebService/SendMail.asmx</value>
+   </setting>
+  </SISAR.WebApplication.Properties.Settings>
+ </applicationSettings>
+</configuration>

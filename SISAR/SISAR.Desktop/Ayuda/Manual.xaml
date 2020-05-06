@@ -1,0 +1,155 @@
+﻿<UserControl x:Class="SISAR.Desktop.Ayuda.Manual"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    >
+    <Grid>
+        <FlowDocumentReader IsScrollViewEnabled="True" Background="{DynamicResource ControlBackgroundBrush}">
+            <FlowDocument Name="Documento">
+                <Paragraph TextAlignment="Center" FontSize="30">
+                    <Bold>SISAR - Sistema de Atencion de Restaurant</Bold>
+                </Paragraph>
+                <Paragraph>
+                    Sistema desarrollado durante el semestre académico 2009-II en la Universidad Ricardo Palma para el 
+                    curso de Taller de Proyectos.
+                </Paragraph>
+                <Paragraph>
+                    Los intregrantes del equipo de proyecto son:
+                </Paragraph>
+                <List>
+                    <ListItem>
+                        <Paragraph>
+                            Pablo Hidrogo Scipion - Jefe de Proyecto
+                        </Paragraph>
+                    </ListItem>
+                    <ListItem>
+                        <Paragraph>
+                            Marco Alberto Prado Carbonel - Arquitecto de Software
+                        </Paragraph>
+                    </ListItem>
+                    <ListItem>
+                        <Paragraph>
+                            Juan Carlos Vega Neira - Diseñador de Software y de Interfaces
+                        </Paragraph>
+                    </ListItem>
+                    <ListItem>
+                        <Paragraph>
+                            Jose Sergio Cortez Parra - Analista y desarrollador
+                        </Paragraph>
+                    </ListItem>
+                    <ListItem>
+                        <Paragraph>
+                            Alberto Machado - Desarrollador y documentador
+                        </Paragraph>
+                    </ListItem>
+                </List>
+                <Paragraph>
+                    El sistema SISAR
+                    <Italic>(la solución)</Italic> 
+                    consite en una solución informática, la cual facilita el proceso de la
+                    atención de los clientes por parte del restaurant
+                    <Italic>(la empresa)</Italic>.
+                    Esta solución es posible gracias a los tres modulos integrados que esta trae consigo.
+                </Paragraph>
+                <List>
+                    <ListItem>
+                        <Paragraph FontWeight="Bold">
+                            Aplicación de Escritorio - 
+                            <Italic>Desktop</Italic>
+                        </Paragraph>
+                    </ListItem>
+                    <ListItem>
+                        <Paragraph FontWeight="Bold">
+                            Aplicación Web -
+                            <Italic>Web</Italic>
+                        </Paragraph>
+                    </ListItem>
+                    <ListItem>
+                        <Paragraph FontWeight="Bold">
+                            Aplicación Móvil -
+                            <Italic>Mobile</Italic>
+                        </Paragraph>
+                    </ListItem>
+                </List>
+                <List>
+                    <ListItem>
+                        <Paragraph>
+                            <Bold>
+                                <Italic>
+                                    Desktop
+                                </Italic>
+                            </Bold>
+                            .-Sistema que está alojado en la computadora del usuario.
+                            Esta parte de la solución está orientada a resolver y facilitar los procesos
+                            básicamente del Administrador y del Cajero, mediante un entorno amigable y bastante gráfico
+                            pensado para ambientes donde el tiempo que se requiere para dar respuestas es bastante corto.
+                            <Floater HorizontalAlignment="Left" Width="180">
+                                <BlockUIContainer>
+                                    <Image Source="Imagenes\lawson_1l.jpg" Width="240" HorizontalAlignment="Center"/>
+                                </BlockUIContainer>
+                                <Paragraph FontFamily="TimesNewRoman" FontSize="12" TextAlignment="Center"> 
+                                    Aplicación de entorno Windows
+                                </Paragraph>
+                            </Floater>
+                            Para ello se estableció que el software funciona tanto para una computadora normal como en un entorno
+                            de pantalla táctil.
+                            Dentro de los procesos que este entorno permite acceder al usuario tenemos los siguientes:
+                        </Paragraph>
+                        <List>
+                            <ListItem>
+                                <Paragraph>
+                                    <Italic>Administrar Perfiles
+                                    </Italic> 
+                                </Paragraph>
+                            </ListItem>
+                            <ListItem>
+                                <Paragraph>
+                                    <Italic>Administrar Permisos
+                                    </Italic>
+                                </Paragraph>
+                            </ListItem>
+                            <ListItem>
+                                <Paragraph>
+                                    <Italic>Administrar Reservas
+                                    </Italic>
+                                </Paragraph>
+                            </ListItem>
+                            <ListItem>
+                                <Paragraph>
+                                    <Italic>Administrar Empleados
+                                    </Italic>
+                                </Paragraph>
+                            </ListItem>
+                        </List>
+                        <Paragraph/>
+                    </ListItem>
+                    <ListItem>
+                        <Paragraph>
+                            <Bold>
+                                <Italic>
+                                    Web .- 
+                                </Italic>
+                            </Bold>
+                            Parte del sistema que está alojado en un servidor. Esta aplicación web muestra un contenido
+                            informativo para los que quieran conocer algo más sobre la empresa. Entre otras cosas, la aplicación
+                            web tiene contenido informativo (de la empresa), además de interactuar con los clientes de esta,
+                            permitiendoles hacer reservaciones para los distintos establecimientos.
+                            <Floater Width="120" HorizontalAlignment="Left">
+                                <BlockUIContainer>
+                                    <Image Source="Imagenes\desktop-software-applications.jpg"/>
+                                </BlockUIContainer>
+                                <Paragraph FontFamily="TimesNewRoman" FontSize="12" TextAlignment="Center">
+                                    Aplicación de entorno Web
+                                </Paragraph>
+                            </Floater>
+                            <LineBreak/>
+                            Esta aplicación web facilita la administración de las reservas derivando
+                            estas a la administración de cada local. De esta forma cada local estará al tanto
+                            de las reservas que tiene según los días programados y según los clientes de la
+                            empresa.
+                        </Paragraph>
+                    </ListItem>
+                </List>
+            </FlowDocument>
+        </FlowDocumentReader>
+    </Grid>
+</UserControl>

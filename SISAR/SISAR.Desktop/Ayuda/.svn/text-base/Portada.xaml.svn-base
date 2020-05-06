@@ -1,0 +1,23 @@
+﻿<UserControl
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+	mc:Ignorable="d"
+	x:Class="SISAR.Desktop.Portada"
+	x:Name="UserControl"
+	d:DesignWidth="640" d:DesignHeight="480" Width="430" Height="600">
+
+	<Grid x:Name="LayoutRoot">
+		<Rectangle Stretch="Fill" StrokeThickness="2" StrokeLineJoin="Round" Stroke="#FF000000" Width="430" Height="600">
+			<Rectangle.Fill>
+				<ImageBrush Stretch="None" Viewport="0,0,128,128" ImageSource="image01.png" TileMode="Tile" ViewportUnits="Absolute">
+					<ImageBrush.Transform>
+						<MatrixTransform Matrix="1.33364,0,0,1.33364,-800,600"/>
+					</ImageBrush.Transform>
+				</ImageBrush>
+			</Rectangle.Fill>
+		</Rectangle>
+		<TextBlock Margin="66,192,70,204" Text="Libro de Visitas" TextWrapping="Wrap" FontFamily="Vivaldi" FontSize="80" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="#FFFFF1A6"/>
+	</Grid>
+</UserControl>

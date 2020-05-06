@@ -1,0 +1,446 @@
+﻿<Project DefaultTargets="Build" ToolsVersion="3.5" InitialTargets="ValidateSolutionConfiguration;ValidateToolsVersions" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <_SolutionProjectConfiguration>Debug|Any CPU</_SolutionProjectConfiguration>
+    <_SolutionProjectToolsVersion>3.5</_SolutionProjectToolsVersion>
+    <_SolutionProjectCacheVersion>3.5</_SolutionProjectCacheVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <_SolutionProjectProjects Include="..\..\SISAR.Acceso\SISAR.Acceso.csproj" />
+    <_SolutionProjectProjects Include="..\..\SISAR.Entidades\SISAR.Entidades.csproj" />
+    <_SolutionProjectProjects Include="..\..\SISAR.Logica\SISAR.Logica.csproj" />
+    <_SolutionProjectProjects Include="SISAR.WebApplication\SISAR.WebApplication.csproj" />
+    <_SolutionProjectProjects Include="SISAR.Web\SISAR.Web.csproj" />
+  </ItemGroup>
+  <ItemGroup Condition=" ('$(Configuration)' == 'Debug') and ('$(Platform)' == 'Any CPU') ">
+    <BuildLevel3 Include="SISAR.Web\SISAR.Web.csproj">
+      <Configuration>Debug</Configuration>
+      <Platform>AnyCPU</Platform>
+    </BuildLevel3>
+    <BuildLevel0 Include="..\..\SISAR.Entidades\SISAR.Entidades.csproj">
+      <Configuration>Debug</Configuration>
+      <Platform>AnyCPU</Platform>
+    </BuildLevel0>
+    <BuildLevel0 Include="SISAR.WebApplication\SISAR.WebApplication.csproj">
+      <Configuration>Debug</Configuration>
+      <Platform>AnyCPU</Platform>
+    </BuildLevel0>
+    <BuildLevel1 Include="..\..\SISAR.Acceso\SISAR.Acceso.csproj">
+      <Configuration>Debug</Configuration>
+      <Platform>AnyCPU</Platform>
+    </BuildLevel1>
+    <BuildLevel1 Include="..\..\SISAR.Logica\SISAR.Logica.csproj">
+      <Configuration>Debug</Configuration>
+      <Platform>AnyCPU</Platform>
+    </BuildLevel1>
+  </ItemGroup>
+  <ItemGroup Condition=" ('$(Configuration)' == 'Release') and ('$(Platform)' == 'Any CPU') ">
+    <BuildLevel3 Include="SISAR.Web\SISAR.Web.csproj">
+      <Configuration>Release</Configuration>
+      <Platform>AnyCPU</Platform>
+    </BuildLevel3>
+    <BuildLevel0 Include="..\..\SISAR.Entidades\SISAR.Entidades.csproj">
+      <Configuration>Release</Configuration>
+      <Platform>AnyCPU</Platform>
+    </BuildLevel0>
+    <BuildLevel0 Include="SISAR.WebApplication\SISAR.WebApplication.csproj">
+      <Configuration>Release</Configuration>
+      <Platform>AnyCPU</Platform>
+    </BuildLevel0>
+    <BuildLevel1 Include="..\..\SISAR.Acceso\SISAR.Acceso.csproj">
+      <Configuration>Release</Configuration>
+      <Platform>AnyCPU</Platform>
+    </BuildLevel1>
+    <BuildLevel1 Include="..\..\SISAR.Logica\SISAR.Logica.csproj">
+      <Configuration>Release</Configuration>
+      <Platform>AnyCPU</Platform>
+    </BuildLevel1>
+  </ItemGroup>
+  <UsingTask TaskName="Microsoft.Build.Tasks.CreateTemporaryVCProject" AssemblyName="Microsoft.Build.Tasks.v3.5, Version=3.5.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <UsingTask TaskName="Microsoft.Build.Tasks.ResolveVCProjectOutput" AssemblyName="Microsoft.Build.Tasks.v3.5, Version=3.5.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <PropertyGroup Condition=" '$(Configuration)' == '' ">
+    <Configuration>Debug</Configuration>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == '' ">
+    <Platform>Any CPU</Platform>
+  </PropertyGroup>
+  <PropertyGroup Condition=" ('$(AspNetConfiguration)' == '') ">
+    <AspNetConfiguration>$(Configuration)</AspNetConfiguration>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SolutionDir>C:\Users\Alberto\Desktop\SISAR 2009 2\SISAR\SISAR.SolucionWeb\SISAR.SolucionWeb\</SolutionDir>
+    <SolutionExt>.sln</SolutionExt>
+    <SolutionFileName>SISAR.SolucionWeb.sln</SolutionFileName>
+    <SolutionName>SISAR.SolucionWeb</SolutionName>
+    <SolutionPath>C:\Users\Alberto\Desktop\SISAR 2009 2\SISAR\SISAR.SolucionWeb\SISAR.SolucionWeb\SISAR.SolucionWeb.sln</SolutionPath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetFrameworkVersion Condition="'$(TargetFrameworkVersion)' == '' and '$(MSBuildToolsVersion)' == '2.0'">v2.0</TargetFrameworkVersion>
+    <TargetFrameworkVersion Condition="'$(TargetFrameworkVersion)' == '' and '$(MSBuildToolsVersion)' != '2.0'">v3.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" ('$(Configuration)' == 'Debug') and ('$(Platform)' == 'Any CPU') ">
+    <CurrentSolutionConfigurationContents>
+      <SolutionConfiguration xmlns="">
+        <ProjectConfiguration Project="{FB729F02-B7F7-4AAD-860B-A9D5C6661110}">Debug|AnyCPU</ProjectConfiguration>
+        <ProjectConfiguration Project="{32E3805E-5B53-4A3A-9946-D9A601DC8FB2}">Debug|AnyCPU</ProjectConfiguration>
+        <ProjectConfiguration Project="{1F6EA603-6F09-4440-A1DD-F40A385F7629}">Debug|AnyCPU</ProjectConfiguration>
+        <ProjectConfiguration Project="{AD1CBA8F-E583-47D6-93FF-B06410C4E688}">Debug|AnyCPU</ProjectConfiguration>
+        <ProjectConfiguration Project="{967C2982-3942-4006-BA0D-68EE4AF23E0E}">Debug|AnyCPU</ProjectConfiguration>
+        <ProjectConfiguration Project="{346EA2B0-3DAD-445F-AF41-382D83B84AC9}">Debug|AnyCPU</ProjectConfiguration>
+      </SolutionConfiguration>
+    </CurrentSolutionConfigurationContents>
+  </PropertyGroup>
+  <PropertyGroup Condition=" ('$(Configuration)' == 'Release') and ('$(Platform)' == 'Any CPU') ">
+    <CurrentSolutionConfigurationContents>
+      <SolutionConfiguration xmlns="">
+        <ProjectConfiguration Project="{FB729F02-B7F7-4AAD-860B-A9D5C6661110}">Release|AnyCPU</ProjectConfiguration>
+        <ProjectConfiguration Project="{32E3805E-5B53-4A3A-9946-D9A601DC8FB2}">Release|AnyCPU</ProjectConfiguration>
+        <ProjectConfiguration Project="{1F6EA603-6F09-4440-A1DD-F40A385F7629}">Debug|AnyCPU</ProjectConfiguration>
+        <ProjectConfiguration Project="{AD1CBA8F-E583-47D6-93FF-B06410C4E688}">Release|AnyCPU</ProjectConfiguration>
+        <ProjectConfiguration Project="{967C2982-3942-4006-BA0D-68EE4AF23E0E}">Release|AnyCPU</ProjectConfiguration>
+        <ProjectConfiguration Project="{346EA2B0-3DAD-445F-AF41-382D83B84AC9}">Release|AnyCPU</ProjectConfiguration>
+      </SolutionConfiguration>
+    </CurrentSolutionConfigurationContents>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(AspNetConfiguration)' == 'Debug' ">
+    <Project_1F6EA603-6F09-4440-A1DD-F40A385F7629_AspNetVirtualPath>/SISAR.WebService</Project_1F6EA603-6F09-4440-A1DD-F40A385F7629_AspNetVirtualPath>
+    <Project_1F6EA603-6F09-4440-A1DD-F40A385F7629_AspNetPhysicalPath>..\..\SISAR.WebService\</Project_1F6EA603-6F09-4440-A1DD-F40A385F7629_AspNetPhysicalPath>
+    <Project_1F6EA603-6F09-4440-A1DD-F40A385F7629_AspNetTargetPath>PrecompiledWeb\SISAR.WebService\</Project_1F6EA603-6F09-4440-A1DD-F40A385F7629_AspNetTargetPath>
+    <Project_1F6EA603-6F09-4440-A1DD-F40A385F7629_AspNetForce>true</Project_1F6EA603-6F09-4440-A1DD-F40A385F7629_AspNetForce>
+    <Project_1F6EA603-6F09-4440-A1DD-F40A385F7629_AspNetUpdateable>true</Project_1F6EA603-6F09-4440-A1DD-F40A385F7629_AspNetUpdateable>
+    <Project_1F6EA603-6F09-4440-A1DD-F40A385F7629_AspNetDebug>True</Project_1F6EA603-6F09-4440-A1DD-F40A385F7629_AspNetDebug>
+    <Project_1F6EA603-6F09-4440-A1DD-F40A385F7629_AspNetKeyFile>
+    </Project_1F6EA603-6F09-4440-A1DD-F40A385F7629_AspNetKeyFile>
+    <Project_1F6EA603-6F09-4440-A1DD-F40A385F7629_AspNetKeyContainer>
+    </Project_1F6EA603-6F09-4440-A1DD-F40A385F7629_AspNetKeyContainer>
+    <Project_1F6EA603-6F09-4440-A1DD-F40A385F7629_AspNetDelaySign>
+    </Project_1F6EA603-6F09-4440-A1DD-F40A385F7629_AspNetDelaySign>
+    <Project_1F6EA603-6F09-4440-A1DD-F40A385F7629_AspNetAPTCA>
+    </Project_1F6EA603-6F09-4440-A1DD-F40A385F7629_AspNetAPTCA>
+    <Project_1F6EA603-6F09-4440-A1DD-F40A385F7629_AspNetFixedNames>false</Project_1F6EA603-6F09-4440-A1DD-F40A385F7629_AspNetFixedNames>
+    <Project_1F6EA603-6F09-4440-A1DD-F40A385F7629_AspNetTargetPath Condition=" '$(OutDir)' != '' ">$(OutDir)_PublishedWebsites\SISAR.WebService\</Project_1F6EA603-6F09-4440-A1DD-F40A385F7629_AspNetTargetPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(AspNetConfiguration)' == 'Release' ">
+    <Project_1F6EA603-6F09-4440-A1DD-F40A385F7629_AspNetVirtualPath>/SISAR.WebService</Project_1F6EA603-6F09-4440-A1DD-F40A385F7629_AspNetVirtualPath>
+    <Project_1F6EA603-6F09-4440-A1DD-F40A385F7629_AspNetPhysicalPath>..\..\SISAR.WebService\</Project_1F6EA603-6F09-4440-A1DD-F40A385F7629_AspNetPhysicalPath>
+    <Project_1F6EA603-6F09-4440-A1DD-F40A385F7629_AspNetTargetPath>PrecompiledWeb\SISAR.WebService\</Project_1F6EA603-6F09-4440-A1DD-F40A385F7629_AspNetTargetPath>
+    <Project_1F6EA603-6F09-4440-A1DD-F40A385F7629_AspNetForce>true</Project_1F6EA603-6F09-4440-A1DD-F40A385F7629_AspNetForce>
+    <Project_1F6EA603-6F09-4440-A1DD-F40A385F7629_AspNetUpdateable>true</Project_1F6EA603-6F09-4440-A1DD-F40A385F7629_AspNetUpdateable>
+    <Project_1F6EA603-6F09-4440-A1DD-F40A385F7629_AspNetDebug>False</Project_1F6EA603-6F09-4440-A1DD-F40A385F7629_AspNetDebug>
+    <Project_1F6EA603-6F09-4440-A1DD-F40A385F7629_AspNetKeyFile>
+    </Project_1F6EA603-6F09-4440-A1DD-F40A385F7629_AspNetKeyFile>
+    <Project_1F6EA603-6F09-4440-A1DD-F40A385F7629_AspNetKeyContainer>
+    </Project_1F6EA603-6F09-4440-A1DD-F40A385F7629_AspNetKeyContainer>
+    <Project_1F6EA603-6F09-4440-A1DD-F40A385F7629_AspNetDelaySign>
+    </Project_1F6EA603-6F09-4440-A1DD-F40A385F7629_AspNetDelaySign>
+    <Project_1F6EA603-6F09-4440-A1DD-F40A385F7629_AspNetAPTCA>
+    </Project_1F6EA603-6F09-4440-A1DD-F40A385F7629_AspNetAPTCA>
+    <Project_1F6EA603-6F09-4440-A1DD-F40A385F7629_AspNetFixedNames>false</Project_1F6EA603-6F09-4440-A1DD-F40A385F7629_AspNetFixedNames>
+    <Project_1F6EA603-6F09-4440-A1DD-F40A385F7629_AspNetTargetPath Condition=" '$(OutDir)' != '' ">$(OutDir)_PublishedWebsites\SISAR.WebService\</Project_1F6EA603-6F09-4440-A1DD-F40A385F7629_AspNetTargetPath>
+  </PropertyGroup>
+  <Target Name="ValidateSolutionConfiguration">
+    <Error Text="La configuración de soluciones especificada &quot;$(Configuration)|$(Platform)&quot; no es válida. Especifique una configuración de soluciones válida con las propiedades Configuration y Platform (p. ej., MSBuild.exe Solution.sln /p:Configuration=Debug /p:Platform=&quot;Any CPU&quot;) o deje esas propiedades en blanco para utilizar la configuración de soluciones predeterminada." Code="MSB4126" HelpKeyword="MSBuild.SolutionInvalidSolutionConfiguration" Condition="('$(CurrentSolutionConfigurationContents)' == '') and ('$(SkipInvalidConfigurations)' != 'true')" />
+    <Warning Text="La configuración de soluciones especificada &quot;$(Configuration)|$(Platform)&quot; no es válida. Especifique una configuración de soluciones válida con las propiedades Configuration y Platform (p. ej., MSBuild.exe Solution.sln /p:Configuration=Debug /p:Platform=&quot;Any CPU&quot;) o deje esas propiedades en blanco para utilizar la configuración de soluciones predeterminada." Code="MSB4126" HelpKeyword="MSBuild.SolutionInvalidSolutionConfiguration" Condition="('$(CurrentSolutionConfigurationContents)' == '') and ('$(SkipInvalidConfigurations)' == 'true')" />
+    <Message Text="Generando la configuración de soluciones &quot;$(Configuration)|$(Platform)&quot;." Condition="'$(CurrentSolutionConfigurationContents)' != ''" />
+  </Target>
+  <Target Name="ValidateToolsVersions">
+    <Error Text="La versión de herramientas &quot;$(MSBuildToolsVersion)&quot; de la solución no permite generar proyectos con una versión de herramientas diferente." Code="MSB4149" HelpKeyword="MSBuild.SolutionToolsVersionDoesNotSupportProjectToolsVersion" Condition="'$(MSBuildToolsVersion)' == '2.0' and ('$(ProjectToolsVersion)' != '2.0' and '$(ProjectToolsVersion)' != '')" />
+  </Target>
+  <Target Name="Capa de Presentacion\SISAR_Web" DependsOnTargets="SISAR_WebService;Capa de Presentacion\SISAR_WebApplication" Condition="'$(CurrentSolutionConfigurationContents)' != ''" Outputs="@(SISAR_WebBuildOutput)">
+    <MSBuild Projects="SISAR.Web\SISAR.Web.csproj" Properties="Configuration=Debug; Platform=AnyCPU; BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)" ToolsVersion="$(ProjectToolsVersion)" UnloadProjectsOnCompletion="$(UnloadProjectsOnCompletion)" UseResultsCache="$(UseResultsCache)" Condition=" ('$(Configuration)' == 'Debug') and ('$(Platform)' == 'Any CPU') ">
+      <Output TaskParameter="TargetOutputs" ItemName="SISAR_WebBuildOutput" />
+    </MSBuild>
+    <MSBuild Projects="SISAR.Web\SISAR.Web.csproj" Properties="Configuration=Release; Platform=AnyCPU; BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)" ToolsVersion="$(ProjectToolsVersion)" UnloadProjectsOnCompletion="$(UnloadProjectsOnCompletion)" UseResultsCache="$(UseResultsCache)" Condition=" ('$(Configuration)' == 'Release') and ('$(Platform)' == 'Any CPU') ">
+      <Output TaskParameter="TargetOutputs" ItemName="SISAR_WebBuildOutput" />
+    </MSBuild>
+  </Target>
+  <Target Name="Capa de Presentacion\SISAR_Web:Clean" DependsOnTargets="SISAR_WebService:Clean;Capa de Presentacion\SISAR_WebApplication:Clean" Condition="'$(CurrentSolutionConfigurationContents)' != ''">
+    <MSBuild Projects="SISAR.Web\SISAR.Web.csproj" Targets="Clean" Properties="Configuration=Debug; Platform=AnyCPU; BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)" ToolsVersion="$(ProjectToolsVersion)" UnloadProjectsOnCompletion="$(UnloadProjectsOnCompletion)" UseResultsCache="$(UseResultsCache)" Condition=" ('$(Configuration)' == 'Debug') and ('$(Platform)' == 'Any CPU') " />
+    <MSBuild Projects="SISAR.Web\SISAR.Web.csproj" Targets="Clean" Properties="Configuration=Release; Platform=AnyCPU; BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)" ToolsVersion="$(ProjectToolsVersion)" UnloadProjectsOnCompletion="$(UnloadProjectsOnCompletion)" UseResultsCache="$(UseResultsCache)" Condition=" ('$(Configuration)' == 'Release') and ('$(Platform)' == 'Any CPU') " />
+  </Target>
+  <Target Name="Capa de Presentacion\SISAR_Web:Rebuild" DependsOnTargets="SISAR_WebService:Rebuild;Capa de Presentacion\SISAR_WebApplication:Rebuild" Condition="'$(CurrentSolutionConfigurationContents)' != ''" Outputs="@(SISAR_WebBuildOutput)">
+    <MSBuild Projects="SISAR.Web\SISAR.Web.csproj" Targets="Rebuild" Properties="Configuration=Debug; Platform=AnyCPU; BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)" ToolsVersion="$(ProjectToolsVersion)" UnloadProjectsOnCompletion="$(UnloadProjectsOnCompletion)" UseResultsCache="$(UseResultsCache)" Condition=" ('$(Configuration)' == 'Debug') and ('$(Platform)' == 'Any CPU') ">
+      <Output TaskParameter="TargetOutputs" ItemName="SISAR_WebBuildOutput" />
+    </MSBuild>
+    <MSBuild Projects="SISAR.Web\SISAR.Web.csproj" Targets="Rebuild" Properties="Configuration=Release; Platform=AnyCPU; BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)" ToolsVersion="$(ProjectToolsVersion)" UnloadProjectsOnCompletion="$(UnloadProjectsOnCompletion)" UseResultsCache="$(UseResultsCache)" Condition=" ('$(Configuration)' == 'Release') and ('$(Platform)' == 'Any CPU') ">
+      <Output TaskParameter="TargetOutputs" ItemName="SISAR_WebBuildOutput" />
+    </MSBuild>
+  </Target>
+  <Target Name="Capa de Presentacion\SISAR_Web:Publish" DependsOnTargets="SISAR_WebService:Publish;Capa de Presentacion\SISAR_WebApplication:Publish" Condition="'$(CurrentSolutionConfigurationContents)' != ''">
+    <MSBuild Projects="SISAR.Web\SISAR.Web.csproj" Targets="Publish" Properties="Configuration=Debug; Platform=AnyCPU; BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)" ToolsVersion="$(ProjectToolsVersion)" UnloadProjectsOnCompletion="$(UnloadProjectsOnCompletion)" UseResultsCache="$(UseResultsCache)" Condition=" ('$(Configuration)' == 'Debug') and ('$(Platform)' == 'Any CPU') " />
+    <MSBuild Projects="SISAR.Web\SISAR.Web.csproj" Targets="Publish" Properties="Configuration=Release; Platform=AnyCPU; BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)" ToolsVersion="$(ProjectToolsVersion)" UnloadProjectsOnCompletion="$(UnloadProjectsOnCompletion)" UseResultsCache="$(UseResultsCache)" Condition=" ('$(Configuration)' == 'Release') and ('$(Platform)' == 'Any CPU') " />
+  </Target>
+  <Target Name="Capa de Presentacion\SISAR_WebApplication" Condition="'$(CurrentSolutionConfigurationContents)' != ''" Outputs="@(SISAR_WebApplicationBuildOutput)">
+    <MSBuild Projects="SISAR.WebApplication\SISAR.WebApplication.csproj" Properties="Configuration=Debug; Platform=AnyCPU; BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)" ToolsVersion="$(ProjectToolsVersion)" UnloadProjectsOnCompletion="$(UnloadProjectsOnCompletion)" UseResultsCache="$(UseResultsCache)" Condition=" ('$(Configuration)' == 'Debug') and ('$(Platform)' == 'Any CPU') ">
+      <Output TaskParameter="TargetOutputs" ItemName="SISAR_WebApplicationBuildOutput" />
+    </MSBuild>
+    <MSBuild Projects="SISAR.WebApplication\SISAR.WebApplication.csproj" Properties="Configuration=Release; Platform=AnyCPU; BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)" ToolsVersion="$(ProjectToolsVersion)" UnloadProjectsOnCompletion="$(UnloadProjectsOnCompletion)" UseResultsCache="$(UseResultsCache)" Condition=" ('$(Configuration)' == 'Release') and ('$(Platform)' == 'Any CPU') ">
+      <Output TaskParameter="TargetOutputs" ItemName="SISAR_WebApplicationBuildOutput" />
+    </MSBuild>
+  </Target>
+  <Target Name="Capa de Presentacion\SISAR_WebApplication:Clean" Condition="'$(CurrentSolutionConfigurationContents)' != ''">
+    <MSBuild Projects="SISAR.WebApplication\SISAR.WebApplication.csproj" Targets="Clean" Properties="Configuration=Debug; Platform=AnyCPU; BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)" ToolsVersion="$(ProjectToolsVersion)" UnloadProjectsOnCompletion="$(UnloadProjectsOnCompletion)" UseResultsCache="$(UseResultsCache)" Condition=" ('$(Configuration)' == 'Debug') and ('$(Platform)' == 'Any CPU') " />
+    <MSBuild Projects="SISAR.WebApplication\SISAR.WebApplication.csproj" Targets="Clean" Properties="Configuration=Release; Platform=AnyCPU; BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)" ToolsVersion="$(ProjectToolsVersion)" UnloadProjectsOnCompletion="$(UnloadProjectsOnCompletion)" UseResultsCache="$(UseResultsCache)" Condition=" ('$(Configuration)' == 'Release') and ('$(Platform)' == 'Any CPU') " />
+  </Target>
+  <Target Name="Capa de Presentacion\SISAR_WebApplication:Rebuild" Condition="'$(CurrentSolutionConfigurationContents)' != ''" Outputs="@(SISAR_WebApplicationBuildOutput)">
+    <MSBuild Projects="SISAR.WebApplication\SISAR.WebApplication.csproj" Targets="Rebuild" Properties="Configuration=Debug; Platform=AnyCPU; BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)" ToolsVersion="$(ProjectToolsVersion)" UnloadProjectsOnCompletion="$(UnloadProjectsOnCompletion)" UseResultsCache="$(UseResultsCache)" Condition=" ('$(Configuration)' == 'Debug') and ('$(Platform)' == 'Any CPU') ">
+      <Output TaskParameter="TargetOutputs" ItemName="SISAR_WebApplicationBuildOutput" />
+    </MSBuild>
+    <MSBuild Projects="SISAR.WebApplication\SISAR.WebApplication.csproj" Targets="Rebuild" Properties="Configuration=Release; Platform=AnyCPU; BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)" ToolsVersion="$(ProjectToolsVersion)" UnloadProjectsOnCompletion="$(UnloadProjectsOnCompletion)" UseResultsCache="$(UseResultsCache)" Condition=" ('$(Configuration)' == 'Release') and ('$(Platform)' == 'Any CPU') ">
+      <Output TaskParameter="TargetOutputs" ItemName="SISAR_WebApplicationBuildOutput" />
+    </MSBuild>
+  </Target>
+  <Target Name="Capa de Presentacion\SISAR_WebApplication:Publish" Condition="'$(CurrentSolutionConfigurationContents)' != ''">
+    <MSBuild Projects="SISAR.WebApplication\SISAR.WebApplication.csproj" Targets="Publish" Properties="Configuration=Debug; Platform=AnyCPU; BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)" ToolsVersion="$(ProjectToolsVersion)" UnloadProjectsOnCompletion="$(UnloadProjectsOnCompletion)" UseResultsCache="$(UseResultsCache)" Condition=" ('$(Configuration)' == 'Debug') and ('$(Platform)' == 'Any CPU') " />
+    <MSBuild Projects="SISAR.WebApplication\SISAR.WebApplication.csproj" Targets="Publish" Properties="Configuration=Release; Platform=AnyCPU; BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)" ToolsVersion="$(ProjectToolsVersion)" UnloadProjectsOnCompletion="$(UnloadProjectsOnCompletion)" UseResultsCache="$(UseResultsCache)" Condition=" ('$(Configuration)' == 'Release') and ('$(Platform)' == 'Any CPU') " />
+  </Target>
+  <Target Name="GetFrameworkPathAndRedistList">
+    <GetFrameworkPath>
+      <Output TaskParameter="Path" ItemName="_CombinedTargetFrameworkDirectoriesItem" Condition="'$(MSBuildToolsVersion)' == '2.0'" />
+      <Output TaskParameter="FrameworkVersion35Path" ItemName="_CombinedTargetFrameworkDirectoriesItem" Condition=" '$(TargetFrameworkVersion)' == 'v3.5' and '$(MSBuildToolsVersion)' != '2.0'" />
+      <Output TaskParameter="FrameworkVersion30Path" ItemName="_CombinedTargetFrameworkDirectoriesItem" Condition=" ('$(TargetFrameworkVersion)' == 'v3.0' or '$(TargetFrameworkVersion)' == 'v3.5') and '$(MSBuildToolsVersion)' != '2.0'" />
+      <Output TaskParameter="FrameworkVersion20Path" ItemName="_CombinedTargetFrameworkDirectoriesItem" Condition=" ('$(TargetFrameworkVersion)' == 'v2.0' or '$(TargetFrameworkVersion)' == 'v3.0' or '$(TargetFrameworkVersion)' == 'v3.5') and '$(MSBuildToolsVersion)' != '2.0'" />
+    </GetFrameworkPath>
+    <CreateItem Include="@(_CombinedTargetFrameworkDirectoriesItem->'%(Identity)\RedistList\*.xml')">
+      <Output TaskParameter="Include" ItemName="InstalledAssemblyTables" />
+    </CreateItem>
+  </Target>
+  <Target Name="SISAR_WebService" DependsOnTargets="Acceso a Datos\SISAR_Acceso;Acceso a Datos\SISAR_Entidades;GetFrameworkPathAndRedistList" Condition=" ('$(CurrentSolutionConfigurationContents)' != '') and (false or ( ('$(Configuration)' == 'Debug') and ('$(Platform)' == 'Any CPU') ) or ( ('$(Configuration)' == 'Release') and ('$(Platform)' == 'Any CPU') )) ">
+    <MSBuild Projects="..\..\SISAR.Acceso\SISAR.Acceso.csproj" Targets="GetTargetPath" Properties="Configuration=Debug; Platform=AnyCPU; BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)" ToolsVersion="$(ProjectToolsVersion)" UnloadProjectsOnCompletion="$(UnloadProjectsOnCompletion)" UseResultsCache="$(UseResultsCache)" Condition=" ('$(Configuration)' == 'Debug') and ('$(Platform)' == 'Any CPU') ">
+      <Output TaskParameter="TargetOutputs" ItemName="Project_1F6EA603-6F09-4440-A1DD-F40A385F7629_References_0" />
+    </MSBuild>
+    <CreateItem Include="@(Project_1F6EA603-6F09-4440-A1DD-F40A385F7629_References_0)" AdditionalMetadata="Guid={AD1CBA8F-E583-47D6-93FF-B06410C4E688}">
+      <Output TaskParameter="Include" ItemName="Project_1F6EA603-6F09-4440-A1DD-F40A385F7629_References" />
+    </CreateItem>
+    <MSBuild Projects="..\..\SISAR.Entidades\SISAR.Entidades.csproj" Targets="GetTargetPath" Properties="Configuration=Debug; Platform=AnyCPU; BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)" ToolsVersion="$(ProjectToolsVersion)" UnloadProjectsOnCompletion="$(UnloadProjectsOnCompletion)" UseResultsCache="$(UseResultsCache)" Condition=" ('$(Configuration)' == 'Debug') and ('$(Platform)' == 'Any CPU') ">
+      <Output TaskParameter="TargetOutputs" ItemName="Project_1F6EA603-6F09-4440-A1DD-F40A385F7629_References_1" />
+    </MSBuild>
+    <CreateItem Include="@(Project_1F6EA603-6F09-4440-A1DD-F40A385F7629_References_1)" AdditionalMetadata="Guid={346EA2B0-3DAD-445F-AF41-382D83B84AC9}">
+      <Output TaskParameter="Include" ItemName="Project_1F6EA603-6F09-4440-A1DD-F40A385F7629_References" />
+    </CreateItem>
+    <MSBuild Projects="..\..\SISAR.Acceso\SISAR.Acceso.csproj" Targets="GetTargetPath" Properties="Configuration=Release; Platform=AnyCPU; BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)" ToolsVersion="$(ProjectToolsVersion)" UnloadProjectsOnCompletion="$(UnloadProjectsOnCompletion)" UseResultsCache="$(UseResultsCache)" Condition=" ('$(Configuration)' == 'Release') and ('$(Platform)' == 'Any CPU') ">
+      <Output TaskParameter="TargetOutputs" ItemName="Project_1F6EA603-6F09-4440-A1DD-F40A385F7629_References_0" />
+    </MSBuild>
+    <CreateItem Include="@(Project_1F6EA603-6F09-4440-A1DD-F40A385F7629_References_0)" AdditionalMetadata="Guid={AD1CBA8F-E583-47D6-93FF-B06410C4E688}">
+      <Output TaskParameter="Include" ItemName="Project_1F6EA603-6F09-4440-A1DD-F40A385F7629_References" />
+    </CreateItem>
+    <MSBuild Projects="..\..\SISAR.Entidades\SISAR.Entidades.csproj" Targets="GetTargetPath" Properties="Configuration=Release; Platform=AnyCPU; BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)" ToolsVersion="$(ProjectToolsVersion)" UnloadProjectsOnCompletion="$(UnloadProjectsOnCompletion)" UseResultsCache="$(UseResultsCache)" Condition=" ('$(Configuration)' == 'Release') and ('$(Platform)' == 'Any CPU') ">
+      <Output TaskParameter="TargetOutputs" ItemName="Project_1F6EA603-6F09-4440-A1DD-F40A385F7629_References_1" />
+    </MSBuild>
+    <CreateItem Include="@(Project_1F6EA603-6F09-4440-A1DD-F40A385F7629_References_1)" AdditionalMetadata="Guid={346EA2B0-3DAD-445F-AF41-382D83B84AC9}">
+      <Output TaskParameter="Include" ItemName="Project_1F6EA603-6F09-4440-A1DD-F40A385F7629_References" />
+    </CreateItem>
+    <CreateItem Include="$(Project_1F6EA603-6F09-4440-A1DD-F40A385F7629_AspNetPhysicalPath)\Bin\*.refresh">
+      <Output TaskParameter="Include" ItemName="Project_1F6EA603-6F09-4440-A1DD-F40A385F7629_References_RefreshFile" />
+    </CreateItem>
+    <ReadLinesFromFile File="%(Project_1F6EA603-6F09-4440-A1DD-F40A385F7629_References_RefreshFile.Identity)" Condition=" '%(Project_1F6EA603-6F09-4440-A1DD-F40A385F7629_References_RefreshFile.Identity)' != '' ">
+      <Output TaskParameter="Lines" ItemName="Project_1F6EA603-6F09-4440-A1DD-F40A385F7629_References_ReferenceRelPath" />
+    </ReadLinesFromFile>
+    <CombinePath BasePath="$(Project_1F6EA603-6F09-4440-A1DD-F40A385F7629_AspNetPhysicalPath)" Paths="@(Project_1F6EA603-6F09-4440-A1DD-F40A385F7629_References_ReferenceRelPath)">
+      <Output TaskParameter="CombinedPaths" ItemName="Project_1F6EA603-6F09-4440-A1DD-F40A385F7629_References" />
+    </CombinePath>
+    <Copy SourceFiles="@(Project_1F6EA603-6F09-4440-A1DD-F40A385F7629_References->'%(FullPath)')" DestinationFolder="$(Project_1F6EA603-6F09-4440-A1DD-F40A385F7629_AspNetPhysicalPath)\Bin\" Condition="!Exists('%(Project_1F6EA603-6F09-4440-A1DD-F40A385F7629_References.Identity)')" ContinueOnError="true" />
+    <ResolveAssemblyReference Assemblies="@(Project_1F6EA603-6F09-4440-A1DD-F40A385F7629_References->'%(FullPath)')" TargetFrameworkDirectories="@(_CombinedTargetFrameworkDirectoriesItem)" InstalledAssemblyTables="@(InstalledAssemblyTables)" SearchPaths="{RawFileName};{TargetFrameworkDirectory};{GAC}" FindDependencies="true" FindSatellites="true" FindSerializationAssemblies="true" FindRelatedFiles="true" Condition="Exists('%(Project_1F6EA603-6F09-4440-A1DD-F40A385F7629_References.Identity)')">
+      <Output TaskParameter="CopyLocalFiles" ItemName="Project_1F6EA603-6F09-4440-A1DD-F40A385F7629_References_CopyLocalFiles" />
+    </ResolveAssemblyReference>
+    <Copy SourceFiles="@(Project_1F6EA603-6F09-4440-A1DD-F40A385F7629_References_CopyLocalFiles)" DestinationFiles="@(Project_1F6EA603-6F09-4440-A1DD-F40A385F7629_References_CopyLocalFiles->'$(Project_1F6EA603-6F09-4440-A1DD-F40A385F7629_AspNetPhysicalPath)\Bin\%(DestinationSubDirectory)%(Filename)%(Extension)')" Condition="(false) or ('$(AspNetConfiguration)' == 'Debug') or ('$(AspNetConfiguration)' == 'Release')" />
+    <AspNetCompiler VirtualPath="$(Project_1F6EA603-6F09-4440-A1DD-F40A385F7629_AspNetVirtualPath)" PhysicalPath="$(Project_1F6EA603-6F09-4440-A1DD-F40A385F7629_AspNetPhysicalPath)" TargetPath="$(Project_1F6EA603-6F09-4440-A1DD-F40A385F7629_AspNetTargetPath)" Force="$(Project_1F6EA603-6F09-4440-A1DD-F40A385F7629_AspNetForce)" Updateable="$(Project_1F6EA603-6F09-4440-A1DD-F40A385F7629_AspNetUpdateable)" Debug="$(Project_1F6EA603-6F09-4440-A1DD-F40A385F7629_AspNetDebug)" KeyFile="$(Project_1F6EA603-6F09-4440-A1DD-F40A385F7629_AspNetKeyFile)" KeyContainer="$(Project_1F6EA603-6F09-4440-A1DD-F40A385F7629_AspNetKeyContainer)" DelaySign="$(Project_1F6EA603-6F09-4440-A1DD-F40A385F7629_AspNetDelaySign)" AllowPartiallyTrustedCallers="$(Project_1F6EA603-6F09-4440-A1DD-F40A385F7629_AspNetAPTCA)" FixedNames="$(Project_1F6EA603-6F09-4440-A1DD-F40A385F7629_AspNetFixedNames)" Condition="(false) or ('$(AspNetConfiguration)' == 'Debug') or ('$(AspNetConfiguration)' == 'Release')" />
+    <Message Text="Se omitirá porque la configuración &quot;$(AspNetConfiguration)&quot; no se admite para este proyecto web. Puede utilizar la propiedad AspNetConfiguration para invalidar la configuración utilizada para crear proyectos web si agrega /p:AspNetConfiguration=&lt;valor&gt; a la línea de comandos. Actualmente, los proyectos web sólo admiten configuraciones Debug y Release." Condition="!((false) or ('$(AspNetConfiguration)' == 'Debug') or ('$(AspNetConfiguration)' == 'Release'))" />
+  </Target>
+  <Target Name="SISAR_WebService:Clean" DependsOnTargets="Acceso a Datos\SISAR_Acceso:Clean;Acceso a Datos\SISAR_Entidades:Clean;GetFrameworkPathAndRedistList">
+    <Message Text="Los proyectos web no admiten el destino &quot;Clean&quot;.  Continuando con los proyectos restantes..." />
+  </Target>
+  <Target Name="SISAR_WebService:Rebuild" DependsOnTargets="Acceso a Datos\SISAR_Acceso:Rebuild;Acceso a Datos\SISAR_Entidades:Rebuild;GetFrameworkPathAndRedistList" Condition=" ('$(CurrentSolutionConfigurationContents)' != '') and (false or ( ('$(Configuration)' == 'Debug') and ('$(Platform)' == 'Any CPU') ) or ( ('$(Configuration)' == 'Release') and ('$(Platform)' == 'Any CPU') )) ">
+    <MSBuild Projects="..\..\SISAR.Acceso\SISAR.Acceso.csproj" Targets="GetTargetPath" Properties="Configuration=Debug; Platform=AnyCPU; BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)" ToolsVersion="$(ProjectToolsVersion)" UnloadProjectsOnCompletion="$(UnloadProjectsOnCompletion)" UseResultsCache="$(UseResultsCache)" Condition=" ('$(Configuration)' == 'Debug') and ('$(Platform)' == 'Any CPU') ">
+      <Output TaskParameter="TargetOutputs" ItemName="Project_1F6EA603-6F09-4440-A1DD-F40A385F7629_References_Rebuild_0" />
+    </MSBuild>
+    <CreateItem Include="@(Project_1F6EA603-6F09-4440-A1DD-F40A385F7629_References_Rebuild_0)" AdditionalMetadata="Guid={AD1CBA8F-E583-47D6-93FF-B06410C4E688}">
+      <Output TaskParameter="Include" ItemName="Project_1F6EA603-6F09-4440-A1DD-F40A385F7629_References_Rebuild" />
+    </CreateItem>
+    <MSBuild Projects="..\..\SISAR.Entidades\SISAR.Entidades.csproj" Targets="GetTargetPath" Properties="Configuration=Debug; Platform=AnyCPU; BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)" ToolsVersion="$(ProjectToolsVersion)" UnloadProjectsOnCompletion="$(UnloadProjectsOnCompletion)" UseResultsCache="$(UseResultsCache)" Condition=" ('$(Configuration)' == 'Debug') and ('$(Platform)' == 'Any CPU') ">
+      <Output TaskParameter="TargetOutputs" ItemName="Project_1F6EA603-6F09-4440-A1DD-F40A385F7629_References_Rebuild_1" />
+    </MSBuild>
+    <CreateItem Include="@(Project_1F6EA603-6F09-4440-A1DD-F40A385F7629_References_Rebuild_1)" AdditionalMetadata="Guid={346EA2B0-3DAD-445F-AF41-382D83B84AC9}">
+      <Output TaskParameter="Include" ItemName="Project_1F6EA603-6F09-4440-A1DD-F40A385F7629_References_Rebuild" />
+    </CreateItem>
+    <MSBuild Projects="..\..\SISAR.Acceso\SISAR.Acceso.csproj" Targets="GetTargetPath" Properties="Configuration=Release; Platform=AnyCPU; BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)" ToolsVersion="$(ProjectToolsVersion)" UnloadProjectsOnCompletion="$(UnloadProjectsOnCompletion)" UseResultsCache="$(UseResultsCache)" Condition=" ('$(Configuration)' == 'Release') and ('$(Platform)' == 'Any CPU') ">
+      <Output TaskParameter="TargetOutputs" ItemName="Project_1F6EA603-6F09-4440-A1DD-F40A385F7629_References_Rebuild_0" />
+    </MSBuild>
+    <CreateItem Include="@(Project_1F6EA603-6F09-4440-A1DD-F40A385F7629_References_Rebuild_0)" AdditionalMetadata="Guid={AD1CBA8F-E583-47D6-93FF-B06410C4E688}">
+      <Output TaskParameter="Include" ItemName="Project_1F6EA603-6F09-4440-A1DD-F40A385F7629_References_Rebuild" />
+    </CreateItem>
+    <MSBuild Projects="..\..\SISAR.Entidades\SISAR.Entidades.csproj" Targets="GetTargetPath" Properties="Configuration=Release; Platform=AnyCPU; BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)" ToolsVersion="$(ProjectToolsVersion)" UnloadProjectsOnCompletion="$(UnloadProjectsOnCompletion)" UseResultsCache="$(UseResultsCache)" Condition=" ('$(Configuration)' == 'Release') and ('$(Platform)' == 'Any CPU') ">
+      <Output TaskParameter="TargetOutputs" ItemName="Project_1F6EA603-6F09-4440-A1DD-F40A385F7629_References_Rebuild_1" />
+    </MSBuild>
+    <CreateItem Include="@(Project_1F6EA603-6F09-4440-A1DD-F40A385F7629_References_Rebuild_1)" AdditionalMetadata="Guid={346EA2B0-3DAD-445F-AF41-382D83B84AC9}">
+      <Output TaskParameter="Include" ItemName="Project_1F6EA603-6F09-4440-A1DD-F40A385F7629_References_Rebuild" />
+    </CreateItem>
+    <CreateItem Include="$(Project_1F6EA603-6F09-4440-A1DD-F40A385F7629_AspNetPhysicalPath)\Bin\*.refresh">
+      <Output TaskParameter="Include" ItemName="Project_1F6EA603-6F09-4440-A1DD-F40A385F7629_References_Rebuild_RefreshFile" />
+    </CreateItem>
+    <ReadLinesFromFile File="%(Project_1F6EA603-6F09-4440-A1DD-F40A385F7629_References_Rebuild_RefreshFile.Identity)" Condition=" '%(Project_1F6EA603-6F09-4440-A1DD-F40A385F7629_References_Rebuild_RefreshFile.Identity)' != '' ">
+      <Output TaskParameter="Lines" ItemName="Project_1F6EA603-6F09-4440-A1DD-F40A385F7629_References_Rebuild_ReferenceRelPath" />
+    </ReadLinesFromFile>
+    <CombinePath BasePath="$(Project_1F6EA603-6F09-4440-A1DD-F40A385F7629_AspNetPhysicalPath)" Paths="@(Project_1F6EA603-6F09-4440-A1DD-F40A385F7629_References_Rebuild_ReferenceRelPath)">
+      <Output TaskParameter="CombinedPaths" ItemName="Project_1F6EA603-6F09-4440-A1DD-F40A385F7629_References_Rebuild" />
+    </CombinePath>
+    <Copy SourceFiles="@(Project_1F6EA603-6F09-4440-A1DD-F40A385F7629_References_Rebuild->'%(FullPath)')" DestinationFolder="$(Project_1F6EA603-6F09-4440-A1DD-F40A385F7629_AspNetPhysicalPath)\Bin\" Condition="!Exists('%(Project_1F6EA603-6F09-4440-A1DD-F40A385F7629_References_Rebuild.Identity)')" ContinueOnError="true" />
+    <ResolveAssemblyReference Assemblies="@(Project_1F6EA603-6F09-4440-A1DD-F40A385F7629_References_Rebuild->'%(FullPath)')" TargetFrameworkDirectories="@(_CombinedTargetFrameworkDirectoriesItem)" InstalledAssemblyTables="@(InstalledAssemblyTables)" SearchPaths="{RawFileName};{TargetFrameworkDirectory};{GAC}" FindDependencies="true" FindSatellites="true" FindSerializationAssemblies="true" FindRelatedFiles="true" Condition="Exists('%(Project_1F6EA603-6F09-4440-A1DD-F40A385F7629_References_Rebuild.Identity)')">
+      <Output TaskParameter="CopyLocalFiles" ItemName="Project_1F6EA603-6F09-4440-A1DD-F40A385F7629_References_Rebuild_CopyLocalFiles" />
+    </ResolveAssemblyReference>
+    <Copy SourceFiles="@(Project_1F6EA603-6F09-4440-A1DD-F40A385F7629_References_Rebuild_CopyLocalFiles)" DestinationFiles="@(Project_1F6EA603-6F09-4440-A1DD-F40A385F7629_References_Rebuild_CopyLocalFiles->'$(Project_1F6EA603-6F09-4440-A1DD-F40A385F7629_AspNetPhysicalPath)\Bin\%(DestinationSubDirectory)%(Filename)%(Extension)')" Condition="(false) or ('$(AspNetConfiguration)' == 'Debug') or ('$(AspNetConfiguration)' == 'Release')" />
+    <AspNetCompiler VirtualPath="$(Project_1F6EA603-6F09-4440-A1DD-F40A385F7629_AspNetVirtualPath)" PhysicalPath="$(Project_1F6EA603-6F09-4440-A1DD-F40A385F7629_AspNetPhysicalPath)" TargetPath="$(Project_1F6EA603-6F09-4440-A1DD-F40A385F7629_AspNetTargetPath)" Force="$(Project_1F6EA603-6F09-4440-A1DD-F40A385F7629_AspNetForce)" Updateable="$(Project_1F6EA603-6F09-4440-A1DD-F40A385F7629_AspNetUpdateable)" Debug="$(Project_1F6EA603-6F09-4440-A1DD-F40A385F7629_AspNetDebug)" KeyFile="$(Project_1F6EA603-6F09-4440-A1DD-F40A385F7629_AspNetKeyFile)" KeyContainer="$(Project_1F6EA603-6F09-4440-A1DD-F40A385F7629_AspNetKeyContainer)" DelaySign="$(Project_1F6EA603-6F09-4440-A1DD-F40A385F7629_AspNetDelaySign)" AllowPartiallyTrustedCallers="$(Project_1F6EA603-6F09-4440-A1DD-F40A385F7629_AspNetAPTCA)" FixedNames="$(Project_1F6EA603-6F09-4440-A1DD-F40A385F7629_AspNetFixedNames)" Condition="(false) or ('$(AspNetConfiguration)' == 'Debug') or ('$(AspNetConfiguration)' == 'Release')" />
+    <Message Text="Se omitirá porque la configuración &quot;$(AspNetConfiguration)&quot; no se admite para este proyecto web. Puede utilizar la propiedad AspNetConfiguration para invalidar la configuración utilizada para crear proyectos web si agrega /p:AspNetConfiguration=&lt;valor&gt; a la línea de comandos. Actualmente, los proyectos web sólo admiten configuraciones Debug y Release." Condition="!((false) or ('$(AspNetConfiguration)' == 'Debug') or ('$(AspNetConfiguration)' == 'Release'))" />
+  </Target>
+  <Target Name="SISAR_WebService:Publish" DependsOnTargets="Acceso a Datos\SISAR_Acceso:Publish;Acceso a Datos\SISAR_Entidades:Publish;GetFrameworkPathAndRedistList">
+    <Message Text="Los proyectos web no admiten el destino &quot;Publish&quot;. Continuando con los proyectos restantes..." />
+  </Target>
+  <Target Name="Acceso a Datos\SISAR_Acceso" DependsOnTargets="Acceso a Datos\SISAR_Entidades" Condition="'$(CurrentSolutionConfigurationContents)' != ''" Outputs="@(SISAR_AccesoBuildOutput)">
+    <MSBuild Projects="..\..\SISAR.Acceso\SISAR.Acceso.csproj" Properties="Configuration=Debug; Platform=AnyCPU; BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)" ToolsVersion="$(ProjectToolsVersion)" UnloadProjectsOnCompletion="$(UnloadProjectsOnCompletion)" UseResultsCache="$(UseResultsCache)" Condition=" ('$(Configuration)' == 'Debug') and ('$(Platform)' == 'Any CPU') ">
+      <Output TaskParameter="TargetOutputs" ItemName="SISAR_AccesoBuildOutput" />
+    </MSBuild>
+    <MSBuild Projects="..\..\SISAR.Acceso\SISAR.Acceso.csproj" Properties="Configuration=Release; Platform=AnyCPU; BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)" ToolsVersion="$(ProjectToolsVersion)" UnloadProjectsOnCompletion="$(UnloadProjectsOnCompletion)" UseResultsCache="$(UseResultsCache)" Condition=" ('$(Configuration)' == 'Release') and ('$(Platform)' == 'Any CPU') ">
+      <Output TaskParameter="TargetOutputs" ItemName="SISAR_AccesoBuildOutput" />
+    </MSBuild>
+  </Target>
+  <Target Name="Acceso a Datos\SISAR_Acceso:Clean" DependsOnTargets="Acceso a Datos\SISAR_Entidades:Clean" Condition="'$(CurrentSolutionConfigurationContents)' != ''">
+    <MSBuild Projects="..\..\SISAR.Acceso\SISAR.Acceso.csproj" Targets="Clean" Properties="Configuration=Debug; Platform=AnyCPU; BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)" ToolsVersion="$(ProjectToolsVersion)" UnloadProjectsOnCompletion="$(UnloadProjectsOnCompletion)" UseResultsCache="$(UseResultsCache)" Condition=" ('$(Configuration)' == 'Debug') and ('$(Platform)' == 'Any CPU') " />
+    <MSBuild Projects="..\..\SISAR.Acceso\SISAR.Acceso.csproj" Targets="Clean" Properties="Configuration=Release; Platform=AnyCPU; BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)" ToolsVersion="$(ProjectToolsVersion)" UnloadProjectsOnCompletion="$(UnloadProjectsOnCompletion)" UseResultsCache="$(UseResultsCache)" Condition=" ('$(Configuration)' == 'Release') and ('$(Platform)' == 'Any CPU') " />
+  </Target>
+  <Target Name="Acceso a Datos\SISAR_Acceso:Rebuild" DependsOnTargets="Acceso a Datos\SISAR_Entidades:Rebuild" Condition="'$(CurrentSolutionConfigurationContents)' != ''" Outputs="@(SISAR_AccesoBuildOutput)">
+    <MSBuild Projects="..\..\SISAR.Acceso\SISAR.Acceso.csproj" Targets="Rebuild" Properties="Configuration=Debug; Platform=AnyCPU; BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)" ToolsVersion="$(ProjectToolsVersion)" UnloadProjectsOnCompletion="$(UnloadProjectsOnCompletion)" UseResultsCache="$(UseResultsCache)" Condition=" ('$(Configuration)' == 'Debug') and ('$(Platform)' == 'Any CPU') ">
+      <Output TaskParameter="TargetOutputs" ItemName="SISAR_AccesoBuildOutput" />
+    </MSBuild>
+    <MSBuild Projects="..\..\SISAR.Acceso\SISAR.Acceso.csproj" Targets="Rebuild" Properties="Configuration=Release; Platform=AnyCPU; BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)" ToolsVersion="$(ProjectToolsVersion)" UnloadProjectsOnCompletion="$(UnloadProjectsOnCompletion)" UseResultsCache="$(UseResultsCache)" Condition=" ('$(Configuration)' == 'Release') and ('$(Platform)' == 'Any CPU') ">
+      <Output TaskParameter="TargetOutputs" ItemName="SISAR_AccesoBuildOutput" />
+    </MSBuild>
+  </Target>
+  <Target Name="Acceso a Datos\SISAR_Acceso:Publish" DependsOnTargets="Acceso a Datos\SISAR_Entidades:Publish" Condition="'$(CurrentSolutionConfigurationContents)' != ''">
+    <MSBuild Projects="..\..\SISAR.Acceso\SISAR.Acceso.csproj" Targets="Publish" Properties="Configuration=Debug; Platform=AnyCPU; BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)" ToolsVersion="$(ProjectToolsVersion)" UnloadProjectsOnCompletion="$(UnloadProjectsOnCompletion)" UseResultsCache="$(UseResultsCache)" Condition=" ('$(Configuration)' == 'Debug') and ('$(Platform)' == 'Any CPU') " />
+    <MSBuild Projects="..\..\SISAR.Acceso\SISAR.Acceso.csproj" Targets="Publish" Properties="Configuration=Release; Platform=AnyCPU; BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)" ToolsVersion="$(ProjectToolsVersion)" UnloadProjectsOnCompletion="$(UnloadProjectsOnCompletion)" UseResultsCache="$(UseResultsCache)" Condition=" ('$(Configuration)' == 'Release') and ('$(Platform)' == 'Any CPU') " />
+  </Target>
+  <Target Name="Logica de Negocios\SISAR_Logica" DependsOnTargets="Acceso a Datos\SISAR_Entidades" Condition="'$(CurrentSolutionConfigurationContents)' != ''" Outputs="@(SISAR_LogicaBuildOutput)">
+    <MSBuild Projects="..\..\SISAR.Logica\SISAR.Logica.csproj" Properties="Configuration=Debug; Platform=AnyCPU; BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)" ToolsVersion="$(ProjectToolsVersion)" UnloadProjectsOnCompletion="$(UnloadProjectsOnCompletion)" UseResultsCache="$(UseResultsCache)" Condition=" ('$(Configuration)' == 'Debug') and ('$(Platform)' == 'Any CPU') ">
+      <Output TaskParameter="TargetOutputs" ItemName="SISAR_LogicaBuildOutput" />
+    </MSBuild>
+    <MSBuild Projects="..\..\SISAR.Logica\SISAR.Logica.csproj" Properties="Configuration=Release; Platform=AnyCPU; BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)" ToolsVersion="$(ProjectToolsVersion)" UnloadProjectsOnCompletion="$(UnloadProjectsOnCompletion)" UseResultsCache="$(UseResultsCache)" Condition=" ('$(Configuration)' == 'Release') and ('$(Platform)' == 'Any CPU') ">
+      <Output TaskParameter="TargetOutputs" ItemName="SISAR_LogicaBuildOutput" />
+    </MSBuild>
+  </Target>
+  <Target Name="Logica de Negocios\SISAR_Logica:Clean" DependsOnTargets="Acceso a Datos\SISAR_Entidades:Clean" Condition="'$(CurrentSolutionConfigurationContents)' != ''">
+    <MSBuild Projects="..\..\SISAR.Logica\SISAR.Logica.csproj" Targets="Clean" Properties="Configuration=Debug; Platform=AnyCPU; BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)" ToolsVersion="$(ProjectToolsVersion)" UnloadProjectsOnCompletion="$(UnloadProjectsOnCompletion)" UseResultsCache="$(UseResultsCache)" Condition=" ('$(Configuration)' == 'Debug') and ('$(Platform)' == 'Any CPU') " />
+    <MSBuild Projects="..\..\SISAR.Logica\SISAR.Logica.csproj" Targets="Clean" Properties="Configuration=Release; Platform=AnyCPU; BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)" ToolsVersion="$(ProjectToolsVersion)" UnloadProjectsOnCompletion="$(UnloadProjectsOnCompletion)" UseResultsCache="$(UseResultsCache)" Condition=" ('$(Configuration)' == 'Release') and ('$(Platform)' == 'Any CPU') " />
+  </Target>
+  <Target Name="Logica de Negocios\SISAR_Logica:Rebuild" DependsOnTargets="Acceso a Datos\SISAR_Entidades:Rebuild" Condition="'$(CurrentSolutionConfigurationContents)' != ''" Outputs="@(SISAR_LogicaBuildOutput)">
+    <MSBuild Projects="..\..\SISAR.Logica\SISAR.Logica.csproj" Targets="Rebuild" Properties="Configuration=Debug; Platform=AnyCPU; BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)" ToolsVersion="$(ProjectToolsVersion)" UnloadProjectsOnCompletion="$(UnloadProjectsOnCompletion)" UseResultsCache="$(UseResultsCache)" Condition=" ('$(Configuration)' == 'Debug') and ('$(Platform)' == 'Any CPU') ">
+      <Output TaskParameter="TargetOutputs" ItemName="SISAR_LogicaBuildOutput" />
+    </MSBuild>
+    <MSBuild Projects="..\..\SISAR.Logica\SISAR.Logica.csproj" Targets="Rebuild" Properties="Configuration=Release; Platform=AnyCPU; BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)" ToolsVersion="$(ProjectToolsVersion)" UnloadProjectsOnCompletion="$(UnloadProjectsOnCompletion)" UseResultsCache="$(UseResultsCache)" Condition=" ('$(Configuration)' == 'Release') and ('$(Platform)' == 'Any CPU') ">
+      <Output TaskParameter="TargetOutputs" ItemName="SISAR_LogicaBuildOutput" />
+    </MSBuild>
+  </Target>
+  <Target Name="Logica de Negocios\SISAR_Logica:Publish" DependsOnTargets="Acceso a Datos\SISAR_Entidades:Publish" Condition="'$(CurrentSolutionConfigurationContents)' != ''">
+    <MSBuild Projects="..\..\SISAR.Logica\SISAR.Logica.csproj" Targets="Publish" Properties="Configuration=Debug; Platform=AnyCPU; BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)" ToolsVersion="$(ProjectToolsVersion)" UnloadProjectsOnCompletion="$(UnloadProjectsOnCompletion)" UseResultsCache="$(UseResultsCache)" Condition=" ('$(Configuration)' == 'Debug') and ('$(Platform)' == 'Any CPU') " />
+    <MSBuild Projects="..\..\SISAR.Logica\SISAR.Logica.csproj" Targets="Publish" Properties="Configuration=Release; Platform=AnyCPU; BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)" ToolsVersion="$(ProjectToolsVersion)" UnloadProjectsOnCompletion="$(UnloadProjectsOnCompletion)" UseResultsCache="$(UseResultsCache)" Condition=" ('$(Configuration)' == 'Release') and ('$(Platform)' == 'Any CPU') " />
+  </Target>
+  <Target Name="Acceso a Datos\SISAR_Entidades" Condition="'$(CurrentSolutionConfigurationContents)' != ''" Outputs="@(SISAR_EntidadesBuildOutput)">
+    <MSBuild Projects="..\..\SISAR.Entidades\SISAR.Entidades.csproj" Properties="Configuration=Debug; Platform=AnyCPU; BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)" ToolsVersion="$(ProjectToolsVersion)" UnloadProjectsOnCompletion="$(UnloadProjectsOnCompletion)" UseResultsCache="$(UseResultsCache)" Condition=" ('$(Configuration)' == 'Debug') and ('$(Platform)' == 'Any CPU') ">
+      <Output TaskParameter="TargetOutputs" ItemName="SISAR_EntidadesBuildOutput" />
+    </MSBuild>
+    <MSBuild Projects="..\..\SISAR.Entidades\SISAR.Entidades.csproj" Properties="Configuration=Release; Platform=AnyCPU; BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)" ToolsVersion="$(ProjectToolsVersion)" UnloadProjectsOnCompletion="$(UnloadProjectsOnCompletion)" UseResultsCache="$(UseResultsCache)" Condition=" ('$(Configuration)' == 'Release') and ('$(Platform)' == 'Any CPU') ">
+      <Output TaskParameter="TargetOutputs" ItemName="SISAR_EntidadesBuildOutput" />
+    </MSBuild>
+  </Target>
+  <Target Name="Acceso a Datos\SISAR_Entidades:Clean" Condition="'$(CurrentSolutionConfigurationContents)' != ''">
+    <MSBuild Projects="..\..\SISAR.Entidades\SISAR.Entidades.csproj" Targets="Clean" Properties="Configuration=Debug; Platform=AnyCPU; BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)" ToolsVersion="$(ProjectToolsVersion)" UnloadProjectsOnCompletion="$(UnloadProjectsOnCompletion)" UseResultsCache="$(UseResultsCache)" Condition=" ('$(Configuration)' == 'Debug') and ('$(Platform)' == 'Any CPU') " />
+    <MSBuild Projects="..\..\SISAR.Entidades\SISAR.Entidades.csproj" Targets="Clean" Properties="Configuration=Release; Platform=AnyCPU; BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)" ToolsVersion="$(ProjectToolsVersion)" UnloadProjectsOnCompletion="$(UnloadProjectsOnCompletion)" UseResultsCache="$(UseResultsCache)" Condition=" ('$(Configuration)' == 'Release') and ('$(Platform)' == 'Any CPU') " />
+  </Target>
+  <Target Name="Acceso a Datos\SISAR_Entidades:Rebuild" Condition="'$(CurrentSolutionConfigurationContents)' != ''" Outputs="@(SISAR_EntidadesBuildOutput)">
+    <MSBuild Projects="..\..\SISAR.Entidades\SISAR.Entidades.csproj" Targets="Rebuild" Properties="Configuration=Debug; Platform=AnyCPU; BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)" ToolsVersion="$(ProjectToolsVersion)" UnloadProjectsOnCompletion="$(UnloadProjectsOnCompletion)" UseResultsCache="$(UseResultsCache)" Condition=" ('$(Configuration)' == 'Debug') and ('$(Platform)' == 'Any CPU') ">
+      <Output TaskParameter="TargetOutputs" ItemName="SISAR_EntidadesBuildOutput" />
+    </MSBuild>
+    <MSBuild Projects="..\..\SISAR.Entidades\SISAR.Entidades.csproj" Targets="Rebuild" Properties="Configuration=Release; Platform=AnyCPU; BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)" ToolsVersion="$(ProjectToolsVersion)" UnloadProjectsOnCompletion="$(UnloadProjectsOnCompletion)" UseResultsCache="$(UseResultsCache)" Condition=" ('$(Configuration)' == 'Release') and ('$(Platform)' == 'Any CPU') ">
+      <Output TaskParameter="TargetOutputs" ItemName="SISAR_EntidadesBuildOutput" />
+    </MSBuild>
+  </Target>
+  <Target Name="Acceso a Datos\SISAR_Entidades:Publish" Condition="'$(CurrentSolutionConfigurationContents)' != ''">
+    <MSBuild Projects="..\..\SISAR.Entidades\SISAR.Entidades.csproj" Targets="Publish" Properties="Configuration=Debug; Platform=AnyCPU; BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)" ToolsVersion="$(ProjectToolsVersion)" UnloadProjectsOnCompletion="$(UnloadProjectsOnCompletion)" UseResultsCache="$(UseResultsCache)" Condition=" ('$(Configuration)' == 'Debug') and ('$(Platform)' == 'Any CPU') " />
+    <MSBuild Projects="..\..\SISAR.Entidades\SISAR.Entidades.csproj" Targets="Publish" Properties="Configuration=Release; Platform=AnyCPU; BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)" ToolsVersion="$(ProjectToolsVersion)" UnloadProjectsOnCompletion="$(UnloadProjectsOnCompletion)" UseResultsCache="$(UseResultsCache)" Condition=" ('$(Configuration)' == 'Release') and ('$(Platform)' == 'Any CPU') " />
+  </Target>
+  <Target Name="Build" Condition="'$(CurrentSolutionConfigurationContents)' != ''" Outputs="@(CollectedBuildOutput)">
+    <MSBuild Condition="@(BuildLevel0) != ''" Projects="@(BuildLevel0)" Properties="Configuration=%(Configuration); Platform=%(Platform); BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)" ToolsVersion="$(ProjectToolsVersion)" BuildInParallel="true" UnloadProjectsOnCompletion="$(UnloadProjectsOnCompletion)" UseResultsCache="$(UseResultsCache)">
+      <Output TaskParameter="TargetOutputs" ItemName="CollectedBuildOutput" />
+    </MSBuild>
+    <Message Text="El proyecto&quot;%(SkipLevel0.Identity)&quot; no se seleccionó para la compilación en la configuración de soluciones &quot;$(Configuration)|$(Platform)&quot;." Condition="@(SkipLevel0) != ''" />
+    <Warning Text="La configuración del proyecto &quot;%(MissingConfigLevel0.Identity)&quot; no se especificó en el archivo de solución de la configuración de soluciones &quot;$(Configuration)|$(Platform)&quot;." Code="MSB4121" HelpKeyword="MSBuild.SolutionProjectConfigurationMissing" Condition="@(MissingConfigLevel0) != ''" />
+    <MSBuild Condition="@(BuildLevel1) != ''" Projects="@(BuildLevel1)" Properties="Configuration=%(Configuration); Platform=%(Platform); BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)" ToolsVersion="$(ProjectToolsVersion)" BuildInParallel="true" UnloadProjectsOnCompletion="$(UnloadProjectsOnCompletion)" UseResultsCache="$(UseResultsCache)">
+      <Output TaskParameter="TargetOutputs" ItemName="CollectedBuildOutput" />
+    </MSBuild>
+    <Message Text="El proyecto&quot;%(SkipLevel1.Identity)&quot; no se seleccionó para la compilación en la configuración de soluciones &quot;$(Configuration)|$(Platform)&quot;." Condition="@(SkipLevel1) != ''" />
+    <Warning Text="La configuración del proyecto &quot;%(MissingConfigLevel1.Identity)&quot; no se especificó en el archivo de solución de la configuración de soluciones &quot;$(Configuration)|$(Platform)&quot;." Code="MSB4121" HelpKeyword="MSBuild.SolutionProjectConfigurationMissing" Condition="@(MissingConfigLevel1) != ''" />
+    <MSBuild Condition="@(BuildLevel2) != ''" Projects="@(BuildLevel2)" Properties="Configuration=%(Configuration); Platform=%(Platform); BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)" ToolsVersion="$(ProjectToolsVersion)" BuildInParallel="true" UnloadProjectsOnCompletion="$(UnloadProjectsOnCompletion)" UseResultsCache="$(UseResultsCache)">
+      <Output TaskParameter="TargetOutputs" ItemName="CollectedBuildOutput" />
+    </MSBuild>
+    <Message Text="El proyecto&quot;%(SkipLevel2.Identity)&quot; no se seleccionó para la compilación en la configuración de soluciones &quot;$(Configuration)|$(Platform)&quot;." Condition="@(SkipLevel2) != ''" />
+    <Warning Text="La configuración del proyecto &quot;%(MissingConfigLevel2.Identity)&quot; no se especificó en el archivo de solución de la configuración de soluciones &quot;$(Configuration)|$(Platform)&quot;." Code="MSB4121" HelpKeyword="MSBuild.SolutionProjectConfigurationMissing" Condition="@(MissingConfigLevel2) != ''" />
+    <CallTarget Targets="SISAR_WebService" RunEachTargetSeparately="true" />
+    <MSBuild Condition="@(BuildLevel3) != ''" Projects="@(BuildLevel3)" Properties="Configuration=%(Configuration); Platform=%(Platform); BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)" ToolsVersion="$(ProjectToolsVersion)" BuildInParallel="true" UnloadProjectsOnCompletion="$(UnloadProjectsOnCompletion)" UseResultsCache="$(UseResultsCache)">
+      <Output TaskParameter="TargetOutputs" ItemName="CollectedBuildOutput" />
+    </MSBuild>
+    <Message Text="El proyecto&quot;%(SkipLevel3.Identity)&quot; no se seleccionó para la compilación en la configuración de soluciones &quot;$(Configuration)|$(Platform)&quot;." Condition="@(SkipLevel3) != ''" />
+    <Warning Text="La configuración del proyecto &quot;%(MissingConfigLevel3.Identity)&quot; no se especificó en el archivo de solución de la configuración de soluciones &quot;$(Configuration)|$(Platform)&quot;." Code="MSB4121" HelpKeyword="MSBuild.SolutionProjectConfigurationMissing" Condition="@(MissingConfigLevel3) != ''" />
+  </Target>
+  <Target Name="Clean" Condition="'$(CurrentSolutionConfigurationContents)' != ''">
+    <MSBuild Condition="@(BuildLevel0) != ''" Projects="@(BuildLevel0)" Properties="Configuration=%(Configuration); Platform=%(Platform); BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)" Targets="Clean" ToolsVersion="$(ProjectToolsVersion)" BuildInParallel="true" UnloadProjectsOnCompletion="$(UnloadProjectsOnCompletion)" UseResultsCache="$(UseResultsCache)" />
+    <Message Text="El proyecto&quot;%(SkipLevel0.Identity)&quot; no se seleccionó para la compilación en la configuración de soluciones &quot;$(Configuration)|$(Platform)&quot;." Condition="@(SkipLevel0) != ''" />
+    <Warning Text="La configuración del proyecto &quot;%(MissingConfigLevel0.Identity)&quot; no se especificó en el archivo de solución de la configuración de soluciones &quot;$(Configuration)|$(Platform)&quot;." Code="MSB4121" HelpKeyword="MSBuild.SolutionProjectConfigurationMissing" Condition="@(MissingConfigLevel0) != ''" />
+    <MSBuild Condition="@(BuildLevel1) != ''" Projects="@(BuildLevel1)" Properties="Configuration=%(Configuration); Platform=%(Platform); BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)" Targets="Clean" ToolsVersion="$(ProjectToolsVersion)" BuildInParallel="true" UnloadProjectsOnCompletion="$(UnloadProjectsOnCompletion)" UseResultsCache="$(UseResultsCache)" />
+    <Message Text="El proyecto&quot;%(SkipLevel1.Identity)&quot; no se seleccionó para la compilación en la configuración de soluciones &quot;$(Configuration)|$(Platform)&quot;." Condition="@(SkipLevel1) != ''" />
+    <Warning Text="La configuración del proyecto &quot;%(MissingConfigLevel1.Identity)&quot; no se especificó en el archivo de solución de la configuración de soluciones &quot;$(Configuration)|$(Platform)&quot;." Code="MSB4121" HelpKeyword="MSBuild.SolutionProjectConfigurationMissing" Condition="@(MissingConfigLevel1) != ''" />
+    <MSBuild Condition="@(BuildLevel2) != ''" Projects="@(BuildLevel2)" Properties="Configuration=%(Configuration); Platform=%(Platform); BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)" Targets="Clean" ToolsVersion="$(ProjectToolsVersion)" BuildInParallel="true" UnloadProjectsOnCompletion="$(UnloadProjectsOnCompletion)" UseResultsCache="$(UseResultsCache)" />
+    <Message Text="El proyecto&quot;%(SkipLevel2.Identity)&quot; no se seleccionó para la compilación en la configuración de soluciones &quot;$(Configuration)|$(Platform)&quot;." Condition="@(SkipLevel2) != ''" />
+    <Warning Text="La configuración del proyecto &quot;%(MissingConfigLevel2.Identity)&quot; no se especificó en el archivo de solución de la configuración de soluciones &quot;$(Configuration)|$(Platform)&quot;." Code="MSB4121" HelpKeyword="MSBuild.SolutionProjectConfigurationMissing" Condition="@(MissingConfigLevel2) != ''" />
+    <CallTarget Targets="SISAR_WebService:Clean" RunEachTargetSeparately="true" />
+    <MSBuild Condition="@(BuildLevel3) != ''" Projects="@(BuildLevel3)" Properties="Configuration=%(Configuration); Platform=%(Platform); BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)" Targets="Clean" ToolsVersion="$(ProjectToolsVersion)" BuildInParallel="true" UnloadProjectsOnCompletion="$(UnloadProjectsOnCompletion)" UseResultsCache="$(UseResultsCache)" />
+    <Message Text="El proyecto&quot;%(SkipLevel3.Identity)&quot; no se seleccionó para la compilación en la configuración de soluciones &quot;$(Configuration)|$(Platform)&quot;." Condition="@(SkipLevel3) != ''" />
+    <Warning Text="La configuración del proyecto &quot;%(MissingConfigLevel3.Identity)&quot; no se especificó en el archivo de solución de la configuración de soluciones &quot;$(Configuration)|$(Platform)&quot;." Code="MSB4121" HelpKeyword="MSBuild.SolutionProjectConfigurationMissing" Condition="@(MissingConfigLevel3) != ''" />
+    <Delete Files="SISAR.SolucionWeb.sln.cache" />
+  </Target>
+  <Target Name="Rebuild" Condition="'$(CurrentSolutionConfigurationContents)' != ''" Outputs="@(CollectedBuildOutput)">
+    <MSBuild Condition="@(BuildLevel0) != ''" Projects="@(BuildLevel0)" Properties="Configuration=%(Configuration); Platform=%(Platform); BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)" Targets="Rebuild" ToolsVersion="$(ProjectToolsVersion)" BuildInParallel="true" UnloadProjectsOnCompletion="$(UnloadProjectsOnCompletion)" UseResultsCache="$(UseResultsCache)">
+      <Output TaskParameter="TargetOutputs" ItemName="CollectedBuildOutput" />
+    </MSBuild>
+    <Message Text="El proyecto&quot;%(SkipLevel0.Identity)&quot; no se seleccionó para la compilación en la configuración de soluciones &quot;$(Configuration)|$(Platform)&quot;." Condition="@(SkipLevel0) != ''" />
+    <Warning Text="La configuración del proyecto &quot;%(MissingConfigLevel0.Identity)&quot; no se especificó en el archivo de solución de la configuración de soluciones &quot;$(Configuration)|$(Platform)&quot;." Code="MSB4121" HelpKeyword="MSBuild.SolutionProjectConfigurationMissing" Condition="@(MissingConfigLevel0) != ''" />
+    <MSBuild Condition="@(BuildLevel1) != ''" Projects="@(BuildLevel1)" Properties="Configuration=%(Configuration); Platform=%(Platform); BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)" Targets="Rebuild" ToolsVersion="$(ProjectToolsVersion)" BuildInParallel="true" UnloadProjectsOnCompletion="$(UnloadProjectsOnCompletion)" UseResultsCache="$(UseResultsCache)">
+      <Output TaskParameter="TargetOutputs" ItemName="CollectedBuildOutput" />
+    </MSBuild>
+    <Message Text="El proyecto&quot;%(SkipLevel1.Identity)&quot; no se seleccionó para la compilación en la configuración de soluciones &quot;$(Configuration)|$(Platform)&quot;." Condition="@(SkipLevel1) != ''" />
+    <Warning Text="La configuración del proyecto &quot;%(MissingConfigLevel1.Identity)&quot; no se especificó en el archivo de solución de la configuración de soluciones &quot;$(Configuration)|$(Platform)&quot;." Code="MSB4121" HelpKeyword="MSBuild.SolutionProjectConfigurationMissing" Condition="@(MissingConfigLevel1) != ''" />
+    <MSBuild Condition="@(BuildLevel2) != ''" Projects="@(BuildLevel2)" Properties="Configuration=%(Configuration); Platform=%(Platform); BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)" Targets="Rebuild" ToolsVersion="$(ProjectToolsVersion)" BuildInParallel="true" UnloadProjectsOnCompletion="$(UnloadProjectsOnCompletion)" UseResultsCache="$(UseResultsCache)">
+      <Output TaskParameter="TargetOutputs" ItemName="CollectedBuildOutput" />
+    </MSBuild>
+    <Message Text="El proyecto&quot;%(SkipLevel2.Identity)&quot; no se seleccionó para la compilación en la configuración de soluciones &quot;$(Configuration)|$(Platform)&quot;." Condition="@(SkipLevel2) != ''" />
+    <Warning Text="La configuración del proyecto &quot;%(MissingConfigLevel2.Identity)&quot; no se especificó en el archivo de solución de la configuración de soluciones &quot;$(Configuration)|$(Platform)&quot;." Code="MSB4121" HelpKeyword="MSBuild.SolutionProjectConfigurationMissing" Condition="@(MissingConfigLevel2) != ''" />
+    <CallTarget Targets="SISAR_WebService:Rebuild" RunEachTargetSeparately="true" />
+    <MSBuild Condition="@(BuildLevel3) != ''" Projects="@(BuildLevel3)" Properties="Configuration=%(Configuration); Platform=%(Platform); BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)" Targets="Rebuild" ToolsVersion="$(ProjectToolsVersion)" BuildInParallel="true" UnloadProjectsOnCompletion="$(UnloadProjectsOnCompletion)" UseResultsCache="$(UseResultsCache)">
+      <Output TaskParameter="TargetOutputs" ItemName="CollectedBuildOutput" />
+    </MSBuild>
+    <Message Text="El proyecto&quot;%(SkipLevel3.Identity)&quot; no se seleccionó para la compilación en la configuración de soluciones &quot;$(Configuration)|$(Platform)&quot;." Condition="@(SkipLevel3) != ''" />
+    <Warning Text="La configuración del proyecto &quot;%(MissingConfigLevel3.Identity)&quot; no se especificó en el archivo de solución de la configuración de soluciones &quot;$(Configuration)|$(Platform)&quot;." Code="MSB4121" HelpKeyword="MSBuild.SolutionProjectConfigurationMissing" Condition="@(MissingConfigLevel3) != ''" />
+  </Target>
+  <Target Name="Publish" Condition="'$(CurrentSolutionConfigurationContents)' != ''">
+    <MSBuild Condition="@(BuildLevel0) != ''" Projects="@(BuildLevel0)" Properties="Configuration=%(Configuration); Platform=%(Platform); BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)" Targets="Publish" ToolsVersion="$(ProjectToolsVersion)" BuildInParallel="true" UnloadProjectsOnCompletion="$(UnloadProjectsOnCompletion)" UseResultsCache="$(UseResultsCache)" />
+    <Message Text="El proyecto&quot;%(SkipLevel0.Identity)&quot; no se seleccionó para la compilación en la configuración de soluciones &quot;$(Configuration)|$(Platform)&quot;." Condition="@(SkipLevel0) != ''" />
+    <Warning Text="La configuración del proyecto &quot;%(MissingConfigLevel0.Identity)&quot; no se especificó en el archivo de solución de la configuración de soluciones &quot;$(Configuration)|$(Platform)&quot;." Code="MSB4121" HelpKeyword="MSBuild.SolutionProjectConfigurationMissing" Condition="@(MissingConfigLevel0) != ''" />
+    <MSBuild Condition="@(BuildLevel1) != ''" Projects="@(BuildLevel1)" Properties="Configuration=%(Configuration); Platform=%(Platform); BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)" Targets="Publish" ToolsVersion="$(ProjectToolsVersion)" BuildInParallel="true" UnloadProjectsOnCompletion="$(UnloadProjectsOnCompletion)" UseResultsCache="$(UseResultsCache)" />
+    <Message Text="El proyecto&quot;%(SkipLevel1.Identity)&quot; no se seleccionó para la compilación en la configuración de soluciones &quot;$(Configuration)|$(Platform)&quot;." Condition="@(SkipLevel1) != ''" />
+    <Warning Text="La configuración del proyecto &quot;%(MissingConfigLevel1.Identity)&quot; no se especificó en el archivo de solución de la configuración de soluciones &quot;$(Configuration)|$(Platform)&quot;." Code="MSB4121" HelpKeyword="MSBuild.SolutionProjectConfigurationMissing" Condition="@(MissingConfigLevel1) != ''" />
+    <MSBuild Condition="@(BuildLevel2) != ''" Projects="@(BuildLevel2)" Properties="Configuration=%(Configuration); Platform=%(Platform); BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)" Targets="Publish" ToolsVersion="$(ProjectToolsVersion)" BuildInParallel="true" UnloadProjectsOnCompletion="$(UnloadProjectsOnCompletion)" UseResultsCache="$(UseResultsCache)" />
+    <Message Text="El proyecto&quot;%(SkipLevel2.Identity)&quot; no se seleccionó para la compilación en la configuración de soluciones &quot;$(Configuration)|$(Platform)&quot;." Condition="@(SkipLevel2) != ''" />
+    <Warning Text="La configuración del proyecto &quot;%(MissingConfigLevel2.Identity)&quot; no se especificó en el archivo de solución de la configuración de soluciones &quot;$(Configuration)|$(Platform)&quot;." Code="MSB4121" HelpKeyword="MSBuild.SolutionProjectConfigurationMissing" Condition="@(MissingConfigLevel2) != ''" />
+    <CallTarget Targets="SISAR_WebService:Publish" RunEachTargetSeparately="true" />
+    <MSBuild Condition="@(BuildLevel3) != ''" Projects="@(BuildLevel3)" Properties="Configuration=%(Configuration); Platform=%(Platform); BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)" Targets="Publish" ToolsVersion="$(ProjectToolsVersion)" BuildInParallel="true" UnloadProjectsOnCompletion="$(UnloadProjectsOnCompletion)" UseResultsCache="$(UseResultsCache)" />
+    <Message Text="El proyecto&quot;%(SkipLevel3.Identity)&quot; no se seleccionó para la compilación en la configuración de soluciones &quot;$(Configuration)|$(Platform)&quot;." Condition="@(SkipLevel3) != ''" />
+    <Warning Text="La configuración del proyecto &quot;%(MissingConfigLevel3.Identity)&quot; no se especificó en el archivo de solución de la configuración de soluciones &quot;$(Configuration)|$(Platform)&quot;." Code="MSB4121" HelpKeyword="MSBuild.SolutionProjectConfigurationMissing" Condition="@(MissingConfigLevel3) != ''" />
+  </Target>
+</Project>

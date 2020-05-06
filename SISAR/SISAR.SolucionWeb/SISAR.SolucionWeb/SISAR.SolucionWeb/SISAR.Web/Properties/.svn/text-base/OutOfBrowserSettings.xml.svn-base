@@ -1,0 +1,7 @@
+<OutOfBrowserSettings ShortName="Mi Carcochita" EnableGPUAcceleration="False" ShowInstallMenuItem="True">
+  <OutOfBrowserSettings.Blurb>Aplicativo para ver el menu y otras novedades del Restaurant</OutOfBrowserSettings.Blurb>
+  <OutOfBrowserSettings.WindowSettings>
+    <WindowSettings Title="Aplicación SISAR.Web" />
+  </OutOfBrowserSettings.WindowSettings>
+  <OutOfBrowserSettings.Icons />
+</OutOfBrowserSettings>
